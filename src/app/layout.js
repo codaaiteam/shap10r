@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
   const locale = params?.lang || 'en'
   const t = translations[locale]
   
-  const baseUrl = 'https://www.playsprunkiphrase4.com'
+  const baseUrl = 'https://www.playshap10r.org'
   const currentUrl = `${baseUrl}/${locale}`
   
   const languageAlternates = locales.reduce((acc, lang) => {
@@ -67,10 +67,7 @@ export default function RootLayout({ children, params }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta 
-          name="google-site-verification" 
-          content={t.seo.googleSiteVerification} 
-        />
+        <meta name="google-site-verification" content="ejTNzps4rUJKSZrNs1b57sjcCQU5MdlsNxUCvhIgJuU" />
       </head>
       <body className={inter.className}>
         {children}
