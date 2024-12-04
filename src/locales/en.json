@@ -1,0 +1,119 @@
+{
+  "title": "Shap10r: A Logic and Deduction Puzzle Game",
+  "description": "Challenge your mind with this unique blend of Wordle™ and Mastermind® gameplay mechanics",
+  "playNow": "Play Now",
+  "gameExperience": "Test your deduction skills by uncovering hidden shape-color combinations in this engaging puzzle game!",
+  "startAdventure": "Begin your puzzle-solving journey with Shap10r:",
+  "playGame": "Play Game",
+  "fullscreenTip": "Click on the game area to start playing. Use the fullscreen button for a better experience.",
+  "howToPlay": "How to play Shap10r?",
+  "quickGuide": "Here's a quick guide to get you started:",
+  "step1Title": "Select Your Shaplors",
+  "step1Description": "Choose five unique shape-color combinations from the grid of 24 options",
+  "step2Title": "Analyze Feedback",
+  "step2Description": "Green outlines show correct Shaplors in the right position, yellow indicates right Shaplor but wrong position",
+  "step3Title": "Use Logic",
+  "step3Description": "Consider Shaplor values (shape + color) to deduce the correct combinations",
+  "step4Title": "Solve the Puzzle",
+  "step4Description": "Use process of elimination to crack the code within 10 guesses",
+  "keyFeatures": "Key Features of Shap10r",
+  "feature1Title": "Dynamic Gameplay",
+  "feature1Description": "Randomly assigned shape and color values make each game unique",
+  "feature2Title": "Difficulty Modes",
+  "feature2Description": "Choose between Normal Mode (sorted values) and Hard Mode (unsorted values)",
+  "feature3Title": "Strategic Scoring",
+  "feature3Description": "Earn points for correct placements and bonus points for solving quickly",
+  "feature4Title": "Intuitive Interface",
+  "feature4Description": "Clear visual feedback and user-friendly controls",
+  "whyPlay": "Why play Shap10r?",
+  "reason1": "Enhance critical thinking and pattern recognition skills through engaging gameplay",
+  "reason2": "Free to play and accessible across all devices with no download required",
+  "reason3": "Perfect for puzzle enthusiasts of all ages who enjoy logical challenges",
+  "faq": "Frequently Asked Questions:",
+  "faq1Question": "What is Shap10r?",
+  "faq1Answer": "Shap10r is a challenging puzzle game that combines elements of Wordle™ and Mastermind®, where players use logic to uncover hidden shape-color combinations.",
+  "faq2Question": "Do I need to install anything to play Shap10r?",
+  "faq2Answer": "No, Shap10r runs directly in your web browser and is completely free to play.",
+  "faq3Question": "Can I play Shap10r on mobile devices?",
+  "faq3Answer": "Yes, Shap10r is fully optimized for mobile devices and playable on any modern web browser.",
+  "faq4Question": "What makes Shap10r unique?",
+  "faq4Answer": "Shap10r features dynamic value assignments, multiple difficulty modes, and combines visual pattern recognition with numerical strategy.",
+  "seoTitle": "Shap10r: A Logic and Deduction Puzzle Game",
+  "seoDescription": "Challenge your mind with this unique blend of Wordle™ and Mastermind® gameplay mechanics in a free-to-play puzzle experience!",
+  "siteUrl": "https://www.playshaplor.com/",
+  "keywords": "Shap10r, puzzle game, logic game, deduction game, Wordle, Mastermind, brain training, strategy game",
+  "clickToRate": "Rate this",
+  "ratingStars": "stars",
+  "averageRating": "Average",
+  "totalVotes": "votes",
+  "meta": {
+    "ogTitle": "Shap10r: A Logic and Deduction Puzzle Game",
+    "ogDescription": "Challenge your mind with this unique blend of Wordle™ and Mastermind® gameplay mechanics",
+    "ogType": "website",
+    "ogUrl": "https://www.playshaplor.com/",
+    "ogImage": "https://www.playshaplor.com/discover.svg",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Shap10r: A Logic and Deduction Puzzle Game",
+    "twitterDescription": "Challenge your mind with this unique blend of Wordle™ and Mastermind® gameplay mechanics",
+    "twitterImage": "https://www.playshaplor.com/discover.svg"
+  },
+  "seo": {
+    "robots": "index, follow",
+    "canonical": "https://www.playshaplor.com/",
+    "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
+    "googleAnalyticsId": "G-1NVXP8SB8Z"
+  },
+  "layout": {
+    "language": "en",
+    "direction": "ltr",
+    "fontFamily": "Inter"
+  },
+  "games":{},
+  "game": {
+    "playNow": "Play Now",
+    "fullscreenTip": "Press F11 or click the fullscreen button for the best experience",
+    "loading": "Loading game...",
+    "relatedGames": "More Games Like This",
+    "features": "Key Features",
+    "about": "About This Game",
+    "howToPlay": "How to Play",
+    "share": "Share",
+    "report": "Report Issue",
+    "feedback": "Give Feedback"
+  },
+  "common": {
+    "difficulty": {
+      "easy": "Normal Mode",
+      "medium": "Hard Mode"
+    },
+    "categories": {
+      "classic": "Classic Series",
+      "themed": "Themed Versions",
+      "experimental": "Experimental",
+      "seasonal": "Seasonal",
+      "crossover": "Crossover"
+    },
+    "features": {
+      "multiplayer": "Multiplayer",
+      "achievements": "Achievements",
+      "leaderboards": "Leaderboards",
+      "customization": "Customization"
+    },
+    "errors": {
+      "loadFailed": "Failed to load game",
+      "saveFailed": "Failed to save progress",
+      "connectionLost": "Connection lost",
+      "loading": "Loading...",
+      "waitforloading": "Wait for a minute...",
+      "gameNotFound": "Game Not Found",
+      "gameNotFoundDesc": "Sorry, we couldn't find the game you're looking for."
+    },
+    "buttons": {
+      "play": "Play Now",
+      "retry": "Try Again",
+      "settings": "Settings",
+      "share": "Share",
+      "fullscreen": "Fullscreen"
+    }
+  }
+}

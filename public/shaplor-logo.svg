@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+  <!-- Background rectangle -->
+  <rect width="300" height="80" rx="12" fill="#5B4FDB"/>
+  
+  <!-- Decorative shapes on the left -->
+  <g transform="translate(20, 20)">
+    <rect width="20" height="20" rx="2" fill="#FF4444"/> <!-- Red -->
+    <circle cx="50" cy="10" r="10" fill="#FFA500"/> <!-- Orange -->
+    <polygon points="80,0 90,20 70,20" fill="#4CAF50"/> <!-- Green -->
+    <rect x="100" y="0" width="20" height="20" rx="2" fill="#2196F3"/> <!-- Blue -->
+  </g>
+  
+  <!-- Text "Shap10r" -->
+  <text x="150" y="55" font-family="Arial Black, sans-serif" font-size="40" fill="white" text-anchor="middle" font-weight="bold">
+    Shap1
+    <tspan fill="#FFD700">0</tspan>
+    r
+  </text>
+</svg>

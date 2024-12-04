@@ -1,0 +1,119 @@
+{
+  "title": "Shap10r：邏輯推理益智遊戲",
+  "description": "透過 Wordle™ 和 Mastermind® 遊戲機制的獨特融合來挑戰您的思維",
+  "playNow": "立即播放",
+  "gameExperience": "在這款引人入勝的益智遊戲中揭開隱藏的形狀-顏色組合，測試您的推理技巧！",
+  "startAdventure": "使用 Shap10r 開始您的解謎之旅：",
+  "playGame": "玩遊戲",
+  "fullscreenTip": "點擊遊戲區域即可開始遊戲。使用全螢幕按鈕以獲得更好的體驗。",
+  "howToPlay": "如何玩Shap10r？",
+  "quickGuide": "以下是幫助您入門的快速指南：",
+  "step1Title": "選擇您的 Shaplors",
+  "step1Description": "從 24 個選項中選擇五種獨特的形狀顏色組合",
+  "step2Title": "分析回饋",
+  "step2Description": "綠色輪廓顯示正確位置的正確 Shaplor，黃色表示正確 Shaplor 但位置錯誤",
+  "step3Title": "使用邏輯",
+  "step3Description": "考慮 Shaplor 值（形狀 + 顏色）來推斷正確的組合",
+  "step4Title": "解決難題",
+  "step4Description": "使用排除法在 10 次猜測內破解代碼",
+  "keyFeatures": "Shap10r 的主要特點",
+  "feature1Title": "動態遊戲玩法",
+  "feature1Description": "隨機分配的形狀和顏色值使每個遊戲都獨一無二",
+  "feature2Title": "難度模式",
+  "feature2Description": "在正常模式（排序值）和困難模式（未排序值）之間進行選擇",
+  "feature3Title": "戰略得分",
+  "feature3Description": "正確放置可賺取積分，快速解決可賺取獎勵積分",
+  "feature4Title": "直覺的介面",
+  "feature4Description": "清晰的視覺回饋和用戶友好的控制",
+  "whyPlay": "為什麼要玩 Shap10r？",
+  "reason1": "透過引人入勝的遊戲玩法增強批判性思維和模式識別技能",
+  "reason2": "免費暢玩，可在所有裝置上訪問，無需下載",
+  "reason3": "非常適合喜歡邏輯挑戰的所有年齡層的益智愛好者",
+  "faq": "常見問題：",
+  "faq1Question": "Shap10r是什麼？",
+  "faq1Answer": "Shap10r 是一款具有挑戰性的益智遊戲，結合了 Wordle™ 和 Mastermind® 的元素，玩家可以使用邏輯來發現隱藏的形狀顏色組合。",
+  "faq2Question": "我需要安裝任何東西才能玩 Shap10r 嗎？",
+  "faq2Answer": "不需要，Shap10r 直接在您的網頁瀏覽器中運行，並且完全免費。",
+  "faq3Question": "我可以在行動裝置上玩 Shap10r 嗎？",
+  "faq3Answer": "是的，Shap10r 針對行動裝置進行了全面最佳化，並且可以在任何現代網頁瀏覽器上播放。",
+  "faq4Question": "Shap10r 有何獨特之處？",
+  "faq4Answer": "Shap10r 具有動態價值分配、多種難度模式，並將視覺模式識別與數值策略結合。",
+  "seoTitle": "Shap10r：邏輯推理益智遊戲",
+  "seoDescription": "在免費的益智遊戲體驗中，透過 Wordle™ 和 Mastermind® 遊戲機制的獨特融合來挑戰您的思維！",
+  "siteUrl": "https://www.playshaplor.com/",
+  "keywords": "Shap10r、益智遊戲、邏輯遊戲、推理遊戲、Wordle、Mastermind、大腦訓練、策略遊戲",
+  "clickToRate": "評價這個",
+  "ratingStars": "星星",
+  "averageRating": "平均的",
+  "totalVotes": "投票數",
+  "meta": {
+    "ogTitle": "Shap10r：邏輯推理益智遊戲",
+    "ogDescription": "透過 Wordle™ 和 Mastermind® 遊戲機制的獨特融合來挑戰您的思維",
+    "ogType": "網站",
+    "ogUrl": "https://www.playshaplor.com/",
+    "ogImage": "https://www.playshaplor.com/discover.svg",
+    "twitterCard": "摘要大圖像",
+    "twitterTitle": "Shap10r：邏輯推理益智遊戲",
+    "twitterDescription": "透過 Wordle™ 和 Mastermind® 遊戲機制的獨特融合來挑戰您的思維",
+    "twitterImage": "https://www.playshaplor.com/discover.svg"
+  },
+  "seo": {
+    "robots": "索引，關注",
+    "canonical": "https://www.playshaplor.com/",
+    "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
+    "googleAnalyticsId": "G-1NVXP8SB8Z"
+  },
+  "layout": {
+    "language": "zh",
+    "direction": "左轉",
+    "fontFamily": "國際米蘭"
+  },
+  "games": {},
+  "game": {
+    "playNow": "立即播放",
+    "fullscreenTip": "按 F11 或按一下全螢幕按鈕以獲得最佳體驗",
+    "loading": "正在載入遊戲...",
+    "relatedGames": "更多類似的遊戲",
+    "features": "主要特點",
+    "about": "關於這個遊戲",
+    "howToPlay": "怎麼玩",
+    "share": "分享",
+    "report": "報告問題",
+    "feedback": "提供回饋"
+  },
+  "common": {
+    "difficulty": {
+      "easy": "普通模式",
+      "medium": "困難模式"
+    },
+    "categories": {
+      "classic": "經典系列",
+      "themed": "主題版本",
+      "experimental": "實驗性的",
+      "seasonal": "季節性",
+      "crossover": "交叉"
+    },
+    "features": {
+      "multiplayer": "多人遊戲",
+      "achievements": "成就",
+      "leaderboards": "排行榜",
+      "customization": "客製化"
+    },
+    "errors": {
+      "loadFailed": "無法載入遊戲",
+      "saveFailed": "保存進度失敗",
+      "connectionLost": "連線遺失",
+      "loading": "載入中...",
+      "waitforloading": "等一下...",
+      "gameNotFound": "找不到遊戲",
+      "gameNotFoundDesc": "抱歉，我們找不到您要找的遊戲。"
+    },
+    "buttons": {
+      "play": "立即播放",
+      "retry": "再試一次",
+      "settings": "設定",
+      "share": "分享",
+      "fullscreen": "全螢幕"
+    }
+  }
+}

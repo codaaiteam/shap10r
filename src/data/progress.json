@@ -1,0 +1,908 @@
+{
+  "last_updated": "2024-12-02T17:55:00.187348",
+  "total_processed": 48,
+  "success_count": 45,
+  "error_count": 3,
+  "processed_games": {
+    "sprunki-retake-night-mode": {
+      "title": "Sprunki Retake Night Mode",
+      "source_url": "https://sprunki.org/sprunki-retake-night-mode",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-23T17:03:46.725409",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-retake-night-mode/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-bob-squarepants": {
+      "title": "Sprunki Bob Squarepants",
+      "source_url": "https://sprunki.org/sprunki-bob-squarepants",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:42:21.914972",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-bob-squarepants/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-retake-babies": {
+      "title": "Sprunki Retake Babies",
+      "source_url": "https://sprunki.org/sprunki-retake-babies",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:25:44.657731",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-retake-babies/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunkilairity": {
+      "title": "Sprunkilairity",
+      "source_url": "https://sprunki.org/sprunkilairity",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:04:43.954370",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunkilairity/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sperunky": {
+      "title": "Sperunky",
+      "source_url": "https://sprunki.org/sperunky",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:58:59.173918",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sperunky/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "dandys-sprunki": {
+      "title": "Dandy’s Sprunki",
+      "source_url": "https://sprunki.org/dandys-sprunki",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:55:15.839668",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/dandys-sprunki/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-sinner-edition": {
+      "title": "Sprunki Sinner Edition",
+      "source_url": "https://sprunki.org/sprunki-sinner-edition",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-23T21:21:16.506843",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-sinner-edition/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "incredibox-spainey": {
+      "title": "Incredibox Spainey",
+      "source_url": "https://sprunki.org/incredibox-spainey",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:26:44.924938",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/incredibox-spainey/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "incredibox-spruncraft": {
+      "title": "Incredibox Spruncraft",
+      "source_url": "https://sprunki.org/incredibox-spruncraft",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:28:28.130427",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/incredibox-spruncraft/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-fall-edition": {
+      "title": "Sprunki Fall Edition",
+      "source_url": "https://sprunki.org/sprunki-fall-edition",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:30:22.473573",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-fall-edition/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-crack-edition": {
+      "title": "Sprunki Crack Edition",
+      "source_url": "https://sprunki.org/sprunki-crack-edition",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:32:13.975361",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-crack-edition/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-christmas-edition": {
+      "title": "Sprunki Christmas Edition",
+      "source_url": "https://sprunki.org/sprunki-christmas-edition",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:33:53.981035",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-christmas-edition/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "rizzbox-incredibox": {
+      "title": "Rizzbox Incredibox",
+      "source_url": "https://sprunki.org/rizzbox-incredibox",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:35:37.767337",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/rizzbox-incredibox/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-cool-as-ice": {
+      "title": "Sprunki Cool As Ice",
+      "source_url": "https://sprunki.org/sprunki-cool-as-ice",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:37:56.335553",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-cool-as-ice/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-banana-edition-mod": {
+      "title": "Sprunki Banana Edition Mod",
+      "source_url": "https://sprunki.org/sprunki-banana-edition-mod",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:39:45.602820",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-banana-edition-mod/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunkion-sauce": {
+      "title": "Sprunkion Sauce",
+      "source_url": "https://sprunki.org/sprunkion-sauce",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T03:53:12.817602",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunkion-sauce/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-sinner": {
+      "title": "Sprunki Sinner",
+      "source_url": "https://sprunki.org/sprunki-sinner",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:00:15.468101",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-sinner/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-candi-retake": {
+      "title": "Sprunki Candi Retake",
+      "source_url": "https://sprunki.org/sprunki-candi-retake",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:08:47.844035",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-candi-retake/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-christmas": {
+      "title": "Sprunki Christmas",
+      "source_url": "https://sprunki.org/sprunki-christmas",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:12:59.745999",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-christmas/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "horror-spranky-beats": {
+      "title": "Horror Spranky Beats",
+      "source_url": "https://sprunki.org/horror-spranky-beats",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:17:21.000351",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/horror-spranky-beats/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-kiss-edition": {
+      "title": "Sprunki Kiss Edition",
+      "source_url": "https://sprunki.org/sprunki-kiss-edition",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:21:36.325926",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-kiss-edition/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-cancelled-update": {
+      "title": "Sprunki Cancelled Update",
+      "source_url": "https://sprunki.org/sprunki-cancelled-update",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:29:52.664080",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-cancelled-update/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-phase-13": {
+      "title": "Sprunki Phase 13",
+      "source_url": "https://sprunki.org/sprunki-phase-13",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:34:02.336275",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-phase-13/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "christmas-sprunki": {
+      "title": "Christmas Sprunki Games",
+      "source_url": "https://sprunki.org/games/christmas-sprunki",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T04:38:09.330583",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/christmas-sprunki/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-mode-hyperblast": {
+      "title": "Sprunki Mode Hyperblast",
+      "source_url": "https://sprunki.org/sprunki-mode-hyperblast",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-24T16:22:47.287448",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-mode-hyperblast/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "subway-surfers": {
+      "title": "Subway Surfers",
+      "source_url": "https://sprunki.org/subway-surfers",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-25T15:56:03.591295",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/subway-surfers/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "abgerny-but-overlap": {
+      "title": "Abgerny But Overlap",
+      "source_url": "https://sprunki.org/abgerny-but-overlap",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-25T15:59:54.412144",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/abgerny-but-overlap/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "banana-sprunkis": {
+      "title": "Banana Sprunkis",
+      "source_url": "https://sprunki.org/banana-sprunkis",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-26T14:41:23.381477",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/banana-sprunkis/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-toca": {
+      "title": "Sprunki Toca",
+      "source_url": "https://sprunki.org/sprunki-toca",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-26T14:45:47.056286",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-toca/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-phase-14": {
+      "title": "Sprunki Phase 14",
+      "source_url": "https://sprunki.org/sprunki-phase-14",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-27T17:29:06.463686",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-phase-14/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-x-fetereder": {
+      "title": "Sprunki x Fetereder",
+      "source_url": "https://sprunki.org/sprunki-x-fetereder",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-27T17:33:50.788065",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-x-fetereder/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-phase-15": {
+      "title": "Sprunki Phase 15",
+      "source_url": "https://sprunki.org/sprunki-phase-15",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-27T17:38:29.853604",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-phase-15/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-oc-maker": {
+      "title": "sprunki-oc-maker",
+      "source_url": "https://sprunki.org/sprunki-oc-maker",
+      "game_url": "",
+      "status": "error",
+      "processed_at": "2024-11-29T00:42:03.797307",
+      "details": {
+        "error": "翻译失败:   File \"/code/spunki/src/locales/lang.py\", line 23\n    'ru':'Russisan'\n        ^\nSyntaxError: invalid syntax\n"
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "padek-man-sprunki": {
+      "title": "padek-man-sprunki",
+      "source_url": "https://sprunki.org/padek-man-sprunki",
+      "game_url": "",
+      "status": "error",
+      "processed_at": "2024-11-29T00:43:00.258430",
+      "details": {
+        "error": "翻译失败:   File \"/code/spunki/src/locales/lang.py\", line 23\n    'ru':'Russisan'\n        ^\nSyntaxError: invalid syntax\n"
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-parasite": {
+      "title": "sprunki-parasite",
+      "source_url": "https://sprunki.org/sprunki-parasite",
+      "game_url": "",
+      "status": "error",
+      "processed_at": "2024-11-29T00:41:07.840266",
+      "details": {
+        "error": "翻译失败:   File \"/code/spunki/src/locales/lang.py\", line 23\n    'ru':'Russisan'\n        ^\nSyntaxError: invalid syntax\n"
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "world-of-zombies-sprunki": {
+      "title": "World of Zombies Sprunki",
+      "source_url": "https://sprunki.org/world-of-zombies-sprunki",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-29T14:31:32.647557",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/world-of-zombies-sprunki/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "abgerny-scratch-remix": {
+      "title": "Abgerny Scratch Remix",
+      "source_url": "https://sprunki.org/abgerny-scratch-remix",
+      "game_url": "scratc",
+      "status": "success",
+      "processed_at": "2024-11-29T14:36:41.822223",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/abgerny-scratch-remix/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-phase-69": {
+      "title": "Sprunki Phase 69",
+      "source_url": "https://sprunki.org/sprunki-phase-69",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-29T14:41:39.501687",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-phase-69/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-lunacy": {
+      "title": "Sprunki Lunacy",
+      "source_url": "https://sprunki.org/sprunki-lunacy",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-29T14:46:26.100937",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-lunacy/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-phase-100": {
+      "title": "Sprunki Phase 100",
+      "source_url": "https://sprunki.org/sprunki-phase-100",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-29T14:51:13.556636",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-phase-100/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-shocked": {
+      "title": "Sprunki Shocked",
+      "source_url": "https://sprunki.org/sprunki-shocked",
+      "game_url": "https://scratch.mit.edu/projects/1086292370",
+      "status": "success",
+      "processed_at": "2024-11-29T14:56:00.332552",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-shocked/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-x-fpe-v9": {
+      "title": "Sprunki x FPE V9",
+      "source_url": "https://sprunki.org/sprunki-x-fpe-v9",
+      "game_url": "https://scratch.mit.edu/projects/1100765865",
+      "status": "success",
+      "processed_at": "2024-11-29T15:00:49.023395",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-x-fpe-v9/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "abgerny-baggerhead": {
+      "title": "Abgerny Baggerhead",
+      "source_url": "https://sprunki.org/abgerny-baggerhead",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-29T15:06:03.058230",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/abgerny-baggerhead/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-halloween": {
+      "title": "Sprunki Halloween",
+      "source_url": "https://sprunki.org/sprunki-halloween",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-11-30T14:31:23.529432",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-halloween/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-colordex": {
+      "title": "Sprunki Colordex",
+      "source_url": "https://sprunki.org/sprunki-colordex.embed",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-12-01T14:31:31.316346",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-colordex/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-on-planet-dom": {
+      "title": "Sprunki On Planet Dom",
+      "source_url": "https://sprunki.org/sprunki-on-planet-dom",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-12-01T14:36:20.434979",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-on-planet-dom/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "sprunki-sonic": {
+      "title": "Sprunki Sonic",
+      "source_url": "https://sprunki.org/sprunki-sonic",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-12-01T14:40:46.612044",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/sprunki-sonic/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    },
+    "corruptbox-2-but-sprunki": {
+      "title": "Corruptbox 2 But Sprunki",
+      "source_url": "https://sprunki.org/corruptbox-2-but-sprunki",
+      "game_url": "",
+      "status": "success",
+      "processed_at": "2024-12-02T17:55:00.187317",
+      "details": {
+        "processed_files": [
+          "games.json",
+          "en.json",
+          "assets/games/corruptbox-2-but-sprunki/logo.png"
+        ]
+      },
+      "files": {
+        "image": "",
+        "json_path": "src/data/games.json",
+        "translation": "src/locales/en.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "title": "Shap10r: 論理と推理のパズルゲーム",
+  "description": "Wordle™とMastermind®のゲームプレイメカニクスを独自に組み合わせて、あなたの頭脳に挑戦しましょう",
+  "playNow": "今すぐプレイ",
+  "gameExperience": "この魅力的なパズル ゲームで、隠された形と色の組み合わせを発見して推理力を試しましょう。",
+  "startAdventure": "Shap10r でパズルを解く旅を始めましょう:",
+  "playGame": "ゲームをプレイ",
+  "fullscreenTip": "ゲームエリアをクリックしてプレイを開始します。より良い体験のために、全画面ボタンを使用してください。",
+  "howToPlay": "Shap10rの遊び方",
+  "quickGuide": "始めるための簡単なガイドは次のとおりです。",
+  "step1Title": "シャプロスを選択",
+  "step1Description": "24 種類のオプションから 5 つのユニークな形状と色の組み合わせを選択します。",
+  "step2Title": "フィードバックを分析する",
+  "step2Description": "緑のアウトラインは正しい位置にある正しいシャプロルを示し、黄色は正しいシャプロルだが位置が間違っていることを示します。",
+  "step3Title": "ロジックを使用する",
+  "step3Description": "シャプロル値（形状+色）を考慮して正しい組み合わせを推測します",
+  "step4Title": "パズルを解く",
+  "step4Description": "消去法を使って10回以内でコードを解読する",
+  "keyFeatures": "Shap10rの主な特徴",
+  "feature1Title": "ダイナミックなゲームプレイ",
+  "feature1Description": "ランダムに割り当てられた形状と色の値により、各ゲームがユニークになります",
+  "feature2Title": "難易度モード",
+  "feature2Description": "通常モード（ソートされた値）とハードモード（ソートされていない値）を選択します",
+  "feature3Title": "戦略的スコアリング",
+  "feature3Description": "正しい配置でポイントを獲得し、素早く解くとボーナスポイントを獲得できます",
+  "feature4Title": "直感的なインターフェース",
+  "feature4Description": "明確な視覚フィードバックとユーザーフレンドリーなコントロール",
+  "whyPlay": "Shap10rをプレイする理由",
+  "reason1": "魅力的なゲームプレイを通じて批判的思考力とパターン認識能力を高める",
+  "reason2": "無料でプレイでき、ダウンロード不要であらゆるデバイスからアクセスできます",
+  "reason3": "論理的な挑戦を楽しむあらゆる年齢のパズル愛好家に最適です",
+  "faq": "よくある質問:",
+  "faq1Question": "Shap10rとは何ですか?",
+  "faq1Answer": "Shap10r は、Wordle™ と Mastermind® の要素を組み合わせた、プレイヤーが論理を駆使して隠された形と色の組み合わせを発見する、挑戦的なパズル ゲームです。",
+  "faq2Question": "Shap10r をプレイするには何かをインストールする必要がありますか?",
+  "faq2Answer": "いいえ、Shap10r は Web ブラウザー内で直接実行され、完全に無料でプレイできます。",
+  "faq3Question": "Shap10r をモバイルデバイスでプレイできますか?",
+  "faq3Answer": "はい、Shap10r はモバイル デバイス向けに完全に最適化されており、最新の Web ブラウザーで再生できます。",
+  "faq4Question": "Shap10r のユニークな点は何ですか?",
+  "faq4Answer": "Shap10r は、動的な値の割り当て、複数の難易度モードを特徴とし、視覚的なパターン認識と数値戦略を組み合わせています。",
+  "seoTitle": "Shap10r: 論理と推理のパズルゲーム",
+  "seoDescription": "Wordle™ と Mastermind® のゲームプレイ メカニズムを独自に組み合わせた無料のパズル エクスペリエンスで、頭脳に挑戦しましょう。",
+  "siteUrl": "https://www.playshaplor.com/",
+  "keywords": "Shap10r、パズルゲーム、ロジックゲーム、推理ゲーム、Wordle、Mastermind、脳トレ、戦略ゲーム",
+  "clickToRate": "これを評価する",
+  "ratingStars": "星",
+  "averageRating": "平均",
+  "totalVotes": "投票数",
+  "meta": {
+    "ogTitle": "Shap10r: 論理と推理のパズルゲーム",
+    "ogDescription": "Wordle™とMastermind®のゲームプレイメカニクスを独自に組み合わせて、あなたの頭脳に挑戦しましょう",
+    "ogType": "Webサイト",
+    "ogUrl": "https://www.playshaplor.com/",
+    "ogImage": "https://www.playshaplor.com/discover.svg",
+    "twitterCard": "概要_大きな画像",
+    "twitterTitle": "Shap10r: 論理と推理のパズルゲーム",
+    "twitterDescription": "Wordle™とMastermind®のゲームプレイメカニクスを独自に組み合わせて、あなたの頭脳に挑戦しましょう",
+    "twitterImage": "https://www.playshaplor.com/discover.svg"
+  },
+  "seo": {
+    "robots": "インデックス、フォロー",
+    "canonical": "https://www.playshaplor.com/",
+    "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
+    "googleAnalyticsId": "G-1NVXP8SB8Z"
+  },
+  "layout": {
+    "language": "ja 翻訳",
+    "direction": "ltr",
+    "fontFamily": "インター"
+  },
+  "games": {},
+  "game": {
+    "playNow": "今すぐプレイ",
+    "fullscreenTip": "最高の体験を得るには、F11 キーを押すか、全画面ボタンをクリックしてください。",
+    "loading": "ゲームをロード中...",
+    "relatedGames": "このようなゲームをもっと見る",
+    "features": "主な特徴",
+    "about": "このゲームについて",
+    "howToPlay": "遊び方",
+    "share": "共有",
+    "report": "問題を報告",
+    "feedback": "フィードバックを送る"
+  },
+  "common": {
+    "difficulty": {
+      "easy": "通常モード",
+      "medium": "ハードモード"
+    },
+    "categories": {
+      "classic": "クラシックシリーズ",
+      "themed": "テーマ別バージョン",
+      "experimental": "実験的",
+      "seasonal": "季節限定",
+      "crossover": "クロスオーバー"
+    },
+    "features": {
+      "multiplayer": "マルチプレイヤー",
+      "achievements": "実績",
+      "leaderboards": "リーダーボード",
+      "customization": "カスタマイズ"
+    },
+    "errors": {
+      "loadFailed": "ゲームの読み込みに失敗しました",
+      "saveFailed": "進行状況を保存できませんでした",
+      "connectionLost": "接続が失われました",
+      "loading": "読み込み中...",
+      "waitforloading": "ちょっと待ってください...",
+      "gameNotFound": "ゲームが見つかりません",
+      "gameNotFoundDesc": "申し訳ありませんが、お探しのゲームは見つかりませんでした。"
+    },
+    "buttons": {
+      "play": "今すぐプレイ",
+      "retry": "もう一度やり直してください",
+      "settings": "設定",
+      "share": "共有",
+      "fullscreen": "全画面表示"
+    }
+  }
+}

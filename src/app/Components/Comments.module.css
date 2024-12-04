@@ -1,0 +1,54 @@
+.commentsWrapper {
+  background: #FFFFFF;
+  color: #333333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.commentsWrapper :global(#cusdis_thread) {
+  color: #333333;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.commentsWrapper :global(#cusdis_thread input),
+.commentsWrapper :global(#cusdis_thread textarea) {
+  background: #F8F9FA !important;
+  color: #333333 !important;
+  border: 1px solid #5B4FDB !important;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.commentsWrapper :global(.cusdis-button) {
+  background: #5B4FDB !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.commentsWrapper :global(#cusdis_thread label),
+.commentsWrapper :global(#cusdis_thread div),
+.commentsWrapper :global(#cusdis_thread span) {
+  color: #ffffff !important;
+}
+
+.commentsWrapper :global(.cusdis-button) {
+  background: #ff4040 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.commentsWrapper :global(.comment-box),
+.commentsWrapper :global(.cusdis-comments) {
+  background: #1a1a1a !important; 
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.commentsWrapper :global(*) {
+  color: #ffffff !important;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#FFFFFF"/>
+  <!-- 颜色混合展示 -->
+  <g transform="translate(40,40)">
+    <!-- 心形行 -->
+    <path d="M15,30 A8,8 0 0,1 7,22 A8,8 0 0,1 15,14 A8,8 0 0,1 23,22 A8,8 0 0,1 15,30 Z" fill="#FF4444"/>
+    <path d="M55,30 A8,8 0 0,1 47,22 A8,8 0 0,1 55,14 A8,8 0 0,1 63,22 A8,8 0 0,1 55,30 Z" fill="#FFA500"/>
+    <path d="M95,30 A8,8 0 0,1 87,22 A8,8 0 0,1 95,14 A8,8 0 0,1 103,22 A8,8 0 0,1 95,30 Z" fill="#4CAF50"/>
+    
+    <!-- 圆形行 -->
+    <circle cx="15" cy="60" r="8" fill="#FF4444"/>
+    <circle cx="55" cy="60" r="8" fill="#FFA500"/>
+    <circle cx="95" cy="60" r="8" fill="#4CAF50"/>
+    
+    <!-- 方形行 -->
+    <rect x="7" y="82" width="16" height="16" rx="2" fill="#FF4444"/>
+    <rect x="47" y="82" width="16" height="16" rx="2" fill="#FFA500"/>
+    <rect x="87" y="82" width="16" height="16" rx="2" fill="#4CAF50"/>
+  </g>
+</svg>

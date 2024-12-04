@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.playsprunkiphrase4.com
+
+# Sitemaps
+Sitemap: https://www.playsprunkiphrase4.com/sitemap.xml

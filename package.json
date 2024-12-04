@@ -1,0 +1,33 @@
+{
+  "name": "image-splitter-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "ngrok": "ngrok http 3000",
+    "postbuild": "next-sitemap",
+    "upload-assets": "ts-node scripts/upload-to-r2.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.699.0",
+    "dotenv": "^16.4.5",
+    "eslint": "8.51.0",
+    "eslint-config-next": "13.5.4",
+    "mime-types": "^2.1.35",
+    "next": "13.5.4",
+    "next-sitemap": "^4.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "@types/react": "18.3.12",
+    "netlify-cli": "^16.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

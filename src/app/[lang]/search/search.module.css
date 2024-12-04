@@ -1,0 +1,27 @@
+.searchResults {
+  padding: 100px 20px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.searchResults h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.noResults {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}

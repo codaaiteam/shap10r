@@ -1,0 +1,119 @@
+{
+  "title": "Shap10r: Ein Logik- und Deduktionspuzzlespiel",
+  "description": "Fordern Sie Ihren Verstand mit dieser einzigartigen Mischung aus Wordle™- und Mastermind®-Spielmechaniken heraus",
+  "playNow": "jetzt spielen",
+  "gameExperience": "Testen Sie Ihre Kombinationsfähigkeiten, indem Sie in diesem spannenden Puzzlespiel versteckte Form-Farb-Kombinationen aufdecken!",
+  "startAdventure": "Beginnen Sie Ihre Rätselreise mit Shap10r:",
+  "playGame": "Spiel spielen",
+  "fullscreenTip": "Klicken Sie auf den Spielbereich, um mit dem Spielen zu beginnen. Verwenden Sie die Vollbild-Schaltfläche für ein besseres Erlebnis.",
+  "howToPlay": "Wie spielt man Shap10r?",
+  "quickGuide": "Hier ist eine Kurzanleitung für den Einstieg:",
+  "step1Title": "Wählen Sie Ihre Shaplors",
+  "step1Description": "Wählen Sie fünf einzigartige Form-Farbkombinationen aus dem Raster mit 24 Optionen",
+  "step2Title": "Feedback analysieren",
+  "step2Description": "Grüne Umrisse zeigen die richtigen Shaplors an der richtigen Position, Gelb zeigt den richtigen Shaplor an, aber die falsche Position",
+  "step3Title": "Verwenden Sie Logik",
+  "step3Description": "Berücksichtigen Sie Shaplor-Werte (Form + Farbe), um die richtigen Kombinationen abzuleiten",
+  "step4Title": "Löse das Rätsel",
+  "step4Description": "Verwenden Sie das Ausschlussverfahren, um den Code innerhalb von 10 Versuchen zu knacken.",
+  "keyFeatures": "Hauptmerkmale von Shap10r",
+  "feature1Title": "Dynamisches Gameplay",
+  "feature1Description": "Zufällig zugewiesene Form- und Farbwerte machen jedes Spiel einzigartig",
+  "feature2Title": "Schwierigkeitsmodi",
+  "feature2Description": "Wählen Sie zwischen Normalmodus (sortierte Werte) und Hardmodus (unsortierte Werte)",
+  "feature3Title": "Strategisches Scoring",
+  "feature3Description": "Erhalten Sie Punkte für korrekte Platzierungen und Bonuspunkte für schnelles Lösen",
+  "feature4Title": "Intuitive Benutzeroberfläche",
+  "feature4Description": "Klares visuelles Feedback und benutzerfreundliche Bedienelemente",
+  "whyPlay": "Warum Shap10r spielen?",
+  "reason1": "Verbessern Sie Ihr kritisches Denken und Ihre Fähigkeiten zur Mustererkennung durch ein spannendes Gameplay",
+  "reason2": "Kostenlos spielbar und auf allen Geräten zugänglich, kein Download erforderlich",
+  "reason3": "Perfekt für Puzzle-Enthusiasten jeden Alters, die logische Herausforderungen mögen",
+  "faq": "Häufig gestellte Fragen:",
+  "faq1Question": "Was ist Shap10r?",
+  "faq1Answer": "Shap10r ist ein anspruchsvolles Puzzlespiel, das Elemente von Wordle™ und Mastermind® kombiniert, bei dem die Spieler mithilfe der Logik versteckte Form-Farb-Kombinationen aufdecken.",
+  "faq2Question": "Muss ich etwas installieren, um Shap10r zu spielen?",
+  "faq2Answer": "Nein, Shap10r läuft direkt in Ihrem Webbrowser und ist völlig kostenlos spielbar.",
+  "faq3Question": "Kann ich Shap10r auf Mobilgeräten spielen?",
+  "faq3Answer": "Ja, Shap10r ist vollständig für Mobilgeräte optimiert und kann in jedem modernen Webbrowser gespielt werden.",
+  "faq4Question": "Was macht Shap10r einzigartig?",
+  "faq4Answer": "Shap10r bietet dynamische Wertzuweisungen, mehrere Schwierigkeitsmodi und kombiniert visuelle Mustererkennung mit numerischer Strategie.",
+  "seoTitle": "Shap10r: Ein Logik- und Deduktionspuzzlespiel",
+  "seoDescription": "Fordern Sie Ihren Verstand mit dieser einzigartigen Mischung aus Wordle™- und Mastermind®-Spielmechaniken in einem kostenlosen Puzzle-Erlebnis heraus!",
+  "siteUrl": "https://www.playshaplor.com/",
+  "keywords": "Shap10r, Puzzlespiel, Logikspiel, Deduktionsspiel, Wordle, Mastermind, Gehirntraining, Strategiespiel",
+  "clickToRate": "Bewerten",
+  "ratingStars": "Sterne",
+  "averageRating": "Durchschnitt",
+  "totalVotes": "Stimmen",
+  "meta": {
+    "ogTitle": "Shap10r: Ein Logik- und Deduktionspuzzlespiel",
+    "ogDescription": "Fordern Sie Ihren Verstand mit dieser einzigartigen Mischung aus Wordle™- und Mastermind®-Spielmechaniken heraus",
+    "ogType": "Webseite",
+    "ogUrl": "https://www.playshaplor.com/",
+    "ogImage": "https://www.playshaplor.com/discover.svg",
+    "twitterCard": "Zusammenfassung_Großbild",
+    "twitterTitle": "Shap10r: Ein Logik- und Deduktionspuzzlespiel",
+    "twitterDescription": "Fordern Sie Ihren Verstand mit dieser einzigartigen Mischung aus Wordle™- und Mastermind®-Spielmechaniken heraus",
+    "twitterImage": "https://www.playshaplor.com/discover.svg"
+  },
+  "seo": {
+    "robots": "Index, folgen",
+    "canonical": "https://www.playshaplor.com/",
+    "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
+    "googleAnalyticsId": "G-1NVXP8SB8Z"
+  },
+  "layout": {
+    "language": "de",
+    "direction": "ltr",
+    "fontFamily": "Inter"
+  },
+  "games": {},
+  "game": {
+    "playNow": "jetzt spielen",
+    "fullscreenTip": "Drücken Sie F11 oder klicken Sie auf die Vollbild-Schaltfläche für das optimale Erlebnis",
+    "loading": "Spiel wird geladen...",
+    "relatedGames": "Weitere Spiele wie dieses",
+    "features": "Hauptmerkmale",
+    "about": "Über dieses Spiel",
+    "howToPlay": "Spielanleitung",
+    "share": "Aktie",
+    "report": "Problem melden",
+    "feedback": "Feedback senden"
+  },
+  "common": {
+    "difficulty": {
+      "easy": "Normaler Modus",
+      "medium": "Hard-Modus"
+    },
+    "categories": {
+      "classic": "Classic Serie",
+      "themed": "Themenversionen",
+      "experimental": "Experimental",
+      "seasonal": "Saisonal",
+      "crossover": "Frequenzweiche"
+    },
+    "features": {
+      "multiplayer": "Mehrspieler",
+      "achievements": "Erfolge",
+      "leaderboards": "Bestenlisten",
+      "customization": "Anpassung"
+    },
+    "errors": {
+      "loadFailed": "Spiel konnte nicht geladen werden",
+      "saveFailed": "Der Fortschritt konnte nicht gespeichert werden",
+      "connectionLost": "Verbindung verloren",
+      "loading": "Laden...",
+      "waitforloading": "Warten Sie eine Minute …",
+      "gameNotFound": "Spiel nicht gefunden",
+      "gameNotFoundDesc": "Leider konnten wir das gesuchte Spiel nicht finden."
+    },
+    "buttons": {
+      "play": "jetzt spielen",
+      "retry": "Versuchen Sie es erneut",
+      "settings": "Einstellungen",
+      "share": "Aktie",
+      "fullscreen": "Vollbild"
+    }
+  }
+}

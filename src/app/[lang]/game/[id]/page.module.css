@@ -1,0 +1,406 @@
+/* app/[lang]/game/[id]/page.module.css */
+
+.main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* app/[lang]/game/[id]/page.module.css */
+.features,
+.howToPlay,
+.faq,
+.moreGames {
+  margin: 6rem 0; /* 增加上下间距 */
+  padding: 4rem 0;
+}
+.faq h2,
+.features h2,
+.howToPlay h2,
+.moreGames h2 {
+  font-size: 2.5rem; /* 增大标题字号 */
+  margin-bottom: 3rem; /* 增加标题下方空间 */
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+/* FAQ section 特定样式 */
+.faq {
+  margin: 6rem auto; /* 保持水平居中的同时增加垂直间距 */
+  max-width: 800px;
+  padding: 4rem 20px; /* 调整内边距 */
+}
+
+.faq h2 {
+  margin-bottom: 16px;
+  text-align: center; /* 添加文本居中 */
+  /* 可选：添加下面的样式让标题更突出 */
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* 控制问题之间的间距 */
+}
+
+.question {
+  margin-bottom: 8px; /* 减少问题之间的间距 */
+  padding: 1rem;
+  cursor: pointer;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: solid rgba(255, 64, 64, 0.2) 1px;
+  background: rgba(255, 64, 64, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.question:last-child {
+  margin-bottom: 0; /* 最后一个问题不需要底部间距 */
+}
+
+.question > p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.4; /* 添加行高控制 */
+}
+
+/* 在文件末尾添加新的样式 */
+.gameDescription {
+  padding: 4rem 2rem;
+  background: var(--container);
+  margin-top: 2rem;
+}
+
+.descriptionContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.descriptionText {
+  margin: 2rem 0;
+  line-height: 1.8;
+  color: var(--dark);
+}
+
+/* 适配固定header的主内容区域 */
+.main {
+  padding-top: 80px; /* header的高度 */
+}
+/* Hero Section */
+.gameHero {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  margin: 2rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.gameHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7)
+  );
+  backdrop-filter: blur(8px);
+}
+
+.gameHeroContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+.gameHeroImage {
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.gameHeroInfo {
+  flex: 1;
+  color: white;
+}
+
+.gameHeroInfo h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.gameHeroInfo p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Game Section */
+.gameSection {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.gameWrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+}
+
+.gameFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.fullscreenButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.fullscreenButton:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.gameTip {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 0;
+  background: var(--container);
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.featuresList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.featureItem {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px);
+}
+
+.featureItem h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-gray);
+}
+
+.featureItem p {
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* How to Play Section */
+.howToPlay {
+  padding: 4rem 0;
+}
+
+.howToPlay h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stepNumber {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--dark-gray);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.gameHeroInfo .playButton {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: var(--dark-gray);
+  color: var(--light);
+  border: 3px solid var(--gray);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.gameHeroInfo .playButton:hover {
+  background-color: var(--gray);
+  color: var(--dark);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+}
+/* More Games Section */
+.moreGames {
+  padding: 4rem 0;
+}
+
+.comments h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.moreGames h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Error Container */
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.errorContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.errorContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--dark-gray);
+}
+
+.backButton {
+  padding: 1rem 2rem;
+  background: var(--dark-gray);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: var(--gray);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gameHeroContent {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .gameHeroInfo h1 {
+    font-size: 2rem;
+  }
+
+  .gameHeroInfo p {
+    font-size: 1rem;
+  }
+
+  .gameWrapper {
+    height: 400px;
+  }
+
+  .featuresList,
+  .steps {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  .features,
+  .howToPlay,
+  .faq,
+  .moreGames {
+    margin: 4rem 0;
+    padding: 3rem 0;
+  }
+
+  .faq h2,
+  .features h2,
+  .howToPlay h2,
+  .moreGames h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 0 10px;
+  }
+
+  .gameHeroContent {
+    padding: 1rem;
+  }
+
+  .features,
+  .howToPlay,
+  .moreGames {
+    padding: 2rem 0;
+  }
+
+  .featureItem {
+    padding: 1rem;
+  }
+}

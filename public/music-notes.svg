@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#FFFFFF"/>
+  <!-- 分数显示 -->
+  <g transform="translate(20,20)">
+    <rect x="120" y="10" width="40" height="30" fill="#5B4FDB" rx="4"/>
+    <text x="125" y="30" fill="white" font-size="14">261</text>
+    
+    <!-- 数值组合展示 -->
+    <rect x="10" y="10" width="30" height="30" rx="4" fill="#FF4444"/>
+    <text x="15" y="30" fill="white" font-size="14">15</text>
+    
+    <circle cx="70" cy="25" r="15" fill="#4CAF50"/>
+    <text x="60" y="30" fill="white" font-size="14">106</text>
+  </g>
+</svg>

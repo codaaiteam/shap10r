@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#FFFFFF"/>
+  <!-- 游戏模式提示 -->
+  <g transform="translate(20,20)">
+    <rect x="0" y="0" width="160" height="40" rx="5" fill="#5B4FDB"/>
+    <text x="20" y="25" fill="white" font-size="14">Normal Mode</text>
+  </g>
+  
+  <!-- 数值示例 -->
+  <g transform="translate(20,80)">
+    <rect x="10" y="10" width="40" height="40" rx="4" fill="#FF4444"/>
+    <text x="20" y="35" fill="white" font-size="14">15</text>
+    
+    <circle cx="90" cy="30" r="20" fill="#4CAF50"/>
+    <text x="80" y="35" fill="white" font-size="14">106</text>
+    
+    <path d="M140 10 l20 20 l-20 20 l-20 -20 z" fill="#2196F3"/>
+    <text x="130" y="35" fill="white" font-size="14">52</text>
+  </g>
+</svg>

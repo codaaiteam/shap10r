@@ -1,0 +1,76 @@
+{
+  "general": {
+    "base_path": "./games",
+    "public_path": "./public",
+    "translations_path": "./translations",
+    "max_concurrent_downloads": 3,
+    "default_language": "en"
+  },
+  "cloudflare": {
+    "api_token": "your_cloudflare_api_token",
+    "account_id": "your_account_id",
+    "zone_id": "your_zone_id",
+    "worker_name": "game-publisher",
+    "bucket_name": "games-assets"
+  },
+  "translation": {
+    "provider": "google",  // 可选: google, azure, deepl
+    "api_key": "your_translation_api_key",
+    "target_languages": ["en", "es", "fr", "de", "zh"],
+    "auto_translate": true
+  },
+  "game_sources": {
+    "sprunki": {
+      "enabled": true,
+      "sitemap_url": "https://sprunki.org/sitemap.xml",
+      "check_interval_minutes": 60,
+      "request_delay_seconds": 2
+    },
+    "gameflare": {
+      "enabled": true,
+      "base_url": "https://www.gameflare.com",
+      "api_endpoint": "/api/games",
+      "api_key": "your_gameflare_api_key"
+    },
+    "play_games": {
+      "enabled": true,
+      "base_url": "https://play-games.com",
+      "scraping_rules": {
+        "game_list_selector": ".game-card",
+        "title_selector": ".game-title",
+        "description_selector": ".game-description",
+        "icon_selector": ".game-icon img"
+      }
+    }
+  },
+  "resources": {
+    "icon": {
+      "max_size": 256,
+      "format": "png",
+      "optimize": true
+    },
+    "thumbnails": {
+      "sizes": [
+        {"width": 320, "height": 180},
+        {"width": 640, "height": 360}
+      ],
+      "quality": 85
+    }
+  },
+  "game_config": {
+    "template": {
+      "version": "1.0",
+      "platform": "web",
+      "category": "auto",
+      "age_rating": "everyone",
+      "status": "active"
+    }
+  },
+  "monitoring": {
+    "enable_logging": true,
+    "log_level": "info",
+    "log_file": "./logs/publisher.log",
+    "notify_on_error": true,
+    "notification_email": "your-email@example.com"
+  }
+}

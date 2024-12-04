@@ -1,0 +1,105 @@
+.header {
+  width: 100%;
+  background: rgba(91, 79, 219, 0.95); /* 使用主色调深蓝色，带透明度 */
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(91, 79, 219, 0.2);
+}
+
+.headerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.logoLink:hover {
+  opacity: 0.8;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchToggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: none;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.9rem;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  width: 300px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .searchToggle {
+    display: block;
+  }
+  
+  .searchForm {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(91, 79, 219, 0.98); /* 与header背景色保持一致 */
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .searchForm.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .searchInput {
+    width: 100%;
+  }
+  
+  .searchInput:focus {
+    width: 100%;
+  }
+}

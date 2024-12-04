@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#FFFFFF"/>
+  <!-- 得分展示 -->
+  <g transform="translate(20,20)">
+    <rect x="10" y="10" width="160" height="40" rx="5" fill="#5B4FDB"/>
+    <text x="40" y="35" fill="white" font-size="16">Score: 651</text>
+  </g>
+  
+  <!-- 时间显示 -->
+  <g transform="translate(20,80)">
+    <rect x="10" y="10" width="160" height="40" rx="5" fill="#4CAF50"/>
+    <text x="40" y="35" fill="white" font-size="16">Time: 01:33</text>
+  </g>
+</svg>

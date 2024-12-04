@@ -1,0 +1,835 @@
+.main {
+  --primary: #5B4FDB; /* 主色调 - 深蓝色 */
+  --dark-gray: #2D2D2D;
+  --gray: #F3F4F6;
+  --light: #FFFFFF;
+  --dark: #333333;
+  --section-gradient: linear-gradient(145deg, #5B4FDB, #7165E3);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.heroContent {
+  flex: 1;
+}
+.fallbackLogo,
+.fallbackScreenshot {
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.fallbackLogo {
+  height: 60px;
+  width: 20px;
+}
+
+.fallbackScreenshot {
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+.logoAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.logoAndTitle h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.contentSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contentSection h2,
+.contentSection h3 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > .left,
+.hero > .right {
+  padding: 75px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+.hero p {
+  font-size: 24px;
+  max-width: 60%;
+  color: var(--dark);
+}
+
+.hero button {
+  width: fit-content;
+  padding: 15px 25px;
+  font-size: 17px;
+  background-color: var(--dark-gray);
+  color: var(--light);
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10vw;
+  text-align: center;
+  font-size: 20px;
+  gap: 15px;
+}
+
+.upload p {
+  color: var(--dark);
+}
+
+.howTo, 
+.features,
+.faq {
+  background: var(--section-gradient);
+}
+
+.howTo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  background-color: var(--gray);
+  padding: 4em;
+  padding-bottom: 8em;
+}
+
+.howTo > h3 {
+  font-size: 40px;
+  font-weight: 450;
+}
+
+.howTo > p {
+  font-size: 17px;
+}
+
+.cards {
+  display: flex;
+  gap: 50px;
+  margin-top: 2em;
+}
+
+.recommendation {
+  text-align: center;
+}
+
+.recommendation > h3 {
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0em;
+  color: var(--dark);
+}
+
+.recommendation > .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.hero h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.hero ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero ul > li {
+  font-size: 20px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray);
+  margin: 0 12vw;
+  padding: 5em;
+  gap: 30px;
+}
+
+.faq > h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.footer {
+  background: #2d2d2d;  /* 改为稍微亮一点的深色 */
+  color: rgba(255, 255, 255, 0.8);  /* 半透明白色 */
+  padding: 2em;
+  border-top: 1px solid rgba(91, 79, 219, 0.2);
+  margin-top: 60px;
+}
+
+
+.footer a:hover {
+  color: #fff;
+  background-color: rgba(255, 64, 64, 0.1);
+  text-decoration: none;
+}/* 在文件末尾添加这些新样式 */
+
+/* 为卡片添加发光效果 */
+.cards > * {
+  background: linear-gradient(145deg, #FFFFFF, #F8F9FA);
+  box-shadow: 0 4px 15px rgba(91, 79, 219, 0.1);
+  border: 1px solid rgba(91, 79, 219, 0.1);
+}
+
+.cards > *:hover {
+  border-color: #5B4FDB;
+  background: linear-gradient(145deg, #F8F9FA, #FFFFFF);
+}
+
+.fullscreenButton {
+  background: rgba(91, 79, 219, 0.5);
+}
+
+.fullscreenButton:hover {
+  background: #5B4FDB;
+}/* src/app/page.module.css */
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.errorContainer h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+.errorContainer p {
+  color: var(--dark);
+  margin-bottom: 2rem;
+}
+
+.backButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--dark-gray);
+  color: var(--light);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: var(--gray);
+  transform: translateY(-2px);
+}
+
+/* 改进 section 标题样式 */
+.howTo h3,
+.features h3,
+.faq h3 {
+  background: linear-gradient(to right, var(--dark-gray), #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  position: relative;
+  display: inline-block;
+}
+
+.howTo h3::after,
+.features h3::after,
+.faq h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #5B4FDB, #7165E3);
+  border-radius: 3px;
+}
+.fullscreenButton:hover {
+  background: var(--dark-gray);
+  transform: scale(1.1);
+}
+
+/* 改进游戏提示文本样式 */
+.gameTip {
+  color: var(--dark);
+  opacity: 0.8;
+}
+
+/* 改进标题发光效果 */
+.hero h1,
+.howTo h3,
+.features h3,
+.faq h3 {
+  text-shadow: 0 0 10px rgba(91, 79, 219, 0.3);
+}
+
+/* 列表项样式改进 */
+.hero ul > li {
+  color: var(--dark);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.hero ul > li:hover {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+@media (max-width: 540px) {
+  .hero > .left,
+  .hero > .right {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h4 {
+    font-size: 18px;
+  }
+
+  .hero ul > li {
+    font-size: 14px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    min-width: 100%;
+  }
+
+  .hero button {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .upload {
+    font-size: 13px;
+    padding: 0 10vw;
+  }
+
+  .recommendation > .cards {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    gap: 20px;
+  }
+
+  .howTo > h3 {
+    font-size: 25px;
+    font-weight: 450;
+  }
+
+  .howTo > p {
+    font-size: 13px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+  }
+
+  .faq {
+    margin: 0 0;
+    padding: 3em;
+  }
+
+  .faq > h3 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+.gameContainer {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-image: url('/cover.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.playButtonContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 改进游戏按钮样式 */
+.playButton {
+  background: linear-gradient(145deg, var(--dark-gray), #ff5555);
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(255, 64, 64, 0.3);
+  transition: all 0.3s ease;
+}
+
+.playButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 64, 64, 0.4);
+  background: linear-gradient(145deg, #ff5555, var(--dark-gray));
+}
+
+.playButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 950px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    min-width: 90vw;
+    font-weight: 500;
+  }
+
+  .hero p {
+    font-size: 22px;
+    min-width: 90vw;
+  }
+
+  .hero button {
+    font-size: 18px;
+    padding: 14px 16px;
+    width: 185px;
+  }
+
+  .hero img {
+    width: 90vw;
+    object-fit: contain;
+  }
+
+  .hero h4 {
+    font-size: 22px;
+    width: 90vw;
+  }
+
+  .hero ul > li {
+    font-size: 16px;
+    width: 90vw;
+    line-height: 30px;
+  }
+
+  .upload {
+    font-size: 13px;
+    padding: 0 8vw;
+  }
+
+  .upload p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .howTo > h3 {
+    font-size: 25px;
+    font-weight: 450;
+  }
+
+  .howTo > p {
+    font-size: 16px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recommendation > .cards {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    gap: 20px;
+  }
+
+  .recommendation > p {
+    padding: 0 1em;
+  }
+
+  .recommendation > h3 {
+    font-size: 20px;
+    padding: 0em 1em;
+  }
+
+  .faq {
+    margin: 0 0;
+    padding: 2em;
+  }
+
+  .faq > h3 {
+    font-size: 20px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
+/* 在文件末尾添加以下新的样式规则 */
+
+.game {
+  width: 100%;
+  padding: 40px 0;
+  background-color: var(--light);
+}
+
+.gameContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameContent p {
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 800px; /* 限制段落的最大宽度 */
+}
+
+.gameContainer {
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  position: relative;
+  background-image: url('/shap10r-screenshot.png');  /* 使用新的背景图 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  overflow: hidden;
+}/* 更新现有的 .playButtonContainer 和 .playButton 样式 */
+.playButtonContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.playButton {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: var(--dark-gray);
+  color: var(--light);
+  border: 3px solid var(--gray);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.playButton:hover {
+  background-color: var(--gray);
+  color: var(--dark);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+}
+
+.playButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* 添加响应式设计 */
+@media (max-width: 768px) {
+  .gameContent {
+    padding: 0 5%; /* 增加小屏幕上的内边距 */
+  }
+  .contentSection {
+    padding: 1.5rem 1rem;
+  }
+
+  .gameContent p {
+    font-size: 16px;
+  }
+
+  .gameContainer {
+    height: 400px; /* 在小屏幕上减小高度 */
+  }
+  .playButton {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .logoAndTitle {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logoAndTitle h1 {
+    font-size: 1.5rem;
+  }
+}
+/* 在 page.module.css 中更新 howTo 部分的样式 */
+
+.howTo {
+  text-align: center;
+  background-color: var(--gray);
+  padding: 4em 0;
+  overflow-x: auto; /* 允许在小屏幕上水平滚动 */
+}
+
+.howToContent {
+  max-width: 1400px; /* 增加最大宽度以适应一行四个卡片 */
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.howTo h3 {
+  font-size: 40px;
+  font-weight: 450;
+  margin-bottom: 20px;
+}
+
+.howTo > p {
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.howTo .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* 减小卡片之间的间距 */
+  min-width: min-content; /* 确保在小屏幕上不会换行 */
+}
+
+.howTo .cards > * {
+  flex: 0 0 auto; /* 防止卡片被压缩 */
+  width: calc(25% - 15px); /* 四个卡片等宽，考虑间距 */
+  min-width: 200px; /* 设置最小宽度 */
+}
+
+@media (max-width: 1200px) {
+  .howTo .cards {
+    justify-content: flex-start; /* 在较小屏幕上左对齐 */
+    padding-bottom: 20px; /* 为可能的滚动条留出空间 */
+  }
+
+  .howTo .cards > * {
+    width: calc(50% - 10px); /* 在中等屏幕上每行两个卡片 */
+  }
+}
+
+@media (max-width: 768px) {
+  .howToContent {
+    padding: 0 3%;
+  }
+
+  .howTo h3 {
+    font-size: 30px;
+  }
+
+  .howTo > p {
+    font-size: 15px;
+  }
+
+  .howTo .cards > * {
+    width: 100%; /* 在小屏幕上每行一个卡片 */
+  }
+}
+
+/* 在 page.module.css 中更新以下样式 */
+
+.features {
+  width: 100%;
+  padding: 60px 0;
+  background-color: var(--light);
+  overflow-x: auto; /* 允许在小屏幕上水平滚动 */
+}
+
+.featuresContent {
+  max-width: 1400px; /* 增加最大宽度以适应一行四个卡片 */
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.features h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* 减小卡片之间的间距 */
+  min-width: min-content; /* 确保在小屏幕上不会换行 */
+}
+
+.cards > * {
+  flex: 0 0 auto; /* 防止卡片被压缩 */
+  width: calc(25% - 15px); /* 四个卡片等宽，考虑间距 */
+  min-width: 200px; /* 设置最小宽度 */
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    justify-content: flex-start; /* 在较小屏幕上左对齐 */
+    padding-bottom: 20px; /* 为可能的滚动条留出空间 */
+  }
+
+  .cards > * {
+    width: calc(50% - 10px); /* 在中等屏幕上每行两个卡片 */
+  }
+}
+
+@media (max-width: 768px) {
+  .featuresContent {
+    padding: 0 3%;
+  }
+
+  .features h3 {
+    font-size: 30px;
+  }
+
+  .cards > * {
+    width: 100%; /* 在小屏幕上每行一个卡片 */
+  }
+}
+
+.gameWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gameIframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 600px;
+}
+
+.fullscreenButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white; /* This sets the color of the SVG icon */
+}
+
+.fullscreenButton:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fullscreenButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+.gameTip {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 20%;
+}
