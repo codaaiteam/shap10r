@@ -6,7 +6,7 @@ import styles from './page.module.css';
 import SEO from '@/app/Components/SEO';
 import Footer from '@/app/Components/Footer';
 import LanguageSwitcher from '@/app/Components/LanguageSwitcher';
-import GameGrid from '@/app/Components/NewsList';
+import GameGrid from '@/app/Components/GameGrid';
 import Link from 'next/link';
 import Header from '@/app/Components/Header';
 import QuestionFAQ from "@/app/Components/QuestionFAQ";
