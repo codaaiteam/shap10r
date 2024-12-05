@@ -83,19 +83,26 @@ const DiamanteGame = forwardRef((props, ref) => {
     setScore(0);
     setTime(0);
     setIsPlaying(true);
-    setUsedShapes(new Set());
     setShowWinDialog(false);
+    setUsedShapes(new Set());
   }, [isHardMode, calculateValue, initializeValues]);
 
   const handlePieceSelect = useCallback((piece) => {
     if (!isPlaying || currentRow >= ROWS) return;
 
     const currentRowCells = gameBoard[currentRow];
-    const emptyIndex = currentRowCells.findIndex(cell => cell === null);
+    const emptyIndex = currentRowCells.findIndex((cell, index) => 
+      cell === null && feedback[currentRow][index] !== 'correct'
+    );
     
     if (emptyIndex === -1) return;
-
-    setUsedShapes(prev => new Set([...prev, `${piece.shape}-${piece.color}`]));
+    
+    // 添加到已使用形状集合，但这只是为了显示标记
+    setUsedShapes(prev => {
+      const newSet = new Set(prev);
+      newSet.add(`${piece.shape}-${piece.color}`);
+      return newSet;
+    });
 
     const newBoard = [...gameBoard];
     newBoard[currentRow][emptyIndex] = {
@@ -104,111 +111,110 @@ const DiamanteGame = forwardRef((props, ref) => {
     };
     
     setGameBoard(newBoard);
-  }, [gameBoard, currentRow, isPlaying, calculateValue]);
+  }, [gameBoard, currentRow, isPlaying, calculateValue, feedback]);
 
   // 检查当前行
   const checkRow = useCallback(() => {
- if (!gameBoard[currentRow].every(cell => cell !== null)) return;
+    if (!gameBoard[currentRow].every(cell => cell !== null)) return;
 
- const newFeedback = [...feedback];
- const newBoard = [...gameBoard];
- let remainingTotal = targetNumbers[currentRow];
- 
- // 第一步：检查完全匹配
- let correctCount = 0;
- newFeedback[currentRow] = gameBoard[currentRow].map((cell, index) => {
-   if (cell.value === targetAnswer.current[index].value) {
-     remainingTotal -= cell.value;
-     correctCount++;
-     
-     // 如果不是最后一行，自动填充下一行相同位置
-     if (currentRow < ROWS - 1) {
-       newBoard[currentRow + 1][index] = cell;
-     }
-     return 'correct';
-   }
-   return null;
- });
+    const newFeedback = [...feedback];
+    const newBoard = [...gameBoard];
+    let remainingTotal = targetNumbers[currentRow];
+    
+    // 第一步：检查完全匹配
+    let correctCount = 0;
+    newFeedback[currentRow] = gameBoard[currentRow].map((cell, index) => {
+      if (cell.value === targetAnswer.current[index].value) {
+        remainingTotal -= cell.value;
+        correctCount++;
+        
+        // 如果不是最后一行，自动填充下一行相同位置
+        if (currentRow < ROWS - 1) {
+          newBoard[currentRow + 1][index] = cell;
+        }
+        return 'correct';
+      }
+      return null;
+    });
 
- // 第二步：检查位置错误但值存在的情况
- const unusedTargets = targetAnswer.current.map((target, index) => 
-   newFeedback[currentRow][index] !== 'correct' ? target.value : null
- ).filter(v => v !== null);
+    // 第二步：检查位置错误但值存在的情况
+    const unusedTargets = targetAnswer.current.map((target, index) => 
+      newFeedback[currentRow][index] !== 'correct' ? target.value : null
+    ).filter(v => v !== null);
 
- gameBoard[currentRow].forEach((cell, index) => {
-   if (newFeedback[currentRow][index] === null) {
-     const targetIndex = unusedTargets.indexOf(cell.value);
-     if (targetIndex !== -1) {
-       newFeedback[currentRow][index] = 'wrong-position';
-       unusedTargets.splice(targetIndex, 1);
-     } else {
-       newFeedback[currentRow][index] = 'incorrect';
-     }
-   }
- });
+    gameBoard[currentRow].forEach((cell, index) => {
+      if (newFeedback[currentRow][index] === null) {
+        const targetIndex = unusedTargets.indexOf(cell.value);
+        if (targetIndex !== -1) {
+          newFeedback[currentRow][index] = 'wrong-position';
+          unusedTargets.splice(targetIndex, 1);
+        } else {
+          newFeedback[currentRow][index] = 'incorrect';
+        }
+      }
+    });
 
- setGameBoard(newBoard);
- setFeedback(newFeedback);
- 
- // 更新目标数值
- setTargetNumbers(prev => {
-   const next = [...prev];
-   next[currentRow] = remainingTotal;
-   return next;
- });
- 
- // 计算本行得分
- const rowScore = targetNumbers[currentRow] - remainingTotal;
- setScore(prev => prev + rowScore);
+    setGameBoard(newBoard);
+    setFeedback(newFeedback);
+    
+    // 更新目标数值
+    setTargetNumbers(prev => {
+      const next = [...prev];
+      next[currentRow] = remainingTotal;
+      return next;
+    });
+    
+    // 计算本行得分
+    const rowScore = targetNumbers[currentRow] - remainingTotal;
+    setScore(prev => prev + rowScore);
 
- // 更新已使用的形状集合，但不包含正确位置的形状
- const newUsedShapes = new Set();
- gameBoard[currentRow].forEach((cell, index) => {
-   if (newFeedback[currentRow][index] !== 'correct') {
-     newUsedShapes.add(`${cell.shape}-${cell.color}`);
-   }
- });
- setUsedShapes(newUsedShapes);
-
- // 检查是否全部正确
- if (correctCount === COLS) {
-   setShowWinDialog(true);
-   endGame(true);
- } else {
-   if (currentRow === ROWS - 1) {
-     endGame(false);
-   } else {
-     setCurrentRow(prev => prev + 1);
-   }
- }
+    // 检查是否全部正确
+    if (correctCount === COLS) {
+      setShowWinDialog(true);
+      endGame(true);
+    } else {
+      if (currentRow === ROWS - 1) {
+        endGame(false);
+      } else {
+        setCurrentRow(prev => prev + 1);
+      }
+    }
   }, [currentRow, gameBoard, targetNumbers, feedback]);
 
   const handleDelete = useCallback(() => {
     if (!isPlaying || currentRow >= ROWS) return;
     
     const currentRowCells = gameBoard[currentRow];
-    const lastFilledIndex = currentRowCells.map((cell, index) => cell ? index : -1)
+    // 找到最后一个可删除的位置（非正确位置）
+    const lastFilledIndex = currentRowCells.map((cell, index) => 
+      cell && feedback[currentRow][index] !== 'correct' ? index : -1
+    )
       .filter(i => i !== -1)
       .pop();
     
     if (lastFilledIndex === undefined) return;
-
+  
     const cellToRemove = gameBoard[currentRow][lastFilledIndex];
+    
+    // 从已使用形状集合中移除
     setUsedShapes(prev => {
       const newSet = new Set(prev);
       newSet.delete(`${cellToRemove.shape}-${cellToRemove.color}`);
       return newSet;
     });
-
+  
     const newBoard = [...gameBoard];
     newBoard[currentRow][lastFilledIndex] = null;
     setGameBoard(newBoard);
-  }, [gameBoard, currentRow, isPlaying]);
+  }, [gameBoard, currentRow, isPlaying, feedback]);
 
   const endGame = (won) => {
     setIsPlaying(false);
-    if (score > highScore) setHighScore(score);
-    if (time < bestTime) setBestTime(time);
+    if (won) {
+      setShowWinDialog(true);
+      if (score > highScore) setHighScore(score);
+      if (time < bestTime) setBestTime(time);
+    }
   };
 
   useEffect(() => {
@@ -277,15 +283,12 @@ const DiamanteGame = forwardRef((props, ref) => {
               }`}
               onClick={() => handlePieceSelect({ shape, color })}
               disabled={
-                !isPlaying || 
-                gameBoard[currentRow]?.every(cell => cell !== null) ||
-                // 检查该形状是否已在之前的行中被确认为正确
-                feedback.some((rowFeedback, rowIndex) => 
-                  rowIndex < currentRow && 
-                  gameBoard[rowIndex].some((cell, colIndex) => 
+                !isPlaying ||
+                gameBoard.some((row, rowIndex) =>
+                  row.some((cell, colIndex) =>
                     cell?.shape === shape && 
                     cell?.color === color && 
-                    rowFeedback[colIndex] === 'correct'
+                    feedback[rowIndex][colIndex] === 'correct'
                   )
                 )
               }
