@@ -69,21 +69,23 @@ export default function RootLayout({ children, params }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="ejTNzps4rUJKSZrNs1b57sjcCQU5MdlsNxUCvhIgJuU" />
       </head>
-      <body className={inter.className}>
-        {children}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-5Q3KHWXNED`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-5Q3KHWXNED');
-          `}
-        </Script>
-      </body>
+        <body className={inter.className}>
+          {children}
+          <Script 
+            src="https://www.googletagmanager.com/gtag/js?id=G-5Q3KHWXNED"
+            strategy="lazyOnload"
+          />
+          <Script id="google-analytics" strategy="lazyOnload">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-5Q3KHWXNED', {
+                page_path: window.location.pathname,
+              });
+            `}
+          </Script>
+        </body>
     </html>
   )
 }

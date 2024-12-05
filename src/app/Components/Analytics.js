@@ -5,7 +5,7 @@ export default function Analytics() {
   return (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-1NVXP8SB8Z"
+        src="https://www.googletagmanager.com/gtag/js?id=G-5Q3KHWXNED"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -13,7 +13,7 @@ export default function Analytics() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ');
+          gtag('config', 'ejTNzps4rUJKSZrNs1b57sjcCQU5MdlsNxUCvhIgJuU');
         `}
       </Script>
     </>
