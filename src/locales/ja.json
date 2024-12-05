@@ -59,9 +59,9 @@
   },
   "seo": {
     "robots": "インデックス、フォロー",
-    "canonical": "https://www.playshaplor.com/",
-    "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
-    "googleAnalyticsId": "G-1NVXP8SB8Z"
+    "canonical": "https://www.playshap10r.org/",
+    "googleSiteVerification": "ejTNzps4rUJKSZrNs1b57sjcCQU5MdlsNxUCvhIgJuU",
+    "googleAnalyticsId": "G-5Q3KHWXNED"
   },
   "layout": {
     "language": "ja 翻訳",
@@ -73,7 +73,7 @@
     "playNow": "今すぐプレイ",
     "fullscreenTip": "最高の体験を得るには、F11 キーを押すか、全画面ボタンをクリックしてください。",
     "loading": "ゲームをロード中...",
-    "relatedGames": "このようなゲームをもっと見る",
+    "relatedGames": "これに似たゲーム",
     "features": "主な特徴",
     "about": "このゲームについて",
     "howToPlay": "遊び方",
@@ -85,6 +85,26 @@
     "difficulty": {
       "easy": "通常モード",
       "medium": "ハードモード"
+    },
+    "game": {
+      "title": "SHAP10Rゲームをプレイ",
+      "description": "Shap10r は Wordle™ と Mastermind® の仕組みを組み合わせたものです。正しい値を持つ 5 つの Shaplors を一致させます。",
+      "score": "スコア",
+      "highScore": "高い",
+      "time": "時間",
+      "bestTime": "最高",
+      "hideTimer": "タイマーを非表示",
+      "showTimer": "タイマーを表示",
+      "delete": "削除",
+      "enter": "入力",
+      "congratulations": "おめでとう！",
+      "solvedPuzzle": "{tries} 回でパズルを解きました!",
+      "finalScore": "最終スコア: {スコア}",
+      "newHighScore": "新しいハイスコア！",
+      "newGame": "もう一度プレイ",
+      "hardMode": "ハードモード",
+      "normalMode": "通常モード",
+      "tryMode": "{mode} モードを試す"
     },
     "categories": {
       "classic": "クラシックシリーズ",

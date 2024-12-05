@@ -8,7 +8,7 @@
   "fullscreenTip": "게임 영역을 클릭하여 플레이를 시작하세요. 더 나은 경험을 위해 전체 화면 버튼을 사용하세요.",
   "howToPlay": "Shap10r은 어떻게 플레이하나요?",
   "quickGuide": "시작하기 위한 간단한 가이드는 다음과 같습니다.",
-  "step1Title": "Shaplors를 선택하세요",
+  "step1Title": "당신의 Shaplors를 선택하세요",
   "step1Description": "24가지 옵션 그리드에서 5가지 독특한 모양-색상 조합을 선택하세요",
   "step2Title": "피드백 분석",
   "step2Description": "녹색 윤곽선은 올바른 Shaplor가 올바른 위치에 있음을 나타내고 노란색은 올바른 Shaplor이지만 위치가 잘못되었음을 나타냅니다.",
@@ -59,9 +59,9 @@
   },
   "seo": {
     "robots": "인덱스, 팔로우",
-    "canonical": "https://www.playshaplor.com/",
-    "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
-    "googleAnalyticsId": "G-1NVXP8SB8Z"
+    "canonical": "https://www.playshap10r.org/",
+    "googleSiteVerification": "ejTNzps4rUJKSZrNs1b57sjcCQU5MdlsNxUCvhIgJuU",
+    "googleAnalyticsId": "G-5Q3KHWXNED"
   },
   "layout": {
     "language": "ko",
@@ -85,6 +85,26 @@
     "difficulty": {
       "easy": "일반 모드",
       "medium": "하드 모드"
+    },
+    "game": {
+      "title": "SHAP10R 게임 플레이",
+      "description": "Shap10r는 Wordle™과 Mastermind® 메커니즘을 결합합니다. Shaplor 5개를 올바른 값으로 매치합니다.",
+      "score": "점수",
+      "highScore": "높은",
+      "time": "시간",
+      "bestTime": "최상의",
+      "hideTimer": "타이머 숨기기",
+      "showTimer": "타이머 표시",
+      "delete": "삭제",
+      "enter": "입력하다",
+      "congratulations": "축하해요!",
+      "solvedPuzzle": "{tries}번의 시도로 퍼즐을 풀었습니다!",
+      "finalScore": "최종 점수: {점수}",
+      "newHighScore": "새로운 최고 점수!",
+      "newGame": "다시 플레이",
+      "hardMode": "하드 모드",
+      "normalMode": "일반 모드",
+      "tryMode": "{mode} 모드를 시도해 보세요"
     },
     "categories": {
       "classic": "클래식 시리즈",

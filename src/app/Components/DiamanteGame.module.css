@@ -152,11 +152,6 @@
   opacity: 0.3;
 }
 
-.gameControls {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 
 .controlButton {
   background: #1b1b1b;

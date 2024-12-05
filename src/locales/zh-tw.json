@@ -59,9 +59,9 @@
   },
   "seo": {
     "robots": "索引，關注",
-    "canonical": "https://www.playshaplor.com/",
-    "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
-    "googleAnalyticsId": "G-1NVXP8SB8Z"
+    "canonical": "https://www.playshap10r.org/",
+    "googleSiteVerification": "ejTNzps4rUJKSZrNS1b57sjcCQU5MdlsNxUCvhIgJuU",
+    "googleAnalyticsId": "G-5Q3KHWXNED"
   },
   "layout": {
     "language": "zh",
@@ -85,6 +85,26 @@
     "difficulty": {
       "easy": "普通模式",
       "medium": "困難模式"
+    },
+    "game": {
+      "title": "玩SHAP10R遊戲",
+      "description": "Shap10r 結合了 Wordle™ 和 Mastermind® 機制。將五個 Shaplors 與正確的值相符。",
+      "score": "分數",
+      "highScore": "高的",
+      "time": "時間",
+      "bestTime": "最好的",
+      "hideTimer": "隱藏計時器",
+      "showTimer": "顯示定時器",
+      "delete": "刪除",
+      "enter": "進入",
+      "congratulations": "恭喜！",
+      "solvedPuzzle": "您在 {tries} 次嘗試中解決了難題！",
+      "finalScore": "最終得分：{score}",
+      "newHighScore": "新高分！",
+      "newGame": "再玩一次",
+      "hardMode": "困難模式",
+      "normalMode": "普通模式",
+      "tryMode": "嘗試{mode}模式"
     },
     "categories": {
       "classic": "經典系列",

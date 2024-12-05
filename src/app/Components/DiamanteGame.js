@@ -15,14 +15,35 @@ const DiamanteGame = forwardRef((props, ref) => {
   const [targetNumbers, setTargetNumbers] = useState(Array(ROWS).fill(0));
   const [currentRow, setCurrentRow] = useState(0);
   const [score, setScore] = useState(0);
-  const [highScore, setHighScore] = useState(0);
   const [time, setTime] = useState(0);
-  const [bestTime, setBestTime] = useState(Infinity);
   const [isPlaying, setIsPlaying] = useState(true);
   const [showTimer, setShowTimer] = useState(true);
   const [showWinDialog, setShowWinDialog] = useState(false);
   const [isHardMode, setIsHardMode] = useState(false);
   const [usedShapes, setUsedShapes] = useState(new Set());
+
+  const [highScore, setHighScore] = useState(() => {
+    const saved = localStorage.getItem('shap10r_highScore');
+    return saved ? parseInt(saved, 10) : 0;
+  });
+  
+  const [bestTime, setBestTime] = useState(() => {
+    const saved = localStorage.getItem('shap10r_bestTime');
+    return saved ? parseInt(saved, 10) : Infinity;
+  });
+  const updateHighScore = useCallback((newScore) => {
+    if (newScore > highScore) {
+      setHighScore(newScore);
+      localStorage.setItem('shap10r_highScore', newScore.toString());
+    }
+  }, [highScore]);
+
+  const updateBestTime = useCallback((newTime) => {
+    if (newTime < bestTime || bestTime === Infinity) {
+      setBestTime(newTime);
+      localStorage.setItem('shap10r_bestTime', newTime.toString());
+    }
+  }, [bestTime]);
 
   const shapeValues = useRef({});
   const colorValues = useRef({});
@@ -214,8 +235,10 @@ const DiamanteGame = forwardRef((props, ref) => {
     setIsPlaying(false);
     if (won) {
       setShowWinDialog(true);
-      if (score > highScore) setHighScore(score);
-      if (time < bestTime) setBestTime(time);
+      setShowWinDialog(true);
+      updateHighScore(score);
+      updateBestTime(time);
+
     }
   };
 
@@ -255,8 +278,12 @@ const DiamanteGame = forwardRef((props, ref) => {
                   {showTimer ? t.common.game.hideTimer : t.common.game.showTimer}
                 </button>
                 {showTimer && (
-                  <span>{t.common.game.time}: {formatTime(time)} {t.common.game.bestTime}: {formatTime(bestTime)}</span>
+                  <span>
+                    {t.common.game.time}: {formatTime(time)} 
+                    {bestTime !== Infinity && ` ${t.common.game.bestTime}: ${formatTime(bestTime)}`}
+                  </span>
                 )}
+
               </div>
             </div>
 
@@ -326,11 +353,6 @@ const DiamanteGame = forwardRef((props, ref) => {
                   onClick={startNewGame}
                 >
                   +
-                </button>
-              </div>
-              <div className={styles.gameControls}>
-                <button className={styles.controlButton} onClick={startNewGame}>
-                  {t.common.game.newGame}
                 </button>
               </div>
             </div>

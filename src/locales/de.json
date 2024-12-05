@@ -59,9 +59,9 @@
   },
   "seo": {
     "robots": "Index, folgen",
-    "canonical": "https://www.playshaplor.com/",
-    "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
-    "googleAnalyticsId": "G-1NVXP8SB8Z"
+    "canonical": "https://www.playshap10r.org/",
+    "googleSiteVerification": "ejTNzps4rUJKSZrNs1b57sjcCQU5MdlsNxUCvhIgJuU",
+    "googleAnalyticsId": "G-5Q3KHWXNED"
   },
   "layout": {
     "language": "de",
@@ -85,6 +85,26 @@
     "difficulty": {
       "easy": "Normaler Modus",
       "medium": "Hard-Modus"
+    },
+    "game": {
+      "title": "Spielen Sie das SHAP10R-Spiel",
+      "description": "Shap10r kombiniert Wordle™- und Mastermind®-Mechaniken. Ordnen Sie fünf Shaplors den richtigen Werten zu.",
+      "score": "Punktzahl",
+      "highScore": "HOCH",
+      "time": "Zeit",
+      "bestTime": "AM BESTEN",
+      "hideTimer": "Timer ausblenden",
+      "showTimer": "Timer anzeigen",
+      "delete": "Löschen",
+      "enter": "Eingeben",
+      "congratulations": "Glückwunsch!",
+      "solvedPuzzle": "Sie haben das Rätsel in {tries} Versuchen gelöst!",
+      "finalScore": "Endergebnis: {score}",
+      "newHighScore": "Neuer Highscore!",
+      "newGame": "Erneut spielen",
+      "hardMode": "Hard-Modus",
+      "normalMode": "Normaler Modus",
+      "tryMode": "Versuchen Sie den {mode}-Modus"
     },
     "categories": {
       "classic": "Classic Serie",
