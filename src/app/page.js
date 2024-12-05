@@ -125,14 +125,9 @@ export default function Home() {
 
       <LanguageSwitcher />
       <main className={styles.main}>
-
-<section id="game" className={styles.game}>
-  <h1 className={styles.gameTitle}>Play Shap10r Game</h1>
-  <p className={styles.gameDesc}>
-    Shap10r combines Wordle™ and Mastermind® mechanics. Match five Shaplors with the correct values.
-  </p>
-  <DiamanteGame ref={iframeRef} />
-</section>
+        <section id="game" className={styles.game}>
+          <DiamanteGame ref={iframeRef} />
+        </section>
 
        <section className={styles.contentSection}> 
         <h3>{t?.comments || "Comments"}</h3>

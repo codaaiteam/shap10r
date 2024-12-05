@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef, forwardRef } from 'react';
+import { useTranslations } from '@/hooks/useTranslations';
 import GameShape from './GameShape';
 import styles from './DiamanteGame.module.css';
 
@@ -8,6 +9,7 @@ const ROWS = 10;
 const COLS = 5;
 
 const DiamanteGame = forwardRef((props, ref) => {
+  const { t, isLoading } = useTranslations();
   const [gameBoard, setGameBoard] = useState(Array(ROWS).fill(null).map(() => Array(COLS).fill(null)));
   const [feedback, setFeedback] = useState(Array(ROWS).fill(null).map(() => Array(COLS).fill(null)));
   const [targetNumbers, setTargetNumbers] = useState(Array(ROWS).fill(0));
@@ -232,132 +234,140 @@ const DiamanteGame = forwardRef((props, ref) => {
   }, [startNewGame]);
 
   return (
-    <div className={styles.gameWrapper} ref={ref}>
-      <div className={styles.header}>
-        <div className={styles.scoreSection}>
-          Score: {score} HIGH: {highScore}
-        </div>
-        <div className={styles.timerSection}>
-          <button 
-            className={styles.timerToggle}
-            onClick={() => setShowTimer(!showTimer)}
-          >
-            {showTimer ? 'Hide' : 'Show'} Timer
-          </button>
-          {showTimer && (
-            <span>Time: {formatTime(time)} BEST: {formatTime(bestTime)}</span>
-          )}
-        </div>
-      </div>
-
-      <div className={styles.gameBoard}>
-        {gameBoard.map((row, rowIndex) => (
-          <div key={rowIndex} className={styles.row}>
-            {row.map((cell, colIndex) => (
-              <div
-                key={colIndex}
-                className={`${styles.cell} ${
-                  feedback[rowIndex]?.[colIndex] === 'correct' ? styles.correct : 
-                  feedback[rowIndex]?.[colIndex] === 'wrong-position' ? styles.wrongPosition : ''
-                }`}
-              >
-                {cell && <GameShape shape={cell.shape} color={cell.color} />}
-                {cell && feedback[rowIndex]?.[colIndex] === 'correct' && (
-                  <span className={styles.value}>{cell.value}</span>
+    <>
+      {!isLoading && (
+        <>
+          <h1 className={styles.gameTitle}>{t.common.game.title}</h1>
+          <div className={styles.gameWrapper} ref={ref}>
+            <div className={styles.header}>
+              <div className={styles.scoreSection}>
+                {t.common.game.score}: {score} {t.common.game.highScore}: {highScore}
+              </div>
+              <div className={styles.timerSection}>
+                <button 
+                  className={styles.timerToggle}
+                  onClick={() => setShowTimer(!showTimer)}
+                >
+                  {showTimer ? t.common.game.hideTimer : t.common.game.showTimer}
+                </button>
+                {showTimer && (
+                  <span>{t.common.game.time}: {formatTime(time)} {t.common.game.bestTime}: {formatTime(bestTime)}</span>
                 )}
               </div>
-            ))}
-            <div className={styles.target}>{targetNumbers[rowIndex]}</div>
-          </div>
-        ))}
-      </div>
+            </div>
 
-      <div className={styles.controls}>
-        <div className={styles.shapesGrid}>
-          {SHAPES.flatMap(shape => 
-            COLORS.map(color => (
-            <button
-              key={`${shape}-${color}`}
-              className={`${styles.shapeSelector} ${
-                usedShapes.has(`${shape}-${color}`) ? styles.used : ''
-              }`}
-              onClick={() => handlePieceSelect({ shape, color })}
-              disabled={
-                !isPlaying ||
-                gameBoard.some((row, rowIndex) =>
-                  row.some((cell, colIndex) =>
-                    cell?.shape === shape && 
-                    cell?.color === color && 
-                    feedback[rowIndex][colIndex] === 'correct'
-                  )
-                )
-              }
-            >
-              <GameShape shape={shape} color={color} />
-            </button>
-            ))
-          )}
-        </div>
-        <div className={styles.gameControls}>
-          <button
-            className={styles.controlButton}
-            onClick={handleDelete}
-            disabled={!isPlaying || !gameBoard[currentRow]?.some(cell => cell !== null)}
-          >
-            Delete
-          </button>
-          <button
-            className={styles.controlButton}
-            onClick={checkRow}
-            disabled={!isPlaying || !gameBoard[currentRow]?.every(cell => cell !== null)}
-          >
-            Enter
-          </button>
-        </div>
-      </div>
+            <div className={styles.gameBoard}>
+              {gameBoard.map((row, rowIndex) => (
+                <div key={rowIndex} className={styles.row}>
+                  {row.map((cell, colIndex) => (
+                    <div
+                      key={colIndex}
+                      className={`${styles.cell} ${
+                        feedback[rowIndex]?.[colIndex] === 'correct' ? styles.correct : 
+                        feedback[rowIndex]?.[colIndex] === 'wrong-position' ? styles.wrongPosition : ''
+                      }`}
+                    >
+                      {cell && <GameShape shape={cell.shape} color={cell.color} />}
+                      {cell && feedback[rowIndex]?.[colIndex] === 'correct' && (
+                        <span className={styles.value}>{cell.value}</span>
+                      )}
+                    </div>
+                  ))}
+                  <div className={styles.target}>{targetNumbers[rowIndex]}</div>
+                </div>
+              ))}
+            </div>
 
-      <div className={styles.statusBar}>
-        <button
-          className={styles.modeButton}
-          onClick={() => {
-            setIsHardMode(!isHardMode);
-            startNewGame();
-          }}
-        >
-          {isHardMode ? 'Hard Mode' : 'Normal Mode'}
-        </button>
-      </div>
+            <div className={styles.controls}>
+              <div className={styles.shapesGrid}>
+                {SHAPES.flatMap(shape => 
+                  COLORS.map(color => (
+                  <button
+                    key={`${shape}-${color}`}
+                    className={`${styles.shapeSelector} ${
+                      usedShapes.has(`${shape}-${color}`) ? styles.used : ''
+                    }`}
+                    onClick={() => handlePieceSelect({ shape, color })}
+                    disabled={
+                      !isPlaying ||
+                      gameBoard.some((row, rowIndex) =>
+                        row.some((cell, colIndex) =>
+                          cell?.shape === shape && 
+                          cell?.color === color && 
+                          feedback[rowIndex][colIndex] === 'correct'
+                        )
+                      )
+                    }
+                  >
+                    <GameShape shape={shape} color={color} />
+                  </button>
+                  ))
+                )}
+              </div>
+              <div className={styles.gameControls}>
+                <button
+                  className={styles.controlButton}
+                  onClick={handleDelete}
+                  disabled={!isPlaying || !gameBoard[currentRow]?.some(cell => cell !== null)}
+                >
+                  {t.common.game.delete}
+                </button>
+                <button
+                  className={styles.controlButton}
+                  onClick={checkRow}
+                  disabled={!isPlaying || !gameBoard[currentRow]?.every(cell => cell !== null)}
+                >
+                  {t.common.game.enter}
+                </button>
+              </div>
+            </div>
 
-      {showWinDialog && (
-        <div className={styles.winDialog}>
-          <div className={styles.winContent}>
-            <h2>Congratulations!</h2>
-            <p>You solved the puzzle in {currentRow + 1} tries!</p>
-            <p className={styles.scoreInfo}>Final Score: {score}</p>
-            {score > highScore && (
-              <p className={styles.newHighScore}>New High Score!</p>
-            )}
-            <div className={styles.winButtons}>
-              <button 
-                className={styles.newGameButton}
-                onClick={startNewGame}
-              >
-                Play Again
-              </button>
-              <button 
+            <div className={styles.statusBar}>
+              <button
                 className={styles.modeButton}
                 onClick={() => {
                   setIsHardMode(!isHardMode);
                   startNewGame();
                 }}
               >
-                Try {isHardMode ? 'Normal' : 'Hard'} Mode
+                {t.common.game[isHardMode ? 'hardMode' : 'normalMode']}
               </button>
             </div>
+
+            {showWinDialog && (
+              <div className={styles.winDialog}>
+                <div className={styles.winContent}>
+                  <h2>{t.common.game.congratulations}</h2>
+                  <p>{t.common.game.solvedPuzzle.replace('{tries}', currentRow + 1)}</p>
+                  <p className={styles.scoreInfo}>{t.common.game.finalScore.replace('{score}', score)}</p>
+                  {score > highScore && (
+                    <p className={styles.newHighScore}>{t.common.game.newHighScore}</p>
+                  )}
+                  <div className={styles.winButtons}>
+                    <button 
+                      className={styles.newGameButton}
+                      onClick={startNewGame}
+                    >
+                      {t.common.game.newGame}
+                    </button>
+                    <button 
+                      className={styles.modeButton}
+                      onClick={() => {
+                        setIsHardMode(!isHardMode);
+                        startNewGame();
+                      }}
+                    >
+                      {t.common.game.tryMode.replace('{mode}', t.common.game[isHardMode ? 'normalMode' : 'hardMode'])}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
-        </div>
+          <p className={styles.gameDescription}>{t.common.game.description}</p>
+        </>
       )}
-    </div>
+    </>
   );
 });
 

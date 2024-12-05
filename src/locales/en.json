@@ -86,6 +86,26 @@
       "easy": "Normal Mode",
       "medium": "Hard Mode"
     },
+    "game": {
+      "title": "Play SHAP10R GAME",
+      "description": "Shap10r combines Wordle™ and Mastermind® mechanics. Match five Shaplors with the correct values.",
+      "score": "Score",
+      "highScore": "HIGH",
+      "time": "Time",
+      "bestTime": "BEST",
+      "hideTimer": "Hide Timer",
+      "showTimer": "Show Timer",
+      "delete": "Delete",
+      "enter": "Enter",
+      "congratulations": "Congratulations!",
+      "solvedPuzzle": "You solved the puzzle in {tries} tries!",
+      "finalScore": "Final Score: {score}",
+      "newHighScore": "New High Score!",
+      "newGame": "Play Again",
+      "hardMode": "Hard Mode",
+      "normalMode": "Normal Mode",
+      "tryMode": "Try {mode} Mode"
+    },
     "categories": {
       "classic": "Classic Series",
       "themed": "Themed Versions",

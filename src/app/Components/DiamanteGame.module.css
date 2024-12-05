@@ -1,3 +1,29 @@
+.gameContainer {
+  background: linear-gradient(145deg, #5B4FDB, #7165E3);
+  padding: 4em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameTitle {
+  font-size: 2.5rem;
+  margin: 80px 0 3rem;
+  text-align: center;
+  color: var(--primary, #5B4FDB);
+  font-weight: 600;
+}
+
+.gameDescription {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
 .gameWrapper {
   width: 100%;
   max-width: 600px;
@@ -18,6 +44,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .row {
   display: flex;
   gap: 8px;

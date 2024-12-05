@@ -86,6 +86,26 @@
       "easy": "普通模式",
       "medium": "困难模式"
     },
+    "game": {
+      "title": "玩 SHAP10R 游戏",
+      "description": "Shap10r 结合了 Wordle™ 和 Mastermind® 的游戏机制。匹配五个带有正确数值的 Shaplor。",
+      "score": "得分",
+      "highScore": "最高",
+      "time": "时间",
+      "bestTime": "最佳",
+      "hideTimer": "隐藏计时器",
+      "showTimer": "显示计时器",
+      "delete": "删除",
+      "enter": "确认",
+      "congratulations": "恭喜！",
+      "solvedPuzzle": "你用了 {tries} 次就解开了谜题！",
+      "finalScore": "最终得分：{score}",
+      "newHighScore": "新的最高分！",
+      "newGame": "再玩一次",
+      "hardMode": "困难模式",
+      "normalMode": "普通模式",
+      "tryMode": "尝试{mode}"
+    },
     "categories": {
       "classic": "经典系列",
       "themed": "主题版本",
