@@ -16,6 +16,7 @@ import enTranslations from '@/locales/en.json';
 import Header from '@/app/Components/Header';
 import Comments from '@/app/Components/Comments';
 import DiamanteGame from "./Components/DiamanteGame";
+import * as gtag from '@/lib/gtag'
 
 const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || '';
 
@@ -38,6 +39,10 @@ export default function Home() {
   }, [t]);
 
   const handlePlayGame = () => {
+    window.gtag('event', 'start_game', {
+      event_category: 'Game',
+      event_label: 'Play Shap10r'
+    });
     setIsGameLoaded(true);
     scrollToGame();
   };

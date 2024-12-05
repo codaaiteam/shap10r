@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useRef, forwardRef } from 'rea
 import { useTranslations } from '@/hooks/useTranslations';
 import GameShape from './GameShape';
 import styles from './DiamanteGame.module.css';
+import * as gtag from '@/lib/gtag'
 
 const SHAPES = ['heart', 'circle', 'square'];
 const COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'black', 'brown'];
@@ -146,6 +147,12 @@ const DiamanteGame = forwardRef((props, ref) => {
 
   // 检查当前行
   const checkRow = useCallback(() => {
+
+    window.gtag('event', 'check_row', {
+      event_category: 'Game',
+      event_label: 'Row Validation',
+      value: score
+    });
     if (!gameBoard[currentRow].every(cell => cell !== null)) return;
 
     const newFeedback = [...feedback];
