@@ -1,5 +1,5 @@
 // lib/gtag.js
-export const GA_ID = 'G-5Q3KHWXNED'
+export const GA_ID = 'G-LQ3Y7K64BY'
 
 export const pageview = (url) => {
   window.gtag('config', GA_ID, {

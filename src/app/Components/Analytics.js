@@ -5,7 +5,7 @@ export default function Analytics() {
   return (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-5Q3KHWXNED"
+        src="https://www.googletagmanager.com/gtag/js?id=G-LQ3Y7K64BY"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">

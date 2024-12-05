@@ -72,7 +72,7 @@ export default function RootLayout({ children, params }) {
         <body className={inter.className}>
           {children}
           <Script 
-            src="https://www.googletagmanager.com/gtag/js?id=G-5Q3KHWXNED"
+            src="https://www.googletagmanager.com/gtag/js?id=G-LQ3Y7K64BY"
             strategy="lazyOnload"
           />
           <Script id="google-analytics" strategy="lazyOnload">
@@ -80,7 +80,7 @@ export default function RootLayout({ children, params }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-5Q3KHWXNED', {
+              gtag('config', 'G-LQ3Y7K64BY', {
                 page_path: window.location.pathname,
               });
             `}
