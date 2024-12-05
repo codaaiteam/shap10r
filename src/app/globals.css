@@ -11,6 +11,7 @@
   --section-gradient: linear-gradient(145deg, #5B4FDB, #7165E3);
   --footer-gradient: linear-gradient(145deg, #5B4FDB, #7165E3);
 }
+
 body {
   background: var(--bg-gradient);
   color: var(--dark);
