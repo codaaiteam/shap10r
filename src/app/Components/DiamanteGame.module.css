@@ -1,0 +1,157 @@
+.gameWrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameBoard {
+  width: 100%;
+  max-height: 360px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.cell {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: white;
+}
+
+.cell.correct {
+  border: 2px solid #00FF00;
+}
+
+.cell.correct .value {
+  position: absolute;
+  bottom: -4px;
+  font-size: 12px;
+  color: black;
+}
+
+.cell.wrongPosition {
+  border: 2px solid #FFFF00;
+}
+
+.target {
+  width: 45px;
+  height: 45px;
+  background: #5B4FDB;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.controls {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.shapesGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.shapeSelector {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  background: white;
+  transition: all 0.2s;
+}
+
+.shapeSelector.used {
+  border: 2px solid white;
+  background: #EEEEEE;
+}
+
+.gameControls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.controlButton {
+  flex: 1;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #5B4FDB;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.controlButton:disabled {
+  background: #E2E8F0;
+  cursor: not-allowed;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px 0;
+  color: #5B4FDB;
+  font-size: 14px;
+}
+
+.modeButton {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #5B4FDB;
+  background: white;
+  color: #5B4FDB;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.gameBoard::-webkit-scrollbar {
+  width: 6px;
+}
+
+.gameBoard::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+
+.gameBoard::-webkit-scrollbar-thumb {
+  background: rgba(91, 79, 219, 0.2);
+  border-radius: 3px;
+}
+
+.gameBoard::-webkit-scrollbar-thumb:hover {
+  background: rgba(91, 79, 219, 0.3);
+}

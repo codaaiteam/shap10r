@@ -15,6 +15,7 @@ import { useTranslations } from '@/hooks/useTranslations';
 import enTranslations from '@/locales/en.json';
 import Header from '@/app/Components/Header';
 import Comments from '@/app/Components/Comments';
+import DiamanteGame from "./Components/DiamanteGame";
 
 const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || '';
 
@@ -125,54 +126,14 @@ export default function Home() {
       <LanguageSwitcher />
       <main className={styles.main}>
 
-        <section id="game" className={styles.game}>
-          <div className={styles.gameContent}>
-          <h1>{t.title}</h1>
-            <p>{t.description}</p>
+<section id="game" className={styles.game}>
+  <h1 className={styles.gameTitle}>Play Shap10r Game</h1>
+  <p className={styles.gameDesc}>
+    Shap10r combines Wordle™ and Mastermind® mechanics. Match five Shaplors with the correct values.
+  </p>
+  <DiamanteGame ref={iframeRef} />
+</section>
 
-            <div className={styles.gameContainer}>
-              {!isGameLoaded ? (
-                <div className={styles.playButtonContainer}>
-                  <button className={styles.playButton} onClick={handlePlayGame}>
-                    {t.playGame}
-                  </button>
-                </div>
-              ) : (
-                <>
-                  <div className={styles.gameWrapper} ref={gameWrapperRef}>
-                    <iframe 
-                      ref={iframeRef}
-                      className={styles.gameIframe}
-                      src="https://game.sprunki-incredibox.org/sprunki/phase-3remake-4.html"
-                      allowFullScreen
-                      allowTransparency="true"
-                      frameBorder="0" 
-                      scrolling="no"
-                      tabIndex="0"
-                      allow="fullscreen; autoplay; gamepad"
-                    />
-                  <button 
-                    className={styles.fullscreenButton}
-                    onClick={toggleFullscreen}
-                    aria-label={isFullscreen ? t.exitFullscreen : t.enterFullscreen}
-                    style={{
-                      backgroundColor: 'rgba(91, 79, 219, 0.5)',
-                      '&:hover': {
-                        backgroundColor: '#5B4FDB'
-                      }
-                    }}
-                  >
-                    <svg width="24" height="24" viewBox="0 0 24 24" style={{ color: 'white' }}>
-                      <use href="/fullscreen-icon.svg#icon"/>
-                    </svg>
-                  </button>
-                  </div>
-                  <p className={styles.gameTip} style={{ color: '#666666' }}>{t.fullscreenTip}</p>
-                </>
-              )}
-            </div>
-          </div>
-        </section>
        <section className={styles.contentSection}> 
         <h3>{t?.comments || "Comments"}</h3>
         <div className={styles.contentWrapper}>

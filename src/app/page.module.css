@@ -231,14 +231,27 @@
   border-color: #5B4FDB;
   background: linear-gradient(145deg, #F8F9FA, #FFFFFF);
 }
-
-.fullscreenButton {
-  background: rgba(91, 79, 219, 0.5);
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-.fullscreenButton:hover {
-  background: #5B4FDB;
-}/* src/app/page.module.css */
+.gameTitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.gameDesc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 600px;
+}
 
 .errorContainer {
   display: flex;
@@ -405,25 +418,23 @@
   }
 }
 .gameContainer {
-  width: 100%;
-  height: 600px;
-  position: relative;
-  background-image: url('/cover.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ width: 100%;
+ max-width: 1200px;
+ height: 600px;
+ position: relative;
+ border-radius: 15px;
+ overflow: hidden;
 }
 
 .playButtonContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 /* 改进游戏按钮样式 */
@@ -740,6 +751,18 @@
   font-weight: 500;
   color: var(--dark);
   margin-bottom: 40px;
+}
+
+.gameWrapper {
+ width: 100%;
+ height: 100%;
+ background: #1a1a1a;
+}
+
+.gameContent {
+
+ width: 100%;
+ height: 100%;
 }
 
 .cards {
