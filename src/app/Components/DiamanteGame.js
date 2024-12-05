@@ -22,26 +22,34 @@ const DiamanteGame = forwardRef((props, ref) => {
   const [isHardMode, setIsHardMode] = useState(false);
   const [usedShapes, setUsedShapes] = useState(new Set());
 
-  const [highScore, setHighScore] = useState(() => {
-    const saved = localStorage.getItem('shap10r_highScore');
-    return saved ? parseInt(saved, 10) : 0;
-  });
-  
-  const [bestTime, setBestTime] = useState(() => {
-    const saved = localStorage.getItem('shap10r_bestTime');
-    return saved ? parseInt(saved, 10) : Infinity;
-  });
+  const [highScore, setHighScore] = useState(0);
+  const [bestTime, setBestTime] = useState(Infinity);
+
+  useEffect(() => {
+    // Initialize from localStorage only on client side
+    if (typeof window !== 'undefined') {
+      const savedHighScore = localStorage.getItem('shap10r_highScore');
+      const savedBestTime = localStorage.getItem('shap10r_bestTime');
+      if (savedHighScore) setHighScore(parseInt(savedHighScore, 10));
+      if (savedBestTime) setBestTime(parseInt(savedBestTime, 10));
+    }
+  }, []);
+
   const updateHighScore = useCallback((newScore) => {
     if (newScore > highScore) {
       setHighScore(newScore);
-      localStorage.setItem('shap10r_highScore', newScore.toString());
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('shap10r_highScore', newScore.toString());
+      }
     }
   }, [highScore]);
 
   const updateBestTime = useCallback((newTime) => {
     if (newTime < bestTime || bestTime === Infinity) {
       setBestTime(newTime);
-      localStorage.setItem('shap10r_bestTime', newTime.toString());
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('shap10r_bestTime', newTime.toString());
+      }
     }
   }, [bestTime]);
 
