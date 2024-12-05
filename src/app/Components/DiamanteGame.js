@@ -15,14 +15,14 @@ const DiamanteGame = forwardRef((props, ref) => {
   const [targetNumbers, setTargetNumbers] = useState(Array(ROWS).fill(0));
   const [currentRow, setCurrentRow] = useState(0);
   const [score, setScore] = useState(0);
-  const [highScore, setHighScore] = useState(1138);
+  const [highScore, setHighScore] = useState(0);
   const [time, setTime] = useState(0);
-  const [bestTime, setBestTime] = useState(4669);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isHardMode, setIsHardMode] = useState(false);
-  const [showWinDialog, setShowWinDialog] = useState(false);
-  const [usedShapes, setUsedShapes] = useState(new Set());
+  const [bestTime, setBestTime] = useState(Infinity);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [showTimer, setShowTimer] = useState(true);
+  const [showWinDialog, setShowWinDialog] = useState(false);
+  const [isHardMode, setIsHardMode] = useState(false);
+  const [usedShapes, setUsedShapes] = useState(new Set());
 
   const shapeValues = useRef({});
   const colorValues = useRef({});
@@ -219,6 +219,10 @@ const DiamanteGame = forwardRef((props, ref) => {
     }
   };
 
+  const handleCloseWinDialog = () => {
+    setShowWinDialog(false);
+  };
+
   useEffect(() => {
     let timer;
     if (isPlaying) {
@@ -278,7 +282,7 @@ const DiamanteGame = forwardRef((props, ref) => {
               ))}
             </div>
 
-            <div className={styles.controls}>
+            <div className={styles.shapesWrapper}>
               <div className={styles.shapesGrid}>
                 {SHAPES.flatMap(shape => 
                   COLORS.map(color => (
@@ -303,21 +307,30 @@ const DiamanteGame = forwardRef((props, ref) => {
                   </button>
                   ))
                 )}
-              </div>
-              <div className={styles.gameControls}>
                 <button
-                  className={styles.controlButton}
+                  className={`${styles.shapeSelector} ${styles.controlButton}`}
                   onClick={handleDelete}
                   disabled={!isPlaying || !gameBoard[currentRow]?.some(cell => cell !== null)}
                 >
-                  {t.common.game.delete}
+                  ✕
                 </button>
                 <button
-                  className={styles.controlButton}
+                  className={`${styles.shapeSelector} ${styles.controlButton}`}
                   onClick={checkRow}
                   disabled={!isPlaying || !gameBoard[currentRow]?.every(cell => cell !== null)}
                 >
-                  {t.common.game.enter}
+                  ✓
+                </button>
+                <button
+                  className={`${styles.shapeSelector} ${styles.controlButton}`}
+                  onClick={startNewGame}
+                >
+                  +
+                </button>
+              </div>
+              <div className={styles.gameControls}>
+                <button className={styles.controlButton} onClick={startNewGame}>
+                  {t.common.game.newGame}
                 </button>
               </div>
             </div>
@@ -337,6 +350,7 @@ const DiamanteGame = forwardRef((props, ref) => {
             {showWinDialog && (
               <div className={styles.winDialog}>
                 <div className={styles.winContent}>
+                  <button className={styles.closeButton} onClick={handleCloseWinDialog}>×</button>
                   <h2>{t.common.game.congratulations}</h2>
                   <p>{t.common.game.solvedPuzzle.replace('{tries}', currentRow + 1)}</p>
                   <p className={styles.scoreInfo}>{t.common.game.finalScore.replace('{score}', score)}</p>
@@ -346,7 +360,10 @@ const DiamanteGame = forwardRef((props, ref) => {
                   <div className={styles.winButtons}>
                     <button 
                       className={styles.newGameButton}
-                      onClick={startNewGame}
+                      onClick={() => {
+                        startNewGame();
+                        handleCloseWinDialog();
+                      }}
                     >
                       {t.common.game.newGame}
                     </button>
@@ -355,6 +372,7 @@ const DiamanteGame = forwardRef((props, ref) => {
                       onClick={() => {
                         setIsHardMode(!isHardMode);
                         startNewGame();
+                        handleCloseWinDialog();
                       }}
                     >
                       {t.common.game.tryMode.replace('{mode}', t.common.game[isHardMode ? 'normalMode' : 'hardMode'])}

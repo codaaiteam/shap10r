@@ -47,15 +47,15 @@
 
 .row {
   display: flex;
-  gap: 8px;
-  margin-bottom: 8px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .cell {
-  width: 45px;
-  height: 45px;
-  border: 1px solid #666;
-  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #666;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,58 +91,82 @@
   font-size: 16px;
 }
 
-.controls {
-  padding: 15px;
-  border-radius: 8px;
+.shapesWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
 }
 
 .shapesGrid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 6px;
-  margin-bottom: 15px;
+  grid-template-columns: repeat(8, 1fr) minmax(auto, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+  max-width: 600px;
 }
 
 .shapeSelector {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #666;
-  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #666;
+  border-radius: 8px;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   padding: 0;
-  background: white;
   transition: all 0.2s;
+  font-size: 20px;
+}
+
+.shapeSelector.controlButton {
+  background: #1b1b1b;
+  color: #fff;
+  border: 2px solid #4CAF50;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.shapeSelector.controlButton:disabled {
+  background: #666;
+  border-color: #666;
+  opacity: 0.3;
+}
+
+.shapeSelector:hover:not(:disabled) {
+  transform: scale(1.05);
+  border-color: #5B4FDB;
 }
 
 .shapeSelector.used {
-  border: 2px solid white;
-  background: #EEEEEE;
+  opacity: 0.5;
+}
+
+.shapeSelector:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
 }
 
 .gameControls {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: center;
+  width: 100%;
 }
 
 .controlButton {
-  flex: 1;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: none;
-  background: #5B4FDB;
-  color: white;
-  cursor: pointer;
+  background: #1b1b1b;
+  color: #fff;
+  border: 2px solid #4CAF50;
+  padding: 12px 24px;
+  border-radius: 8px;
   font-size: 14px;
-  transition: all 0.2s;
-}
-
-.controlButton:disabled {
-  background: #E2E8F0;
-  cursor: not-allowed;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .statusBar {
@@ -189,21 +213,35 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   z-index: 1000;
 }
 
 .winContent {
-  background: white;
-  padding: 30px;
+  background: #2D2D2D;
+  padding: 2rem;
   border-radius: 12px;
   text-align: center;
-  max-width: 400px;
+  position: relative;
   width: 90%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  color: white;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
 }
 
 .winContent h2 {
@@ -233,16 +271,74 @@
 }
 
 .newGameButton {
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: none;
-  background: #5B4FDB;
+  background: #4CAF50;
   color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
-  font-size: 14px;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
 
 .newGameButton:hover {
-  background: #4B3FCB;
+  background: #45a049;
+}
+
+@media (max-width: 480px) {
+  .shapesGrid {
+    gap: 6px;
+  }
+
+  .shapeSelector {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .shapeSelector.controlButton {
+    font-size: 20px;
+  }
+
+  .controlButton {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .cell {
+    width: 45px;
+    height: 45px;
+  }
+
+  .shapeSelector {
+    width: 45px;
+    height: 45px;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .shapesGrid {
+    grid-template-columns: repeat(8, 1fr);
+    order: 2;
+  }
+
+  .gameControls {
+    width: 100%;
+    justify-content: space-between;
+    order: 1;
+  }
+
+  .controlButton {
+    flex: 1;
+    padding: 12px 8px;
+    font-size: 13px;
+    min-width: 0;
+  }
+
+  .row {
+    gap: 8px;
+  }
 }

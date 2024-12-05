@@ -40,7 +40,7 @@
   "faq4Answer": "Shap10r presenta asignaciones de valores dinámicos, múltiples modos de dificultad y combina el reconocimiento de patrones visuales con la estrategia numérica.",
   "seoTitle": "Shap10r: un juego de lógica y deducción",
   "seoDescription": "¡Desafía tu mente con esta combinación única de mecánicas de juego de Wordle™ y Mastermind® en una experiencia de rompecabezas gratuita!",
-  "siteUrl": "https://www.playshaplor.com/",
+  "siteUrl": "https://www.playshap10r.org/",
   "keywords": "Shap10r, juego de rompecabezas, juego de lógica, juego de deducción, Wordle, Mastermind, entrenamiento cerebral, juego de estrategia",
   "clickToRate": "Califica esto",
   "ratingStars": "estrellas",
@@ -49,24 +49,24 @@
   "meta": {
     "ogTitle": "Shap10r: un juego de lógica y deducción",
     "ogDescription": "Desafía tu mente con esta combinación única de mecánicas de juego de Wordle™ y Mastermind®",
-    "ogType": "sitio web",
-    "ogUrl": "https://www.playshaplor.com/",
-    "ogImage": "https://www.playshaplor.com/discover.svg",
-    "twitterCard": "resumen_imagen_grande",
+    "ogType": "website",
+    "ogUrl": "https://www.playshap10r.org/",
+    "ogImage": "https://www.playshap10r.org/discover.svg",
+    "twitterCard": "summary_large_image",
     "twitterTitle": "Shap10r: un juego de lógica y deducción",
     "twitterDescription": "Desafía tu mente con esta combinación única de mecánicas de juego de Wordle™ y Mastermind®",
-    "twitterImage": "https://www.playshaplor.com/discover.svg"
+    "twitterImage": "https://www.playshap10r.org/discover.svg"
   },
   "seo": {
-    "robots": "índice, seguir",
-    "canonical": "https://www.playshaplor.com/",
+    "robots": "index, follow",
+    "canonical": "https://www.playshap10r.org/",
     "googleSiteVerification": "gp8OOTgtImSxvl5BNocZiHeMKwXw5QP6e7SaeCVQjEQ",
     "googleAnalyticsId": "G-1NVXP8SB8Z"
   },
   "layout": {
     "language": "es",
-    "direction": "largo",
-    "fontFamily": "Enterrar"
+    "direction": "ltr",
+    "fontFamily": "Inter"
   },
   "games": {},
   "game": {
@@ -78,40 +78,60 @@
     "about": "Acerca de este juego",
     "howToPlay": "Cómo jugar",
     "share": "Compartir",
-    "report": "Informar de un problema",
-    "feedback": "Dar retroalimentación"
+    "report": "Informar problema",
+    "feedback": "Dar opinión"
   },
   "common": {
     "difficulty": {
       "easy": "Modo normal",
       "medium": "Modo difícil"
     },
+    "game": {
+      "title": "Jugar SHAP10R",
+      "description": "Shap10r combina mecánicas de Wordle™ y Mastermind®. Combina cinco Shaplors con los valores correctos.",
+      "score": "Puntuación",
+      "highScore": "MÁXIMA",
+      "time": "Tiempo",
+      "bestTime": "MEJOR",
+      "hideTimer": "Ocultar temporizador",
+      "showTimer": "Mostrar temporizador",
+      "delete": "Borrar",
+      "enter": "Entrar",
+      "congratulations": "¡Felicitaciones!",
+      "solvedPuzzle": "¡Resolviste el rompecabezas en {tries} intentos!",
+      "finalScore": "Puntuación final: {score}",
+      "newHighScore": "¡Nueva puntuación máxima!",
+      "newGame": "Jugar de nuevo",
+      "hardMode": "Modo difícil",
+      "normalMode": "Modo normal",
+      "tryMode": "Probar modo {mode}"
+    },
     "categories": {
       "classic": "Serie Clásica",
       "themed": "Versiones temáticas",
       "experimental": "Experimental",
       "seasonal": "Estacional",
-      "crossover": "Cruce"
+      "crossover": "Crossover"
     },
     "features": {
       "multiplayer": "Multijugador",
       "achievements": "Logros",
-      "leaderboards": "Tablas de clasificación",
+      "leaderboards": "Clasificación",
       "customization": "Personalización"
     },
     "errors": {
-      "loadFailed": "No se pudo cargar el juego",
-      "saveFailed": "No se pudo guardar el progreso",
+      "loadFailed": "Error al cargar el juego",
+      "saveFailed": "Error al guardar el progreso",
       "connectionLost": "Conexión perdida",
       "loading": "Cargando...",
-      "waitforloading": "Espera un minuto...",
+      "waitforloading": "Espere un momento...",
       "gameNotFound": "Juego no encontrado",
-      "gameNotFoundDesc": "Lo sentimos, no pudimos encontrar el juego que estás buscando."
+      "gameNotFoundDesc": "Lo sentimos, no pudimos encontrar el juego que buscas."
     },
     "buttons": {
       "play": "Jugar ahora",
-      "retry": "Intentar otra vez",
-      "settings": "Configuración",
+      "retry": "Intentar de nuevo",
+      "settings": "Ajustes",
       "share": "Compartir",
       "fullscreen": "Pantalla completa"
     }
