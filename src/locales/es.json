@@ -68,60 +68,60 @@
     "direction": "largo",
     "fontFamily": "Enterrar"
   },
- "games": {
-   "double-shap10r": {
-     "title": "Double Shap10r",
-     "description": "Challenge yourself with two simultaneous Shap10r puzzles. Use shared shapes and colors to solve both number combinations at once in this mind-bending variant of the classic game.",
-     "shortDescription": "Dual puzzle solving with shared resources",
-     "features": {
-       "feature1": {
-         "title": "Dual Game Boards", 
-         "description": "Solve two independent Shap10r puzzles simultaneously using a shared pool of shapes"
-       },
-       "feature2": {
-         "title": "Strategic Planning",
-         "description": "Carefully manage shape usage between both boards to optimize your solutions"
-       },
-       "feature3": {
-         "title": "Enhanced Challenge",
-         "description": "Double the puzzle complexity with interconnected gameplay mechanics"
-       },
-       "feature4": {
-         "title": "Shared Resources",
-         "description": "Use the same shapes and colors across both boards for unique strategic depth"
-       }
-     },
-     "howToPlay": {
-       "step1": "Select shapes and colors from the shared selection area",
-       "step2": "Place pieces on either board to work towards their target numbers",
-       "step3": "Plan your moves carefully as shapes used on one board affect availability for the other",
-       "step4": "Complete both puzzles within the allowed attempts to win"
-     },
-     "seo": {
-       "title": "Double Shap10r | Dual Board Number Puzzle Game",
-       "description": "Challenge your mind with Double Shap10r, featuring two simultaneous puzzle boards sharing shapes and colors. Strategic dual-board gameplay for enhanced puzzle solving.",
-       "keywords": "Double Shap10r, dual puzzle, number game, logic game, strategy game, shape matching, color matching"
-     },
-     "faqs": {
-       "faq1": {
-         "question": "How is Double Shap10r different from regular Shap10r?",
-         "answer": "Double Shap10r features two game boards that share the same pool of shapes and colors, requiring strategic planning to solve both puzzles simultaneously."
-       },
-       "faq2": {
-         "question": "Do both boards need to be completed together?",
-         "answer": "Yes, you must solve both puzzles within the allowed attempts, managing your shape selections carefully between the two boards."
-       },
-       "faq3": {
-         "question": "Is it more difficult than regular Shap10r?",
-         "answer": "Yes, managing two boards with shared resources adds an extra layer of strategy and complexity to the game."
-       },
-       "faq4": {
-         "question": "Are there different modes available?",
-         "answer": "Like regular Shap10r, you can play in Normal Mode with sorted values or Hard Mode with unsorted values on both boards."
-       }
-     }
-   }
- },
+  "games": {
+    "double-shap10r": {
+      "title": "Doble forma 10r",
+      "description": "Ponte a prueba con dos rompecabezas Shap10r simultáneos. Usa formas y colores compartidos para resolver ambas combinaciones numéricas a la vez en esta alucinante variante del clásico juego.",
+      "shortDescription": "Solución de rompecabezas dual con recursos compartidos",
+      "features": {
+        "feature1": {
+          "title": "Tableros de juego duales",
+          "description": "Resuelve dos rompecabezas Shap10r independientes simultáneamente usando un conjunto compartido de formas"
+        },
+        "feature2": {
+          "title": "Planificación estratégica",
+          "description": "Gestione con cuidado el uso de formas entre ambas placas para optimizar sus soluciones"
+        },
+        "feature3": {
+          "title": "Desafío mejorado",
+          "description": "Duplica la complejidad del rompecabezas con mecánicas de juego interconectadas."
+        },
+        "feature4": {
+          "title": "Recursos compartidos",
+          "description": "Utilice las mismas formas y colores en ambos tableros para lograr una profundidad estratégica única."
+        }
+      },
+      "howToPlay": {
+        "step1": "Seleccione formas y colores del área de selección compartida",
+        "step2": "Coloque piezas en cualquiera de los tableros para trabajar hacia sus números objetivo.",
+        "step3": "Planifique sus movimientos con cuidado, ya que las formas utilizadas en un tablero afectan la disponibilidad para el otro.",
+        "step4": "Completa ambos rompecabezas dentro de los intentos permitidos para ganar."
+      },
+      "seo": {
+        "title": "Double Shap10r | Juego de rompecabezas numérico de tablero doble",
+        "description": "Pon a prueba tu mente con Double Shap10r, que incluye dos tableros de rompecabezas simultáneos que comparten formas y colores. Juego estratégico de dos tableros para una resolución de rompecabezas mejorada.",
+        "keywords": "Double Shap10r, rompecabezas dual, juego de números, juego de lógica, juego de estrategia, combinación de formas, combinación de colores"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "¿En qué se diferencia Double Shap10r del Shap10r normal?",
+          "answer": "Double Shap10r presenta dos tableros de juego que comparten el mismo conjunto de formas y colores, lo que requiere planificación estratégica para resolver ambos rompecabezas simultáneamente."
+        },
+        "faq2": {
+          "question": "¿Es necesario completar ambos tableros juntos?",
+          "answer": "Sí, debes resolver ambos rompecabezas dentro de los intentos permitidos, administrando cuidadosamente tus selecciones de formas entre los dos tableros."
+        },
+        "faq3": {
+          "question": "¿Es más difícil que el Shap10r normal?",
+          "answer": "Sí, gestionar dos tableros con recursos compartidos añade una capa extra de estrategia y complejidad al juego."
+        },
+        "faq4": {
+          "question": "¿Hay diferentes modos disponibles?",
+          "answer": "Al igual que en el Shap10r normal, puedes jugar en modo normal con valores ordenados o en modo difícil con valores sin ordenar en ambos tableros."
+        }
+      }
+    }
+  },
   "game": {
     "playNow": "Jugar ahora",
     "fullscreenTip": "Presione F11 o haga clic en el botón de pantalla completa para obtener la mejor experiencia",

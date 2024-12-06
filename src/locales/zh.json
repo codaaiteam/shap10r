@@ -68,7 +68,60 @@
     "direction": "升",
     "fontFamily": "国际米兰"
   },
-  "games": {},
+  "games": {
+    "double-shap10r": {
+      "title": "双 Shap10r",
+      "description": "挑战自己，同时玩两个 Shap10r 拼图。在这个经典游戏的令人费解的版本中，使用共享的形状和颜色同时解决两个数字组合。",
+      "shortDescription": "通过共享资源解决双重难题",
+      "features": {
+        "feature1": {
+          "title": "双游戏板",
+          "description": "使用共享的形状池同时解决两个独立的 Shap10r 拼图"
+        },
+        "feature2": {
+          "title": "战略规划",
+          "description": "仔细管理两个板之间的形状使用以优化您的解决方案"
+        },
+        "feature3": {
+          "title": "增强挑战",
+          "description": "通过相互关联的游戏机制使谜题复杂度加倍"
+        },
+        "feature4": {
+          "title": "共享资源",
+          "description": "在两个棋盘上使用相同的形状和颜色，实现独特的战略深度"
+        }
+      },
+      "howToPlay": {
+        "step1": "从共享选择区域中选择形状和颜色",
+        "step2": "将棋子放置在任一板面上以达到其目标数字",
+        "step3": "仔细规划你的动作，因为一块棋盘上使用的形状会影响另一块棋盘的可用性",
+        "step4": "在允许的尝试次数内完成两个谜题即可获胜"
+      },
+      "seo": {
+        "title": "Double Shap10r | 双板数字拼图游戏",
+        "description": "用 Double Shap10r 挑战你的思维，它具有两个同时共享形状和颜色的拼图板。战略性双板游戏可提高解谜能力。",
+        "keywords": "Double Shap10r，双重拼图，数字游戏，逻辑游戏，策略游戏，形状匹配，颜色匹配"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "Double Shap10r 与常规 Shap10r 有何不同？",
+          "answer": "Double Shap10r 具有两个游戏板，它们共享相同的形状和颜色，需要战略规划才能同时解决两个难题。"
+        },
+        "faq2": {
+          "question": "两块板子需要一起完成吗？",
+          "answer": "是的，您必须在允许的尝试次数内解决这两个难题，并在两个板之间谨慎管理您的形状选择。"
+        },
+        "faq3": {
+          "question": "它比常规的Shap10r更难吗？",
+          "answer": "是的，管理两个共享资源的棋盘会为游戏增加额外的策略和复杂性。"
+        },
+        "faq4": {
+          "question": "有不同的模式可用吗？",
+          "answer": "与常规 Shap10r 一样，您可以在两个棋盘上以排序值的普通模式或以未分类值的困难模式进行游戏。"
+        }
+      }
+    }
+  },
   "game": {
     "playNow": "立即播放",
     "fullscreenTip": "按 F11 或单击全屏按钮以获得最佳体验",

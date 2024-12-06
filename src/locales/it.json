@@ -68,7 +68,60 @@
     "direction": "litro",
     "fontFamily": "Inter"
   },
-  "games": {},
+  "games": {
+    "double-shap10r": {
+      "title": "Doppio Shap10r",
+      "description": "Mettiti alla prova con due puzzle Shap10r simultanei. Usa forme e colori condivisi per risolvere entrambe le combinazioni di numeri contemporaneamente in questa variante rompicapo del classico gioco.",
+      "shortDescription": "Risoluzione di puzzle doppi con risorse condivise",
+      "features": {
+        "feature1": {
+          "title": "Tabelloni di gioco doppi",
+          "description": "Risolvi due puzzle Shap10r indipendenti contemporaneamente utilizzando un pool condiviso di forme"
+        },
+        "feature2": {
+          "title": "Pianificazione strategica",
+          "description": "Gestire attentamente l'utilizzo delle forme tra entrambe le schede per ottimizzare le soluzioni"
+        },
+        "feature3": {
+          "title": "Sfida migliorata",
+          "description": "Raddoppia la complessità del puzzle con meccaniche di gioco interconnesse"
+        },
+        "feature4": {
+          "title": "Risorse condivise",
+          "description": "Utilizza le stesse forme e colori su entrambe le tavole per una profondità strategica unica"
+        }
+      },
+      "howToPlay": {
+        "step1": "Seleziona forme e colori dall'area di selezione condivisa",
+        "step2": "Posiziona i pezzi su entrambe le scacchiere per raggiungere il numero desiderato",
+        "step3": "Pianifica attentamente le tue mosse poiché le forme utilizzate su una tavola influenzano la disponibilità per l'altra",
+        "step4": "Completa entrambi i puzzle entro i tentativi consentiti per vincere"
+      },
+      "seo": {
+        "title": "Double Shap10r | Gioco di puzzle numerico a doppia tavola",
+        "description": "Sfida la tua mente con Double Shap10r, con due tavole di puzzle simultanee che condividono forme e colori. Gioco strategico a doppia tavola per una risoluzione avanzata dei puzzle.",
+        "keywords": "Double Shap10r, puzzle doppio, gioco numerico, gioco di logica, gioco di strategia, abbinamento di forme, abbinamento di colori"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "In che cosa il Double Shap10r è diverso dal normale Shap10r?",
+          "answer": "Double Shap10r è caratterizzato da due tabelloni di gioco che condividono lo stesso insieme di forme e colori, il che richiede una pianificazione strategica per risolvere entrambi i puzzle contemporaneamente."
+        },
+        "faq2": {
+          "question": "È necessario completare entrambe le schede insieme?",
+          "answer": "Sì, devi risolvere entrambi i puzzle entro i tentativi consentiti, gestendo attentamente la selezione delle forme tra le due tavole."
+        },
+        "faq3": {
+          "question": "È più difficile dello Shap10r normale?",
+          "answer": "Sì, gestire due scacchiere con risorse condivise aggiunge un ulteriore livello di strategia e complessità al gioco."
+        },
+        "faq4": {
+          "question": "Sono disponibili diverse modalità?",
+          "answer": "Come nel normale Shap10r, puoi giocare in modalità Normale con valori ordinati o in modalità Difficile con valori non ordinati su entrambe le scacchiere."
+        }
+      }
+    }
+  },
   "game": {
     "playNow": "Gioca ora",
     "fullscreenTip": "Premi F11 o clicca sul pulsante a schermo intero per la migliore esperienza",

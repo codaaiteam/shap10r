@@ -68,7 +68,60 @@
     "direction": "ltr",
     "fontFamily": "Inter"
   },
-  "games": {},
+  "games": {
+    "double-shap10r": {
+      "title": "Doppel-Shap10r",
+      "description": "Fordern Sie sich selbst mit zwei gleichzeitigen Shap10r-Puzzles heraus. Verwenden Sie gemeinsame Formen und Farben, um in dieser kniffligen Variante des klassischen Spiels beide Zahlenkombinationen gleichzeitig zu lösen.",
+      "shortDescription": "Duales Rätsellösen mit gemeinsam genutzten Ressourcen",
+      "features": {
+        "feature1": {
+          "title": "Doppelte Spielbretter",
+          "description": "Lösen Sie zwei unabhängige Shap10r-Puzzles gleichzeitig mithilfe eines gemeinsamen Formenpools."
+        },
+        "feature2": {
+          "title": "Strategische Planung",
+          "description": "Verwalten Sie die Formnutzung zwischen beiden Boards sorgfältig, um Ihre Lösungen zu optimieren"
+        },
+        "feature3": {
+          "title": "Erweiterte Herausforderung",
+          "description": "Verdoppeln Sie die Rätselkomplexität mit vernetzten Spielmechanismen"
+        },
+        "feature4": {
+          "title": "Gemeinsam genutzte Ressourcen",
+          "description": "Verwenden Sie auf beiden Brettern dieselben Formen und Farben für eine einzigartige strategische Tiefe"
+        }
+      },
+      "howToPlay": {
+        "step1": "Wählen Sie Formen und Farben aus dem gemeinsamen Auswahlbereich",
+        "step2": "Platzieren Sie Teile auf beiden Brettern, um auf die Zielzahlen hinzuarbeiten.",
+        "step3": "Planen Sie Ihre Züge sorgfältig, da die auf einem Brett verwendeten Formen die Verfügbarkeit auf dem anderen beeinflussen",
+        "step4": "Schließe beide Rätsel innerhalb der erlaubten Versuche ab, um zu gewinnen"
+      },
+      "seo": {
+        "title": "Double Shap10r | Zahlen-Puzzlespiel mit zwei Brettern",
+        "description": "Fordern Sie Ihren Verstand mit Double Shap10r heraus, das zwei gleichzeitige Puzzle-Bretter mit gleichen Formen und Farben bietet. Strategisches Dual-Board-Gameplay für verbessertes Puzzle-Lösen.",
+        "keywords": "Double Shap10r, Doppelpuzzle, Zahlenspiel, Logikspiel, Strategiespiel, Formenzuordnung, Farbzuordnung"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "Wie unterscheidet sich Double Shap10r vom normalen Shap10r?",
+          "answer": "Double Shap10r bietet zwei Spielbretter mit denselben Formen und Farben. Um beide Rätsel gleichzeitig zu lösen, ist strategische Planung erforderlich."
+        },
+        "faq2": {
+          "question": "Müssen beide Boards gleichzeitig ausgefüllt werden?",
+          "answer": "Ja, Sie müssen beide Rätsel innerhalb der erlaubten Versuche lösen und dabei Ihre Formauswahl zwischen den beiden Brettern sorgfältig verwalten."
+        },
+        "faq3": {
+          "question": "Ist es schwieriger als das normale Shap10r?",
+          "answer": "Ja, das Verwalten von zwei Brettern mit gemeinsam genutzten Ressourcen fügt dem Spiel eine zusätzliche Strategieebene und Komplexität hinzu."
+        },
+        "faq4": {
+          "question": "Sind verschiedene Modi verfügbar?",
+          "answer": "Wie beim regulären Shap10r können Sie im Normalmodus mit sortierten Werten oder im Hard-Modus mit unsortierten Werten auf beiden Brettern spielen."
+        }
+      }
+    }
+  },
   "game": {
     "playNow": "jetzt spielen",
     "fullscreenTip": "Drücken Sie F11 oder klicken Sie auf die Vollbild-Schaltfläche für das optimale Erlebnis",
