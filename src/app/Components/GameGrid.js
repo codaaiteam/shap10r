@@ -25,11 +25,8 @@ export default function GameGrid({ t, excludeId }) {
           .map(([id, gameData]) => ({
             id,
             title: t?.games?.[id]?.title || gameData.title,
-            image: gameData.image ? 
-              (gameData.image.startsWith('http') ? 
-                gameData.image : 
-                `${CDN_URL}${gameData.image.startsWith('/') ? '' : '/'}${gameData.image}`
-              ) : null,
+            // 直接使用相对路径
+            image: gameData.image,
             gameUrl: gameData.gameUrl,
             features: [
               t?.games?.[id]?.features?.feature1?.title || gameData.features?.[0],
@@ -106,7 +103,7 @@ export default function GameGrid({ t, excludeId }) {
               <div className={styles.imageWrapper}>
                 {game.image && !imageErrors[game.id] ? (
                   <img
-                    src={game.image}
+                    src={game.image}  // 直接使用 image 路径
                     alt={game.title}
                     className={styles.gameImage}
                     loading="lazy"

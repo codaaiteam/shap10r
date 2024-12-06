@@ -131,6 +131,8 @@ export default function Home() {
       <LanguageSwitcher />
       <main className={styles.main}>
         <section id="game" className={styles.game}>
+        <h1 className={styles.gameTitle}>{t.title}</h1>
+       <p className={styles.gameDescription}>{t.description}</p>
           <DiamanteGame ref={iframeRef} />
         </section>
 
@@ -142,7 +144,7 @@ export default function Home() {
       </section>
 
       <section className={`${styles.contentSection} mt-12`}>
-        <h3>{t.otherGamesTitle}</h3>
+        <h3>{t.game.relatedGames}</h3>
         <div className={styles.contentWrapper}>
           <GameGrid t={translations} />
         </div>

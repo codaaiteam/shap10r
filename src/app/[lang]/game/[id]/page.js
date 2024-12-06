@@ -14,8 +14,10 @@ import { useTranslations } from '@/hooks/useTranslations';
 import { getGamesData } from '@/lib/cloudflare'; // 新增
 import Comments from '../../../Components/Comments';
 import SimpleRating from '../../../Components/SimpleRating';  // 注意调整导入路径
+import { getGameById, getGameComponent } from '@/data/games';
 
 const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || '';
+
 
 const generateGameFaqs = (game, templates) => {
     if (!templates) return [];
@@ -93,14 +95,13 @@ export default function GamePage() {
     return `${CDN_URL}${imagePath.startsWith('/') ? '' : '/'}${imagePath}`;
   };
 
-
   useEffect(() => {
     async function fetchGames() {
       try {
         const data = await getGamesData();
         setGamesData(data);
-        const currentGame = data.games[id];
-        
+        const currentGame = getGameById(id, t);  // 使用 getGameById
+
         if (currentGame) {
           // 处理图片路径
           currentGame.processedImage = getImageUrl(currentGame.image);
@@ -126,7 +127,7 @@ export default function GamePage() {
     }
 
     fetchGames();
-  }, [id, t?.gameFaqTemplates, t?.games]);
+  }, [id, t]); 
 
   const defaultErrors = {
     gameNotFound: "Game is Loading..",
@@ -141,6 +142,15 @@ export default function GamePage() {
         <Link href={`/${currentLocale}`} className={styles.backButton}>
           {t?.common?.backToHome || "Back to Home"}
         </Link>
+      </div>
+    );
+  }
+   const GameComponent = getGameComponent(game.component);  // 使用 game.type 而不是 game.component
+  
+  if (!GameComponent) {
+    return (
+      <div className={styles.error}>
+        <p>{t?.common?.errors?.gameNotFound || "Game not found"}</p>
       </div>
     );
   }
@@ -210,55 +220,15 @@ export default function GamePage() {
       <Header />
       <main className={styles.main}>
         {/* Hero Section */}
-        <section className={styles.gameHero}>
-          <div className={styles.gameHeroOverlay} />
-          <div className={styles.gameHeroContent}>
-            <img
-              src={game.processedImage}
-              alt={gameT.title}
-              className={styles.gameHeroImage}
-              loading="lazy"
-              onError={handleImageError}
-            />            
-            <div className={styles.gameHeroInfo}>
-              <h1>{gameT.title}</h1>
-              <p>{gameT.description}</p>
-              <button 
-                className={styles.playButton}
-                onClick={() => {
-                  document.querySelector('.gameSection')?.scrollIntoView({ behavior: 'smooth' });
-                  setTimeout(() => setIsGameLoaded(true), 500); // Delay game load until after scroll
-                }}
-              >
-                {t?.game?.playNow || "Play Now"}
-              </button>
-            </div>
+        <section className={styles.gameSection}>
+       <h1 className={styles.gameTitle}>{gameT.title}</h1>
+       <p className={styles.gameDescription}>{gameT.description}</p>
+          <div className={styles.gameWrapper}>
+            <GameComponent {...game} />
           </div>
         </section>
 
         {/* Game Section */}
-        {isGameLoaded && (
-          <section className={styles.gameSection}>
-            <div className={styles.gameWrapper}>
-              <iframe
-                src={game.gameUrl}
-                className={styles.gameFrame}
-                allowFullScreen
-                allow="fullscreen; autoplay"
-              />
-              <button
-                className={styles.fullscreenButton}
-                onClick={() => setIsFullscreen(!isFullscreen)}
-                aria-label={isFullscreen ? t?.game?.exitFullscreen : t?.game?.enterFullscreen}
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use href="/fullscreen-icon.svg#icon"/>
-                </svg>
-              </button>
-            </div>
-            <p className={styles.gameTip}>{t?.game?.fullscreenTip || "Press F11 for fullscreen mode"}</p>
-          </section>
-        )}
         <section className={styles.comments}>
         <h2>{t?.comments || "Comments"}</h2>
         <Comments title={t.title} />
@@ -271,7 +241,7 @@ export default function GamePage() {
             t={t}
           />
         </section>
-
+        
         {/* Features Section */}
         <section className={styles.features}>
           <h2>{t?.game?.features || "Features"}</h2>

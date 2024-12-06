@@ -68,7 +68,60 @@
     "direction": "largo",
     "fontFamily": "Enterrar"
   },
-  "games": {},
+ "games": {
+   "double-shap10r": {
+     "title": "Double Shap10r",
+     "description": "Challenge yourself with two simultaneous Shap10r puzzles. Use shared shapes and colors to solve both number combinations at once in this mind-bending variant of the classic game.",
+     "shortDescription": "Dual puzzle solving with shared resources",
+     "features": {
+       "feature1": {
+         "title": "Dual Game Boards", 
+         "description": "Solve two independent Shap10r puzzles simultaneously using a shared pool of shapes"
+       },
+       "feature2": {
+         "title": "Strategic Planning",
+         "description": "Carefully manage shape usage between both boards to optimize your solutions"
+       },
+       "feature3": {
+         "title": "Enhanced Challenge",
+         "description": "Double the puzzle complexity with interconnected gameplay mechanics"
+       },
+       "feature4": {
+         "title": "Shared Resources",
+         "description": "Use the same shapes and colors across both boards for unique strategic depth"
+       }
+     },
+     "howToPlay": {
+       "step1": "Select shapes and colors from the shared selection area",
+       "step2": "Place pieces on either board to work towards their target numbers",
+       "step3": "Plan your moves carefully as shapes used on one board affect availability for the other",
+       "step4": "Complete both puzzles within the allowed attempts to win"
+     },
+     "seo": {
+       "title": "Double Shap10r | Dual Board Number Puzzle Game",
+       "description": "Challenge your mind with Double Shap10r, featuring two simultaneous puzzle boards sharing shapes and colors. Strategic dual-board gameplay for enhanced puzzle solving.",
+       "keywords": "Double Shap10r, dual puzzle, number game, logic game, strategy game, shape matching, color matching"
+     },
+     "faqs": {
+       "faq1": {
+         "question": "How is Double Shap10r different from regular Shap10r?",
+         "answer": "Double Shap10r features two game boards that share the same pool of shapes and colors, requiring strategic planning to solve both puzzles simultaneously."
+       },
+       "faq2": {
+         "question": "Do both boards need to be completed together?",
+         "answer": "Yes, you must solve both puzzles within the allowed attempts, managing your shape selections carefully between the two boards."
+       },
+       "faq3": {
+         "question": "Is it more difficult than regular Shap10r?",
+         "answer": "Yes, managing two boards with shared resources adds an extra layer of strategy and complexity to the game."
+       },
+       "faq4": {
+         "question": "Are there different modes available?",
+         "answer": "Like regular Shap10r, you can play in Normal Mode with sorted values or Hard Mode with unsorted values on both boards."
+       }
+     }
+   }
+ },
   "game": {
     "playNow": "Jugar ahora",
     "fullscreenTip": "Presione F11 o haga clic en el botón de pantalla completa para obtener la mejor experiencia",

@@ -1,0 +1,24 @@
+/* DoubleShapr10r.module.css */
+.doubleGameContainer {
+ width: 100%;
+ max-width: 1400px;
+ margin: 0 auto;
+ padding: 20px;
+ background: #ffffff;
+}
+
+.gameBoard {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ background: #ffffff;  
+ padding: 20px;
+ border-radius: 12px;
+}
+@media (max-width: 1024px) {
+ .gameBoard {
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+ }
+}

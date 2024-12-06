@@ -1,0 +1,34 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+   <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+     <stop offset="0%" style="stop-color:#5B4FDB;stop-opacity:1" />
+     <stop offset="100%" style="stop-color:#7165E3;stop-opacity:1" />
+   </linearGradient>
+ </defs>
+ 
+ <!-- 背景 -->
+ <rect width="800" height="800" fill="url(#bgGrad)" rx="20"/>
+ 
+ <!-- 左侧游戏板 -->
+ <g transform="translate(100,100)">
+   <rect width="280" height="500" fill="#FFFFFF" rx="15" opacity="0.95"/>
+   <!-- 游戏格子和形状 -->
+   <circle cx="70" cy="80" r="25" fill="#FF4D4D" stroke="#000" stroke-width="2"/>
+   <rect x="120" y="55" width="50" height="50" fill="#4169E1" stroke="#000" stroke-width="2"/>
+   <circle cx="210" cy="80" r="25" fill="#FFD700" stroke="#000" stroke-width="2"/>
+   <text x="140" y="400" fill="#333" fontSize="48" textAnchor="middle">324</text>
+ </g>
+ 
+ <!-- 右侧游戏板 -->
+ <g transform="translate(420,100)">
+   <rect width="280" height="500" fill="#FFFFFF" rx="15" opacity="0.95"/>
+   <!-- 游戏格子和形状 -->
+   <circle cx="70" cy="80" r="25" fill="#32CD32" stroke="#000" stroke-width="2"/>
+   <rect x="120" y="55" width="50" height="50" fill="#9370DB" stroke="#000" stroke-width="2"/>
+   <circle cx="210" cy="80" r="25" fill="#FF8C00" stroke="#000" stroke-width="2"/>
+   <text x="140" y="400" fill="#333" fontSize="48" textAnchor="middle">248</text>
+ </g>
+ 
+ <!-- 标题 -->
+ <text x="400" y="700" fill="#FFFFFF" fontSize="48" fontWeight="bold" textAnchor="middle">Double Shap10r</text>
+</svg>

@@ -279,7 +279,6 @@ const DiamanteGame = forwardRef((props, ref) => {
     <>
       {!isLoading && (
         <>
-          <h1 className={styles.gameTitle}>{t.common.game.title}</h1>
           <div className={styles.gameWrapper} ref={ref}>
             <div className={styles.header}>
               <div className={styles.scoreSection}>
@@ -419,7 +418,6 @@ const DiamanteGame = forwardRef((props, ref) => {
               </div>
             )}
           </div>
-          <p className={styles.gameDescription}>{t.common.game.description}</p>
         </>
       )}
     </>

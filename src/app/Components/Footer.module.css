@@ -1,0 +1,15 @@
+
+.footer {
+  background: #2d2d2d;  /* 改为稍微亮一点的深色 */
+  color: rgba(255, 255, 255, 0.8);  /* 半透明白色 */
+  padding: 2em;
+  border-top: 1px solid rgba(91, 79, 219, 0.2);
+  margin-top: 60px;
+}
+
+
+.footer a:hover {
+  color: #fff;
+  background-color: rgba(255, 64, 64, 0.1);
+  text-decoration: none;
+}/* 在文件末尾添加这些新样式 */
