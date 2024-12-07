@@ -730,6 +730,42 @@
   background-color: #2d3748;
 }
 
+.scoreContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.scoreSection {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.helpButton {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.helpButton:hover {
+  background-color: #4a3fc7;
+}
+
 /* 在 page.module.css 中更新 howTo 部分的样式 */
 
 .howTo {

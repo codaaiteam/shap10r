@@ -135,7 +135,8 @@ export default function Home() {
       <div className={styles.helpContainer}>
         <GlobalHelpButton t={t} />
       </div>
-      <div className={styles.header}>
+      <Header t={t} />
+      <div className={styles.scoreContainer}>
         <div className={styles.scoreSection}>
           <span>{t.common.game.score}: {0}</span>
           <span>{t.common.game.highScore}: {0}</span>
