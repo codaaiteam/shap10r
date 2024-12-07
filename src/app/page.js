@@ -16,6 +16,8 @@ import enTranslations from '@/locales/en.json';
 import Header from '@/app/Components/Header';
 import Comments from '@/app/Components/Comments';
 import DiamanteGame from "./Components/DiamanteGame";
+import GamesHelpDialog from './Components/GamesHelpDialog'; // Import the GamesHelpDialog component
+import GlobalHelpButton from './Components/GlobalHelpButton';
 import * as gtag from '@/lib/gtag'
 
 const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || '';
@@ -28,9 +30,10 @@ export default function Home() {
   const iframeRef = useRef(null);
   const gameWrapperRef = useRef(null);
   const params = useParams();
-  const { t, currentLocale } = useTranslations();  // 使用 hook 获取翻译
+  const { t, currentLocale, isLoading } = useTranslations();  // 使用 hook 获取翻译
   const [logoError, setLogoError] = useState(false);
   const [screenshotError, setScreenshotError] = useState(false);
+  const [showHelpDialog, setShowHelpDialog] = useState(false); // Add the showHelpDialog state
   
   useEffect(() => {
     if (t) {
@@ -118,18 +121,53 @@ export default function Home() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isFullscreen]);
 
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
-
       <SEO 
         title={translations.seoTitle}
         description={translations.seoDescription}
-        keywords={translations.keywords}
+        keywords={translations.seoKeywords}
       />
-      <Header />
-
+      <div className={styles.helpContainer}>
+        <GlobalHelpButton t={t} />
+      </div>
+      <div className={styles.header}>
+        <div className={styles.scoreSection}>
+          <span>{t.common.game.score}: {0}</span>
+          <span>{t.common.game.highScore}: {0}</span>
+        </div>
+        <button 
+          className={styles.helpButton}
+          onClick={() => setShowHelpDialog(true)}
+          aria-label={t.common.game.help}
+        >
+          ?
+        </button>
+      </div>
       <LanguageSwitcher />
+
+      <button
+        className={styles.globalHelpButton}
+        onClick={() => setShowHelpDialog(true)}
+        aria-label={t.common.game.help}
+      >
+        ?
+      </button>
+
       <main className={styles.main}>
+        <div className={styles.helpContainer}>
+          <button
+            className={styles.helpButton}
+            onClick={() => setShowHelpDialog(true)}
+            aria-label={t.common.game.help}
+          >
+            ?
+          </button>
+        </div>
         <section id="game" className={styles.game}>
         <h1 className={styles.gameTitle}>{t.title}</h1>
        <p className={styles.gameDescription}>{t.description}</p>
@@ -289,8 +327,15 @@ export default function Home() {
             answer={t.faq4Answer}
           />
         </section>
-        <Footer />
       </main>
+
+      {showHelpDialog && (
+        <GamesHelpDialog
+          t={t}
+          onClose={() => setShowHelpDialog(false)}
+        />
+      )}
+      <Footer />
     </>
   );
 }

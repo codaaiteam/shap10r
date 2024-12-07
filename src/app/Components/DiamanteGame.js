@@ -3,6 +3,7 @@ import { useTranslations } from '@/hooks/useTranslations';
 import GameShape from './GameShape';
 import styles from './DiamanteGame.module.css';
 import * as gtag from '@/lib/gtag'
+import GamesHelpDialog from './GamesHelpDialog';  // 确保路径正确
 
 const SHAPES = ['heart', 'circle', 'square'];
 const COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'black', 'brown'];
@@ -18,10 +19,11 @@ const DiamanteGame = forwardRef((props, ref) => {
   const [score, setScore] = useState(0);
   const [time, setTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
-  const [showTimer, setShowTimer] = useState(true);
+  const [isTimerActive, setIsTimerActive] = useState(true);
   const [showWinDialog, setShowWinDialog] = useState(false);
   const [isHardMode, setIsHardMode] = useState(false);
   const [usedShapes, setUsedShapes] = useState(new Set());
+  const [showHelpDialog, setShowHelpDialog] = useState(false);  // 添加这行
 
   const [highScore, setHighScore] = useState(0);
   const [bestTime, setBestTime] = useState(Infinity);
@@ -263,13 +265,20 @@ const DiamanteGame = forwardRef((props, ref) => {
 
   useEffect(() => {
     let timer;
-    if (isPlaying) {
+    if (isPlaying && isTimerActive) {
       timer = setInterval(() => {
-        setTime(t => t + 1);
+        setTime(prevTime => prevTime + 1);
       }, 10);
     }
     return () => clearInterval(timer);
-  }, [isPlaying]);
+  }, [isPlaying, isTimerActive]);
+
+  const handleTimerToggle = () => {
+    if (isTimerActive) {
+      setTime(0); // 关闭时重置为0
+    }
+    setIsTimerActive(!isTimerActive);
+  };
 
   useEffect(() => {
     startNewGame();
@@ -282,25 +291,32 @@ const DiamanteGame = forwardRef((props, ref) => {
           <div className={styles.gameWrapper} ref={ref}>
             <div className={styles.header}>
               <div className={styles.scoreSection}>
-                {t.common.game.score}: {score} {t.common.game.highScore}: {highScore}
+                <span>{t.common.game.score}: {score}</span>
+                <span>{t.common.game.highScore}: {highScore}</span>
               </div>
-              <div className={styles.timerSection}>
+              {!props.hideHelp && !props.isQuad && (
                 <button 
-                  className={styles.timerToggle}
-                  onClick={() => setShowTimer(!showTimer)}
+                  className={styles.helpButton}
+                  onClick={() => setShowHelpDialog(true)}
+                  aria-label={t.common.game.help}
                 >
-                  {showTimer ? t.common.game.hideTimer : t.common.game.showTimer}
+                  ?
                 </button>
-                {showTimer && (
-                  <span>
-                    {t.common.game.time}: {formatTime(time)} 
-                    {bestTime !== Infinity && ` ${t.common.game.bestTime}: ${formatTime(bestTime)}`}
-                  </span>
-                )}
-
-              </div>
+              )}
             </div>
-
+            <div className={styles.timerSection}>
+              <button 
+                className={styles.timerToggle}
+                onClick={handleTimerToggle}
+                aria-label={isTimerActive ? t.common.game.stopTimer : t.common.game.startTimer}
+              >
+                {isTimerActive ? "⏸️" : "▶️"}
+              </button>
+              <span>
+                {t.common.game.time}: {formatTime(time)} 
+                {bestTime !== Infinity && ` ${t.common.game.bestTime}: ${formatTime(bestTime)}`}
+              </span>
+            </div>
             <div className={styles.gameBoard}>
               {gameBoard.map((row, rowIndex) => (
                 <div key={rowIndex} className={styles.row}>
@@ -369,6 +385,12 @@ const DiamanteGame = forwardRef((props, ref) => {
                   +
                 </button>
               </div>
+              {showHelpDialog && (
+                <GamesHelpDialog 
+                  t={t} 
+                  onClose={() => setShowHelpDialog(false)} 
+                />
+              )}
             </div>
 
             <div className={styles.statusBar}>

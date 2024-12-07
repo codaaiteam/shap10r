@@ -11,6 +11,7 @@ import Link from 'next/link';
 import Header from '@/app/Components/Header';
 import QuestionFAQ from "@/app/Components/QuestionFAQ";
 import { useTranslations } from '@/hooks/useTranslations';
+import GlobalHelpButton from '@/app/Components/GlobalHelpButton';
 import { getGamesData } from '@/lib/cloudflare'; 
 import Comments from '../../../Components/Comments';
 import SimpleRating from '../../../Components/SimpleRating';  
@@ -217,6 +218,9 @@ export default function GamePage() {
         keywords={gameT.seo.keywords}
       />
       
+      <div className={styles.helpContainer}>
+        <GlobalHelpButton t={t} />
+      </div>
       <LanguageSwitcher />
       <Header />
       <main className={styles.main}>

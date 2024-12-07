@@ -2,17 +2,18 @@
   width: 100%;
   max-width: 2000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1rem;
   background: #ffffff;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding: 10px;
-  background: var(--background-secondary, #f5f5f5);
-  border-radius: 8px;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2d3748;
+  border-radius: 0.5rem;
 }
 
 .scoreSection {
@@ -28,6 +29,7 @@
 
 .gameWrapper {
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   background: #ffffff;
@@ -35,43 +37,41 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.helpButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #4a5568;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.helpButton:hover {
+  background-color: #718096;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .gameBoard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  width: 100%;
-}
-
-/* 大屏幕：4x2 布局 */
-@media (min-width: 1921px) {
-  .container {
-    max-width: 2400px;
-  }
-  .gameBoard {
-    gap: 24px;
-  }
-}
-
-/* 中等屏幕：2x4 布局 */
-@media (max-width: 1920px) and (min-width: 1201px) {
-  .container {
-    max-width: 1800px;
-  }
-  .gameBoard {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-/* 小屏幕：单列布局 */
-@media (max-width: 1200px) {
-  .container {
-    max-width: 800px;
-  }
-  .gameBoard {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
+  gap: 1rem;
+  margin: 0 auto;
 }
 
 .gameCell {
@@ -119,4 +119,38 @@
 .button:disabled {
   background: var(--disabled-color, #cccccc);
   cursor: not-allowed;
+}
+
+/* 大屏幕：4x2 布局 */
+@media (min-width: 1921px) {
+  .container {
+    max-width: 2400px;
+  }
+  .gameBoard {
+    gap: 24px;
+  }
+}
+
+/* 中等屏幕：2x4 布局 */
+@media (max-width: 1920px) and (min-width: 1201px) {
+  .container {
+    max-width: 1800px;
+  }
+  .gameBoard {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* 小屏幕：单列布局 */
+@media (max-width: 1200px) {
+  .gameBoard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .gameBoard {
+    grid-template-columns: 1fr;
+  }
 }

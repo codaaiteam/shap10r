@@ -9,10 +9,41 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding: 10px;
-  background: var(--background-secondary, #f5f5f5);
-  border-radius: 8px;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2d3748;
+  border-radius: 0.5rem;
+}
+
+.title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.helpButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #4a5568;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.helpButton:hover {
+  background-color: #718096;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .scoreSection {
