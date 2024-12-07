@@ -1,6 +1,9 @@
 {
-  "title": "Shap10r: A Logic and Deduction Puzzle Game",
-  "description": "Challenge your mind with this unique blend of Wordle™ and Mastermind® gameplay mechanics",
+  "title": "Shap10r: A Logic and Deduction Game",
+  "description": "Experience the ultimate puzzle challenge with Shap10r",
+  "keywords": "puzzle game, logic game, brain teaser, mastermind",
+  "seoTitle": "Shap10r - Logic Puzzle Game",
+  "seoDescription": "Challenge your mind with Shap10r, a unique puzzle game combining logic and deduction",
   "playNow": "Play Now",
   "gameExperience": "Test your deduction skills by uncovering hidden shape-color combinations in this engaging puzzle game!",
   "startAdventure": "Begin your puzzle-solving journey with Shap10r:",
@@ -38,10 +41,7 @@
   "faq3Answer": "Yes, Shap10r is fully optimized for mobile devices and playable on any modern web browser.",
   "faq4Question": "What makes Shap10r unique?",
   "faq4Answer": "Shap10r features dynamic value assignments, multiple difficulty modes, and combines visual pattern recognition with numerical strategy.",
-  "seoTitle": "Shap10r: A Logic and Deduction Puzzle Game",
-  "seoDescription": "Challenge your mind with this unique blend of Wordle™ and Mastermind® gameplay mechanics in a free-to-play puzzle experience!",
-  "siteUrl": "https://www.playshaplor.com/",
-  "keywords": "Shap10r, puzzle game, logic game, deduction game, Wordle, Mastermind, brain training, strategy game",
+  "siteUrl": "https://www.playshap10r.org/",
   "clickToRate": "Rate this",
   "ratingStars": "stars",
   "averageRating": "Average",
@@ -68,9 +68,8 @@
     "direction": "ltr",
     "fontFamily": "Inter"
   },
- 
- "games": {
-   "shap10r": {
+  "games": {
+    "shap10r": {
       "id": "shap10r",
       "title": "Shape10r",
       "description": "The original Shape10r puzzle game",
@@ -85,164 +84,164 @@
       ],
       "mainFeature": "Original Shape10r Game"
     },
-   "double-shap10r": {
-     "title": "Double Shap10r",
-     "description": "Challenge yourself with two simultaneous Shap10r puzzles. Use shared shapes and colors to solve both number combinations at once in this mind-bending variant of the classic game.",
-     "shortDescription": "Dual puzzle solving with shared resources",
-     "features": {
-       "feature1": {
-         "title": "Dual Game Boards", 
-         "description": "Solve two independent Shap10r puzzles simultaneously using a shared pool of shapes"
-       },
-       "feature2": {
-         "title": "Strategic Planning",
-         "description": "Carefully manage shape usage between both boards to optimize your solutions"
-       },
-       "feature3": {
-         "title": "Enhanced Challenge",
-         "description": "Double the puzzle complexity with interconnected gameplay mechanics"
-       },
-       "feature4": {
-         "title": "Shared Resources",
-         "description": "Use the same shapes and colors across both boards for unique strategic depth"
-       }
-     },
-     "howToPlay": {
-       "step1": "Select shapes and colors from the shared selection area",
-       "step2": "Place pieces on either board to work towards their target numbers",
-       "step3": "Plan your moves carefully as shapes used on one board affect availability for the other",
-       "step4": "Complete both puzzles within the allowed attempts to win"
-     },
-     "seo": {
-       "title": "Double Shap10r | Dual Board Number Puzzle Game",
-       "description": "Challenge your mind with Double Shap10r, featuring two simultaneous puzzle boards sharing shapes and colors. Strategic dual-board gameplay for enhanced puzzle solving.",
-       "keywords": "Double Shap10r, dual puzzle, number game, logic game, strategy game, shape matching, color matching"
-     },
-     "faqs": {
-       "faq1": {
-         "question": "How is Double Shap10r different from regular Shap10r?",
-         "answer": "Double Shap10r features two game boards that share the same pool of shapes and colors, requiring strategic planning to solve both puzzles simultaneously."
-       },
-       "faq2": {
-         "question": "Do both boards need to be completed together?",
-         "answer": "Yes, you must solve both puzzles within the allowed attempts, managing your shape selections carefully between the two boards."
-       },
-       "faq3": {
-         "question": "Is it more difficult than regular Shap10r?",
-         "answer": "Yes, managing two boards with shared resources adds an extra layer of strategy and complexity to the game."
-       },
-       "faq4": {
-         "question": "Are there different modes available?",
-         "answer": "Like regular Shap10r, you can play in Normal Mode with sorted values or Hard Mode with unsorted values on both boards."
-       }
-     }
-   },
-   "quad-shap10r": {
-     "title": "Quad Shap10r",
-     "description": "Take on the ultimate challenge with four simultaneous Shap10r puzzles. Master the art of multi-tasking as you solve four independent number combinations using a shared pool of shapes and colors.",
-     "shortDescription": "Quad puzzle solving with shared resources",
-     "features": {
-       "feature1": {
-         "title": "Quad Game Boards",
-         "description": "Solve four independent Shap10r puzzles simultaneously using a shared pool of shapes"
-       },
-       "feature2": {
-         "title": "Advanced Strategy",
-         "description": "Manage resources across four boards to maximize efficiency and score"
-       },
-       "feature3": {
-         "title": "Multi-tasking Challenge",
-         "description": "Test your ability to track and solve multiple puzzles at once"
-       },
-       "feature4": {
-         "title": "Competitive Scoring",
-         "description": "Earn points for completing rows across all boards and aim for high scores"
-       }
-     },
-     "howToPlay": {
-       "step1": "Select shapes and colors from the shared selection area",
-       "step2": "Place pieces strategically across all four boards",
-       "step3": "Monitor progress on each board and prioritize moves effectively",
-       "step4": "Complete all four puzzles within the allowed attempts to win"
-     },
-     "seo": {
-       "title": "Quad Shap10r | Four Board Number Puzzle Game",
-       "description": "Challenge your mind with Quad Shap10r, featuring four simultaneous puzzle boards sharing shapes and colors. Strategic multi-board gameplay for ultimate puzzle solving.",
-       "keywords": "Quad Shap10r, quad puzzle, number game, logic game, strategy game, shape matching, color matching"
-     },
-     "faqs": {
-       "faq1": {
-         "question": "How is Quad Shap10r different from regular Shap10r?",
-         "answer": "Quad Shap10r features four game boards that share the same pool of shapes and colors, requiring advanced strategic planning to solve all puzzles simultaneously."
-       },
-       "faq2": {
-         "question": "Do all boards need to be completed together?",
-         "answer": "Yes, you must solve all four puzzles within the allowed attempts, carefully managing your shape selections across all boards."
-       },
-       "faq3": {
-         "question": "Is it more difficult than Double Shap10r?",
-         "answer": "Yes, managing four boards with shared resources creates an intense challenge that requires expert multitasking and strategic thinking."
-       },
-       "faq4": {
-         "question": "Are there different modes available?",
-         "answer": "Like regular Shap10r, you can play in Normal Mode with sorted values or Hard Mode with unsorted values on all four boards."
-       }
-     }
-   },
-   "octo-shap10r": {
-     "title": "Octo Shap10r",
-     "description": "Experience the ultimate Shap10r challenge with eight simultaneous puzzles. Master the art of extreme multi-tasking as you solve multiple number combinations using a shared pool of shapes and colors.",
-     "shortDescription": "Octo puzzle solving with shared resources",
-     "features": {
-       "feature1": {
-         "title": "Eight Game Boards",
-         "description": "Solve eight independent Shap10r puzzles simultaneously in a 4x2 grid layout"
-       },
-       "feature2": {
-         "title": "Expert Strategy",
-         "description": "Master complex resource management across eight interconnected boards"
-       },
-       "feature3": {
-         "title": "Ultimate Challenge",
-         "description": "Push your multi-tasking abilities to the limit with eight parallel games"
-       },
-       "feature4": {
-         "title": "High Score Potential",
-         "description": "Achieve massive scores by completing rows across all eight boards"
-       }
-     },
-     "howToPlay": {
-       "step1": "Select shapes and colors from the shared selection area",
-       "step2": "Place pieces strategically across all eight boards",
-       "step3": "Monitor progress on each board and optimize your moves",
-       "step4": "Complete all eight puzzles within the allowed attempts to win"
-     },
-     "seo": {
-       "title": "Octo Shap10r | Eight Board Number Puzzle Game",
-       "description": "Take on the ultimate challenge with Octo Shap10r, featuring eight simultaneous puzzle boards sharing shapes and colors. The most intense multi-board gameplay experience.",
-       "keywords": "Octo Shap10r, eight puzzle, number game, logic game, strategy game, shape matching, color matching"
-     },
-     "faqs": {
-       "faq1": {
-         "question": "How is Octo Shap10r different from other variants?",
-         "answer": "Octo Shap10r features eight game boards in a 4x2 grid layout, offering the most challenging multi-tasking experience in the Shap10r series."
-       },
-       "faq2": {
-         "question": "Do all eight boards need to be completed together?",
-         "answer": "Yes, you must solve all eight puzzles within the allowed attempts, requiring expert resource management and strategic planning."
-       },
-       "faq3": {
-         "question": "What screen size is recommended?",
-         "answer": "A large screen (1920x1080 or higher) is recommended for the best experience, though the layout adapts to smaller screens."
-       },
-       "faq4": {
-         "question": "Is this the most challenging version?",
-         "answer": "Yes, Octo Shap10r is designed for expert players who want to push their skills to the absolute limit with eight simultaneous games."
-       }
-     }
-   }
- },
-   "game": {
+    "double-shap10r": {
+      "title": "Double Shap10r",
+      "description": "Challenge yourself with two simultaneous Shap10r puzzles. Use shared shapes and colors to solve both number combinations at once in this mind-bending variant of the classic game.",
+      "shortDescription": "Dual puzzle solving with shared resources",
+      "features": {
+        "feature1": {
+          "title": "Dual Game Boards",
+          "description": "Solve two independent Shap10r puzzles simultaneously using a shared pool of shapes"
+        },
+        "feature2": {
+          "title": "Strategic Planning",
+          "description": "Carefully manage shape usage between both boards to optimize your solutions"
+        },
+        "feature3": {
+          "title": "Enhanced Challenge",
+          "description": "Double the puzzle complexity with interconnected gameplay mechanics"
+        },
+        "feature4": {
+          "title": "Shared Resources",
+          "description": "Use the same shapes and colors across both boards for unique strategic depth"
+        }
+      },
+      "howToPlay": {
+        "step1": "Select shapes and colors from the shared selection area",
+        "step2": "Place pieces on either board to work towards their target numbers",
+        "step3": "Plan your moves carefully as shapes used on one board affect availability for the other",
+        "step4": "Complete both puzzles within the allowed attempts to win"
+      },
+      "seo": {
+        "title": "Double Shap10r | Dual Board Number Puzzle Game",
+        "description": "Challenge your mind with Double Shap10r, featuring two simultaneous puzzle boards sharing shapes and colors. Strategic dual-board gameplay for enhanced puzzle solving.",
+        "keywords": "Double Shap10r, dual puzzle, number game, logic game, strategy game, shape matching, color matching"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "How is Double Shap10r different from regular Shap10r?",
+          "answer": "Double Shap10r features two game boards that share the same pool of shapes and colors, requiring strategic planning to solve both puzzles simultaneously."
+        },
+        "faq2": {
+          "question": "Do both boards need to be completed together?",
+          "answer": "Yes, you must solve both puzzles within the allowed attempts, managing your shape selections carefully between the two boards."
+        },
+        "faq3": {
+          "question": "Is it more difficult than regular Shap10r?",
+          "answer": "Yes, managing two boards with shared resources adds an extra layer of strategy and complexity to the game."
+        },
+        "faq4": {
+          "question": "Are there different modes available?",
+          "answer": "Like regular Shap10r, you can play in Normal Mode with sorted values or Hard Mode with unsorted values on both boards."
+        }
+      }
+    },
+    "quad-shap10r": {
+      "title": "Quad Shap10r",
+      "description": "Take on the ultimate challenge with four simultaneous Shap10r puzzles. Master the art of multi-tasking as you solve four independent number combinations using a shared pool of shapes and colors.",
+      "shortDescription": "Quad puzzle solving with shared resources",
+      "features": {
+        "feature1": {
+          "title": "Quad Game Boards",
+          "description": "Solve four independent Shap10r puzzles simultaneously using a shared pool of shapes"
+        },
+        "feature2": {
+          "title": "Advanced Strategy",
+          "description": "Manage resources across four boards to maximize efficiency and score"
+        },
+        "feature3": {
+          "title": "Multi-tasking Challenge",
+          "description": "Test your ability to track and solve multiple puzzles at once"
+        },
+        "feature4": {
+          "title": "Competitive Scoring",
+          "description": "Earn points for completing rows across all boards and aim for high scores"
+        }
+      },
+      "howToPlay": {
+        "step1": "Select shapes and colors from the shared selection area",
+        "step2": "Place pieces strategically across all four boards",
+        "step3": "Monitor progress on each board and prioritize moves effectively",
+        "step4": "Complete all four puzzles within the allowed attempts to win"
+      },
+      "seo": {
+        "title": "Quad Shap10r | Four Board Number Puzzle Game",
+        "description": "Challenge your mind with Quad Shap10r, featuring four simultaneous puzzle boards sharing shapes and colors. Strategic multi-board gameplay for ultimate puzzle solving.",
+        "keywords": "Quad Shap10r, quad puzzle, number game, logic game, strategy game, shape matching, color matching"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "How is Quad Shap10r different from regular Shap10r?",
+          "answer": "Quad Shap10r features four game boards that share the same pool of shapes and colors, requiring advanced strategic planning to solve all puzzles simultaneously."
+        },
+        "faq2": {
+          "question": "Do all boards need to be completed together?",
+          "answer": "Yes, you must solve all four puzzles within the allowed attempts, carefully managing your shape selections across all boards."
+        },
+        "faq3": {
+          "question": "Is it more difficult than Double Shap10r?",
+          "answer": "Yes, managing four boards with shared resources creates an intense challenge that requires expert multitasking and strategic thinking."
+        },
+        "faq4": {
+          "question": "Are there different modes available?",
+          "answer": "Like regular Shap10r, you can play in Normal Mode with sorted values or Hard Mode with unsorted values on all four boards."
+        }
+      }
+    },
+    "octo-shap10r": {
+      "title": "Octo Shap10r",
+      "description": "Experience the ultimate Shap10r challenge with eight simultaneous puzzles. Master the art of extreme multi-tasking as you solve multiple number combinations using a shared pool of shapes and colors.",
+      "shortDescription": "Octo puzzle solving with shared resources",
+      "features": {
+        "feature1": {
+          "title": "Eight Game Boards",
+          "description": "Solve eight independent Shap10r puzzles simultaneously in a 4x2 grid layout"
+        },
+        "feature2": {
+          "title": "Expert Strategy",
+          "description": "Master complex resource management across eight interconnected boards"
+        },
+        "feature3": {
+          "title": "Ultimate Challenge",
+          "description": "Push your multi-tasking abilities to the limit with eight parallel games"
+        },
+        "feature4": {
+          "title": "High Score Potential",
+          "description": "Achieve massive scores by completing rows across all eight boards"
+        }
+      },
+      "howToPlay": {
+        "step1": "Select shapes and colors from the shared selection area",
+        "step2": "Place pieces strategically across all eight boards",
+        "step3": "Monitor progress on each board and optimize your moves",
+        "step4": "Complete all eight puzzles within the allowed attempts to win"
+      },
+      "seo": {
+        "title": "Octo Shap10r | Eight Board Number Puzzle Game",
+        "description": "Take on the ultimate challenge with Octo Shap10r, featuring eight simultaneous puzzle boards sharing shapes and colors. The most intense multi-board gameplay experience.",
+        "keywords": "Octo Shap10r, eight puzzle, number game, logic game, strategy game, shape matching, color matching"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "How is Octo Shap10r different from other variants?",
+          "answer": "Octo Shap10r features eight game boards in a 4x2 grid layout, offering the most challenging multi-tasking experience in the Shap10r series."
+        },
+        "faq2": {
+          "question": "Do all eight boards need to be completed together?",
+          "answer": "Yes, you must solve all eight puzzles within the allowed attempts, requiring expert resource management and strategic planning."
+        },
+        "faq3": {
+          "question": "What screen size is recommended?",
+          "answer": "A large screen (1920x1080 or higher) is recommended for the best experience, though the layout adapts to smaller screens."
+        },
+        "faq4": {
+          "question": "Is this the most challenging version?",
+          "answer": "Yes, Octo Shap10r is designed for expert players who want to push their skills to the absolute limit with eight simultaneous games."
+        }
+      }
+    }
+  },
+  "game": {
     "playNow": "Play Now",
     "fullscreenTip": "Press F11 or click the fullscreen button for the best experience",
     "loading": "Loading game...",
@@ -261,11 +260,14 @@
     },
     "game": {
       "title": "Play SHAP10R GAME",
-      "description": "Shap10r combines Wordle™ and Mastermind® mechanics. Match five Shaplors with the correct values.",
+      "description": "Shapr10r combines Wordle™ and Mastermind® mechanics. Match five Shaplors with the correct values.",
       "score": "Score",
       "highScore": "HIGH",
       "time": "Time",
-      "bestTime": "BEST",
+      "bestTime": "Best",
+      "startTimer": "Start Timer",
+      "stopTimer": "Stop Timer",
+      "resetTimer": "Reset Timer",
       "hideTimer": "Hide Timer",
       "showTimer": "Show Timer",
       "delete": "Delete",
@@ -277,36 +279,69 @@
       "newGame": "Play Again",
       "hardMode": "Hard Mode",
       "normalMode": "Normal Mode",
-      "tryMode": "Try {mode} Mode"
-    },
-    "categories": {
-      "classic": "Classic Series",
-      "themed": "Themed Versions",
-      "experimental": "Experimental",
-      "seasonal": "Seasonal",
-      "crossover": "Crossover"
-    },
-    "features": {
-      "multiplayer": "Multiplayer",
-      "achievements": "Achievements",
-      "leaderboards": "Leaderboards",
-      "customization": "Customization"
-    },
-    "errors": {
-      "loadFailed": "Failed to load game",
-      "saveFailed": "Failed to save progress",
-      "connectionLost": "Connection lost",
-      "loading": "Loading...",
-      "waitforloading": "Wait for a minute...",
-      "gameNotFound": "Game Not Found",
-      "gameNotFoundDesc": "Sorry, we couldn't find the game you're looking for."
-    },
-    "buttons": {
-      "play": "Play Now",
-      "retry": "Try Again",
-      "settings": "Settings",
-      "share": "Share",
-      "fullscreen": "Fullscreen"
+      "tryMode": "Try {mode} Mode",
+      "help": "Help",
+      "close": "Close",
+      "gameDescription": "Game Description",
+      "gameDesc": "Shapr10r is a puzzle game where you need to match shapes and colors to create specific numbers. Each shape and color combination has a unique value based on simple math.",
+      "objective": "Game Objective",
+      "objectiveDesc": "Your goal is to find shape and color combinations that add up to the target numbers shown on each row. Each shape has a value from 10 to 100 (in multiples of 10), and each color adds 1 to 8 to that shape's value.",
+      "basicRules": "Game Rules",
+      "rule1": "Each shape has a base value (10-100 in steps of 10)",
+      "rule2": "Each color adds a unique value (1-8) to the shape's base value",
+      "rule3": "The final number for each position is the sum of its shape value and color value",
+      "rule4": "Different combinations can create the same final number",
+      "howToPlay": "How to Play",
+      "step1": "Look at the target number for your current row",
+      "step2": "Choose a shape (base value: 10-100) and color (adds 1-8)",
+      "step3": "Try to match the target number with your shape-color combination",
+      "step4": "Use the feedback to adjust your next guess",
+      "controls": "Game Controls",
+      "controlsDesc1": "Left click: Place a shape",
+      "controlsDesc2": "Right click: Remove a shape",
+      "controlsDesc3": "Spacebar: Start a new game",
+      "scoring": "Scoring System",
+      "scoringDesc": "Points are awarded based on speed of completion, number of moves used, and accuracy of placements",
+      "tips": "Pro Tips",
+      "tip1": "Start with positions where you are most confident about the pattern",
+      "tip2": "Pay attention to both shape and color feedback",
+      "tip3": "Use process of elimination to narrow down possibilities",
+      "tip4": "Practice recognizing common patterns to improve your speed",
+      "variations": "Game Variations",
+      "variationsDesc": "Try different modes: Classic (Single board), Double (Two boards simultaneously), Octo (Eight boards for ultimate challenge)",
+      "gameModes": "Game Modes",
+      "normalMode": "Normal Mode",
+      "normalModeDesc": "In each row, the 5 target numbers are arranged from smallest to largest, making it easier to match the correct shape and color combinations to their positions",
+      "hardMode": "Hard Mode",
+      "hardModeDesc": "The 5 target numbers in each row appear in random order - you'll need to figure out which shape and color combination belongs in which position without the help of numerical order",
+      "modesTip": "In both modes, you need to create shape and color combinations that match the target numbers. Normal mode helps you learn by showing numbers in order, while Hard mode tests your mastery of the game mechanics",
+      "categories": {
+        "classic": "Classic Series",
+        "advanced": "Advanced Series",
+        "expert": "Expert Series"
+      },
+      "features": {
+        "multiplayer": "Multiplayer",
+        "achievements": "Achievements",
+        "leaderboards": "Leaderboards",
+        "customization": "Customization"
+      },
+      "errors": {
+        "loadFailed": "Failed to load game",
+        "saveFailed": "Failed to save progress",
+        "connectionLost": "Connection lost",
+        "loading": "Loading...",
+        "waitforloading": "Wait for a minute...",
+        "gameNotFound": "Game Not Found",
+        "gameNotFoundDesc": "Sorry, we couldn't find the game you're looking for."
+      },
+      "buttons": {
+        "play": "Play Now",
+        "retry": "Try Again",
+        "settings": "Settings",
+        "share": "Share",
+        "fullscreen": "Fullscreen"
+      }
     }
   }
 }

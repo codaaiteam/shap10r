@@ -1,13 +1,13 @@
 import json
 import os
-from typing import Dict, Any, Set
+from typing import Dict, Any, Set, Union, Optional
 from deep_translator import GoogleTranslator
 from time import sleep
 from tqdm import tqdm
 import sys
 import random
 import re
-import traceback  # 添加这行
+import traceback  
 
 GAME_NAME_RULES = {
     'ja': {
@@ -28,15 +28,15 @@ class JSONTranslator:
     def __init__(self):
         # 定义目标语言列表
         self.target_languages = {
-            'ja': 'Japanese',
-            'ko': 'Korean',
+            # 'ja': 'Japanese',
+            # 'ko': 'Korean',
             'zh-CN': 'Simplified Chinese',
-            'zh-TW': 'Traditional Chinese',
-            'fr': 'French',
-            'de': 'German',
-            'es': 'Spanish',
-            'it': 'Italian',
-            'ru':'Russisan'
+            # 'zh-TW': 'Traditional Chinese',
+            # 'fr': 'French',
+            # 'de': 'German',
+            # 'es': 'Spanish',
+            # 'it': 'Italian',
+            # 'ru':'Russisan'
         }
 
         self.update_paths = []
@@ -658,62 +658,95 @@ class JSONTranslator:
         
         return chunks
 
-    def translate_value(self, value: Any, target_lang: str, pbar: tqdm, key: str = None) -> Any:
-        """翻译字符串值，保持特定值不变"""
-        # 如果是技术字段，使用固定值或保持原值
-        if isinstance(value, str):
-            if self.should_skip_translation(value, key):
-                return value
-            result = self.translate_with_retry(value, target_lang)
-            pbar.update(1)
-            return result
-
-        if key in self.technical_keys:
-            if key in self.fixed_values:
-                return self.fixed_values[key]
-            return value
+    def translate_game_text(self, text: str, target_lang: str) -> str:
+        """Translate game-related text, preserving special characters and placeholders."""
+        # Skip translation for technical fields
+        if any(pattern.search(text) for pattern in self.url_patterns):
+            return text
             
-        if key in ['title', 'seoTitle'] and target_lang in ['ja', 'ko']:
-            return self.process_game_name(value, target_lang)
+        # Skip translation for fixed values
+        if any(text == fixed_val for fixed_vals in self.fixed_values.values() 
+              for fixed_val in (fixed_vals if isinstance(fixed_vals, (list, dict)) else [fixed_vals])):
+            return text
+            
+        # Skip translation for special keys
+        special_keys = ["HIGH", "Score", "Time", "Best"]
+        if text in special_keys:
+            return text
+            
+        # Extract placeholders
+        placeholders = {}
+        placeholder_count = 0
+        while '{' in text and '}' in text:
+            start = text.find('{')
+            end = text.find('}') + 1
+            placeholder = text[start:end]
+            key = f"__PH{placeholder_count}__"
+            placeholders[key] = placeholder
+            text = text.replace(placeholder, key)
+            placeholder_count += 1
+            
+        # Extract numbers and units
+        number_pattern = r'\d+(?:-\d+)?'
+        numbers = {}
+        number_count = 0
+        for match in re.finditer(number_pattern, text):
+            key = f"__NUM{number_count}__"
+            numbers[key] = match.group()
+            text = text.replace(match.group(), key)
+            number_count += 1
+            
+        # Extract special words
+        special_words = ["Shap10r", "Wordle", "Mastermind", "Shaplor", "Shapr10r", "Loading...", "Wait for a minute..."]
+        special_word_dict = {}
+        for word in special_words:
+            if word in text:
+                key = f"__WORD_{word}__"
+                special_word_dict[key] = word
+                text = text.replace(word, key)
+            
+        try:
+            # Translate the text
+            translator = GoogleTranslator(source='en', target=target_lang)
+            translated = translator.translate(text)
+            
+            # Restore special words
+            for key, value in special_word_dict.items():
+                translated = translated.replace(key, value)
+                
+            # Restore placeholders and numbers
+            for key, value in placeholders.items():
+                translated = translated.replace(key, value)
+            for key, value in numbers.items():
+                translated = translated.replace(key, value)
+                
+            return translated
+        except Exception as e:
+            print(f"Error translating '{text}' to {target_lang}: {str(e)}")
+            return text
 
+    def translate_value(self, value: Union[str, Dict[str, Any]], target_lang: str, pbar: Optional[tqdm] = None) -> Union[str, Dict[str, Any]]:
+        """Translate a value (string or dictionary) to the target language."""
         if isinstance(value, str):
-            result = self.translate_with_retry(value, target_lang)
-            pbar.update(1)
-            return result
+            try:
+                translated = self.translate_game_text(value, target_lang)
+                if pbar:
+                    pbar.update(1)
+                return translated
+            except Exception as e:
+                print(f"Error translating '{value}' to {target_lang}: {str(e)}")
+                return value
         elif isinstance(value, dict):
-            return self.translate_dict(value, target_lang, pbar)
-        elif isinstance(value, list):
-            return [self.translate_value(item, target_lang, pbar) for item in value]
+            translated_dict = {}
+            for k, v in value.items():
+                # Skip translation for certain keys
+                if k in self.technical_keys:
+                    translated_dict[k] = v
+                else:
+                    translated_dict[k] = self.translate_value(v, target_lang, pbar)
+            return translated_dict
         else:
             return value
-
-
-    def count_translatable_items(self, data: Any, current_path: str = '') -> int:
-        """计算指定路径中需要翻译的字符串数量"""
-        if isinstance(data, str):
-            if self.should_translate_path(current_path):
-                return 1
-            return 0
-        elif isinstance(data, dict):
-            count = 0
-            for key, value in data.items():
-                new_path = f"{current_path}.{key}" if current_path else key
-                count += self.count_translatable_items(value, new_path)
-            return count
-        elif isinstance(data, list):
-            count = 0
-            # 修复这里的 value 引用错误
-            for i, item in enumerate(data):  # 改 value 为 data
-                count += self.count_translatable_items(item, f"{current_path}[{i}]")
-            return count
-        return 0
-
-     
-    def should_translate_path(self, current_path: str) -> bool:
-        """检查当前路径是否需要翻译"""
-        print(f"\n当前检查路径: {current_path}")
-        print(f"目标路径: {self.update_paths}")
-        return current_path.startswith('games.sprunki-phase-5')
 
     def translate_dict(self, data: Dict, target_lang: str, pbar: tqdm, current_path: str = '') -> Dict:
         """递归翻译字典中的指定路径的值"""
@@ -835,6 +868,66 @@ class JSONTranslator:
             
         return data
 
+    def translate_specific_key(self, en_json: Dict[str, Any], key_path: str) -> Dict[str, Dict[str, Any]]:
+        """
+        Translate a specific key in the English JSON to all target languages.
+        
+        Args:
+            en_json: The English JSON content
+            key_path: Dot-separated path to the key to translate (e.g., "common.game.help")
+            
+        Returns:
+            Dictionary with translations for all target languages
+        """
+        translations = {}
+        keys = key_path.split('.')
+        
+        # Get the value to translate
+        value = en_json
+        for key in keys:
+            if key not in value:
+                print(f"Key path {key_path} not found in English JSON")
+                return {}
+            value = value[key]
+            
+        if not isinstance(value, (str, dict)):
+            print(f"Value at {key_path} is neither a string nor a dictionary")
+            return {}
+        
+        # Count total items to translate for progress bar
+        def count_translatable_items(data):
+            count = 0
+            if isinstance(data, dict):
+                for v in data.values():
+                    count += count_translatable_items(v)
+            elif isinstance(data, str):
+                count += 1
+            return count
+        
+        total_items = count_translatable_items(value)
+        
+        # Translate to each target language
+        for lang_code in self.target_languages:
+            try:
+                print(f"\nTranslating {key_path} to {lang_code}...")
+                with tqdm(total=total_items, desc=f"Translating to {lang_code}") as pbar:
+                    translated_value = self.translate_content(value, lang_code, pbar)
+                
+                # Build nested dictionary structure
+                current = translations.setdefault(lang_code, {})
+                for key in keys[:-1]:
+                    current = current.setdefault(key, {})
+                current[keys[-1]] = translated_value
+                
+                sleep(1)  # Rate limiting
+                
+            except Exception as e:
+                print(f"Error translating to {lang_code}: {str(e)}")
+                import traceback
+                traceback.print_exc()
+        
+        return translations
+
 def main():
     import argparse
     
@@ -874,4 +967,37 @@ def main():
         print(f"发生错误: {str(e)}")
 
 if __name__ == "__main__":
-    main()
+    translator = JSONTranslator()
+    
+    if len(sys.argv) > 2 and sys.argv[1] == '--translate-key':
+        # Handle specific key translation
+        with open('en.json', 'r', encoding='utf-8') as f:
+            en_json = json.load(f)
+            
+        key_path = sys.argv[2]
+        translations = translator.translate_specific_key(en_json, key_path)
+        
+        # Update existing translation files with new translations
+        for lang_code, translation in translations.items():
+            lang_file = f"{lang_code.lower()}.json"
+            if os.path.exists(lang_file):
+                with open(lang_file, 'r', encoding='utf-8') as f:
+                    existing = json.load(f)
+                    
+                # Deep merge the translations
+                def deep_update(d, u):
+                    for k, v in u.items():
+                        if isinstance(v, dict):
+                            d[k] = deep_update(d.get(k, {}), v)
+                        else:
+                            d[k] = v
+                    return d
+                    
+                deep_update(existing, translation)
+                
+                with open(lang_file, 'w', encoding='utf-8') as f:
+                    json.dump(existing, f, ensure_ascii=False, indent=2)
+                print(f"Updated {lang_file}")
+    else:
+        # Original functionality
+        translator.translate_all()
