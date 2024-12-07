@@ -69,6 +69,21 @@
     "fontFamily": "Enterrar"
   },
   "games": {
+    "shap10r": {
+      "id": "forma10r",
+      "title": "Forma10r",
+      "description": "El juego de rompecabezas original Shape10r",
+      "image": "/images/shap10r.svg",
+      "gameUrl": "/{idioma}",
+      "type": "soltero",
+      "features": [
+        "Juego Shape10r original",
+        "Mecánica clásica de los rompecabezas",
+        "Múltiples niveles",
+        "Jugabilidad desafiante"
+      ],
+      "mainFeature": "Juego Shape10r original"
+    },
     "double-shap10r": {
       "title": "Doble forma 10r",
       "description": "Ponte a prueba con dos rompecabezas Shap10r simultáneos. Usa formas y colores compartidos para resolver ambas combinaciones numéricas a la vez en esta alucinante variante del clásico juego.",
@@ -118,6 +133,110 @@
         "faq4": {
           "question": "¿Hay diferentes modos disponibles?",
           "answer": "Al igual que en el Shap10r normal, puedes jugar en modo normal con valores ordenados o en modo difícil con valores sin ordenar en ambos tableros."
+        }
+      }
+    },
+    "quad-shap10r": {
+      "title": "Cuadrángulo Shap10r",
+      "description": "Acepta el desafío definitivo con cuatro rompecabezas Shap10r simultáneos. Domina el arte de la multitarea mientras resuelves cuatro combinaciones de números independientes utilizando un conjunto compartido de formas y colores.",
+      "shortDescription": "Solución de rompecabezas cuádruples con recursos compartidos",
+      "features": {
+        "feature1": {
+          "title": "Tableros de juego cuádruples",
+          "description": "Resuelve cuatro rompecabezas Shap10r independientes simultáneamente usando un grupo compartido de formas"
+        },
+        "feature2": {
+          "title": "Estrategia avanzada",
+          "description": "Administre recursos en cuatro tableros para maximizar la eficiencia y la puntuación."
+        },
+        "feature3": {
+          "title": "Desafío de multitarea",
+          "description": "Pon a prueba tu capacidad para rastrear y resolver varios rompecabezas a la vez."
+        },
+        "feature4": {
+          "title": "Puntuación competitiva",
+          "description": "Gana puntos por completar filas en todos los tableros y aspira a obtener puntuaciones altas."
+        }
+      },
+      "howToPlay": {
+        "step1": "Seleccione formas y colores del área de selección compartida",
+        "step2": "Coloca las piezas estratégicamente en los cuatro tableros.",
+        "step3": "Monitorea el progreso en cada tablero y prioriza los movimientos de manera efectiva",
+        "step4": "Completa los cuatro rompecabezas dentro de los intentos permitidos para ganar."
+      },
+      "seo": {
+        "title": "Quad Shap10r | Juego de rompecabezas numérico de cuatro tableros",
+        "description": "Pon a prueba tu mente con Quad Shap10r, que incluye cuatro tableros de rompecabezas simultáneos que comparten formas y colores. Juego estratégico con múltiples tableros para resolver los rompecabezas de la mejor manera.",
+        "keywords": "Quad Shap10r, rompecabezas cuádruple, juego de números, juego de lógica, juego de estrategia, combinación de formas, combinación de colores"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "¿En qué se diferencia el Quad Shap10r del Shap10r normal?",
+          "answer": "Quad Shap10r cuenta con cuatro tableros de juego que comparten el mismo conjunto de formas y colores, lo que requiere una planificación estratégica avanzada para resolver todos los rompecabezas simultáneamente."
+        },
+        "faq2": {
+          "question": "¿Es necesario completar todos los tableros juntos?",
+          "answer": "Sí, debes resolver los cuatro rompecabezas dentro de los intentos permitidos, administrando cuidadosamente tus selecciones de formas en todos los tableros."
+        },
+        "faq3": {
+          "question": "¿Es más difícil que Double Shap10r?",
+          "answer": "Sí, gestionar cuatro juntas con recursos compartidos crea un desafío intenso que requiere habilidad experta para realizar múltiples tareas y pensamiento estratégico."
+        },
+        "faq4": {
+          "question": "¿Hay diferentes modos disponibles?",
+          "answer": "Al igual que en el Shap10r normal, puedes jugar en modo normal con valores ordenados o en modo difícil con valores sin ordenar en los cuatro tableros."
+        }
+      }
+    },
+    "octo-shap10r": {
+      "title": "OctoShap10r-1",
+      "description": "Experimente el desafío definitivo de Shap10r con ocho rompecabezas simultáneos. Domine el arte de la multitarea extrema mientras resuelve múltiples combinaciones de números utilizando un conjunto compartido de formas y colores.",
+      "shortDescription": "Solución de rompecabezas de pulpo con recursos compartidos",
+      "features": {
+        "feature1": {
+          "title": "Ocho tableros de juego",
+          "description": "Resuelve ocho rompecabezas Shap10r independientes simultáneamente en un diseño de cuadrícula de 4x2"
+        },
+        "feature2": {
+          "title": "Estrategia experta",
+          "description": "Domine la gestión compleja de recursos a través de ocho paneles interconectados"
+        },
+        "feature3": {
+          "title": "El desafío definitivo",
+          "description": "Lleva tus habilidades multitarea al límite con ocho juegos paralelos"
+        },
+        "feature4": {
+          "title": "Potencial de puntuación alta",
+          "description": "Consigue puntuaciones enormes completando filas en los ocho tableros."
+        }
+      },
+      "howToPlay": {
+        "step1": "Seleccione formas y colores del área de selección compartida",
+        "step2": "Coloca las piezas estratégicamente en los ocho tableros.",
+        "step3": "Monitorea el progreso en cada tablero y optimiza tus movimientos.",
+        "step4": "Completa los ocho rompecabezas dentro de los intentos permitidos para ganar."
+      },
+      "seo": {
+        "title": "Octo Shap10r | Juego de rompecabezas numérico de ocho tableros",
+        "description": "Acepta el desafío definitivo con Octo Shap10r, que incluye ocho tableros de rompecabezas simultáneos que comparten formas y colores. La experiencia de juego multitablero más intensa.",
+        "keywords": "Octo Shap10r, rompecabezas de ocho, juego de números, juego de lógica, juego de estrategia, combinación de formas, combinación de colores"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "¿En qué se diferencia Octo Shap10r de otras variantes?",
+          "answer": "Octo Shap10r cuenta con ocho tableros de juego en un diseño de cuadrícula de 4x2, lo que ofrece la experiencia multitarea más desafiante de la serie Shap10r."
+        },
+        "faq2": {
+          "question": "¿Es necesario completar los ocho tableros juntos?",
+          "answer": "Sí, debes resolver los ocho rompecabezas dentro de los intentos permitidos, lo que requiere una gestión experta de los recursos y una planificación estratégica."
+        },
+        "faq3": {
+          "question": "¿Qué tamaño de pantalla se recomienda?",
+          "answer": "Se recomienda una pantalla grande (1920 x 1080 o superior) para obtener la mejor experiencia, aunque el diseño se adapta a pantallas más pequeñas."
+        },
+        "faq4": {
+          "question": "¿Es esta la versión más desafiante?",
+          "answer": "Sí, Octo Shap10r está diseñado para jugadores expertos que quieren llevar sus habilidades al límite absoluto con ocho juegos simultáneos."
         }
       }
     }

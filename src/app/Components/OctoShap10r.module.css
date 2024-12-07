@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: var(--background-secondary, #f5f5f5);
+  border-radius: 8px;
+}
+
+.scoreSection {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-primary, #333);
+}
+
+.timer {
+  font-size: 1.2rem;
+  color: var(--text-primary, #333);
+}
+
+.gameWrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* 大屏幕：4x2 布局 */
+@media (min-width: 1921px) {
+  .container {
+    max-width: 2400px;
+  }
+  .gameBoard {
+    gap: 24px;
+  }
+}
+
+/* 中等屏幕：2x4 布局 */
+@media (max-width: 1920px) and (min-width: 1201px) {
+  .container {
+    max-width: 1800px;
+  }
+  .gameBoard {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* 小屏幕：单列布局 */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 800px;
+  }
+  .gameBoard {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.gameCell {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.gameCell:hover {
+  transform: translateY(-2px);
+}
+
+.controlSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: var(--background-secondary, #f5f5f5);
+  border-radius: 8px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: var(--primary-color, #007bff);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background: var(--primary-color-dark, #0056b3);
+}
+
+.button:disabled {
+  background: var(--disabled-color, #cccccc);
+  cursor: not-allowed;
+}

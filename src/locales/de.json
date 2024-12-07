@@ -69,6 +69,21 @@
     "fontFamily": "Inter"
   },
   "games": {
+    "shap10r": {
+      "id": "shap10r",
+      "title": "Form10r",
+      "description": "Das Original Shape10r-Puzzlespiel",
+      "image": "/images/shap10r.svg",
+      "gameUrl": "/{lang}",
+      "type": "einzel",
+      "features": [
+        "Original Shape10r-Spiel",
+        "Klassische Puzzle-Mechanik",
+        "Mehrere Ebenen",
+        "Herausforderndes Gameplay"
+      ],
+      "mainFeature": "Original Shape10r-Spiel"
+    },
     "double-shap10r": {
       "title": "Doppel-Shap10r",
       "description": "Fordern Sie sich selbst mit zwei gleichzeitigen Shap10r-Puzzles heraus. Verwenden Sie gemeinsame Formen und Farben, um in dieser kniffligen Variante des klassischen Spiels beide Zahlenkombinationen gleichzeitig zu lösen.",
@@ -118,6 +133,110 @@
         "faq4": {
           "question": "Sind verschiedene Modi verfügbar?",
           "answer": "Wie beim regulären Shap10r können Sie im Normalmodus mit sortierten Werten oder im Hard-Modus mit unsortierten Werten auf beiden Brettern spielen."
+        }
+      }
+    },
+    "quad-shap10r": {
+      "title": "Quad Shap10r",
+      "description": "Stellen Sie sich der ultimativen Herausforderung mit vier gleichzeitigen Shap10r-Puzzles. Meistern Sie die Kunst des Multitaskings, während Sie vier unabhängige Zahlenkombinationen mithilfe eines gemeinsamen Pools aus Formen und Farben lösen.",
+      "shortDescription": "Quad-Puzzle-Lösung mit gemeinsam genutzten Ressourcen",
+      "features": {
+        "feature1": {
+          "title": "Quad-Spielbretter",
+          "description": "Lösen Sie vier unabhängige Shap10r-Puzzles gleichzeitig mithilfe eines gemeinsamen Formenpools."
+        },
+        "feature2": {
+          "title": "Fortgeschrittene Strategie",
+          "description": "Verwalten Sie Ressourcen über vier Boards hinweg, um Effizienz und Punktzahl zu maximieren"
+        },
+        "feature3": {
+          "title": "Multitasking-Herausforderung",
+          "description": "Testen Sie Ihre Fähigkeit, mehrere Rätsel gleichzeitig zu verfolgen und zu lösen"
+        },
+        "feature4": {
+          "title": "Wettbewerbswertung",
+          "description": "Sammeln Sie Punkte für das Vervollständigen von Reihen auf allen Brettern und streben Sie nach hohen Punktzahlen"
+        }
+      },
+      "howToPlay": {
+        "step1": "Wählen Sie Formen und Farben aus dem gemeinsamen Auswahlbereich",
+        "step2": "Platzieren Sie die Teile strategisch auf allen vier Brettern",
+        "step3": "Überwachen Sie den Fortschritt auf jedem Board und priorisieren Sie die Schritte effektiv",
+        "step4": "Schließe alle vier Rätsel innerhalb der erlaubten Versuche ab, um zu gewinnen"
+      },
+      "seo": {
+        "title": "Quad Shap10r | Zahlen-Puzzlespiel mit vier Brettern",
+        "description": "Fordern Sie Ihren Verstand mit Quad Shap10r heraus, das vier gleichzeitige Puzzle-Bretter mit gemeinsamen Formen und Farben bietet. Strategisches Multi-Board-Gameplay zum ultimativen Lösen von Puzzles.",
+        "keywords": "Quad Shap10r, Quad-Puzzle, Zahlenspiel, Logikspiel, Strategiespiel, Formenzuordnung, Farbzuordnung"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "Wie unterscheidet sich Quad Shap10r vom normalen Shap10r?",
+          "answer": "Quad Shap10r verfügt über vier Spielbretter mit demselben Pool an Formen und Farben. Um alle Rätsel gleichzeitig zu lösen, ist eine fortgeschrittene strategische Planung erforderlich."
+        },
+        "faq2": {
+          "question": "Müssen alle Bretter gleichzeitig ausgefüllt werden?",
+          "answer": "Ja, Sie müssen alle vier Rätsel innerhalb der erlaubten Versuche lösen und dabei Ihre Formauswahl auf allen Brettern sorgfältig verwalten."
+        },
+        "faq3": {
+          "question": "Ist es schwieriger als Double Shap10r?",
+          "answer": "Ja, die Verwaltung von vier Vorständen mit gemeinsam genutzten Ressourcen stellt eine große Herausforderung dar, die Expertenwissen im Multitasking und strategisches Denken erfordert."
+        },
+        "faq4": {
+          "question": "Sind verschiedene Modi verfügbar?",
+          "answer": "Wie beim regulären Shap10r können Sie im Normalmodus mit sortierten Werten oder im Hard-Modus mit unsortierten Werten auf allen vier Brettern spielen."
+        }
+      }
+    },
+    "octo-shap10r": {
+      "title": "Octo Shap10r",
+      "description": "Erleben Sie die ultimative Shap10r-Herausforderung mit acht gleichzeitigen Rätseln. Meistern Sie die Kunst des extremen Multitaskings, während Sie mehrere Zahlenkombinationen mithilfe eines gemeinsamen Pools aus Formen und Farben lösen.",
+      "shortDescription": "Octo-Puzzle-Lösung mit gemeinsam genutzten Ressourcen",
+      "features": {
+        "feature1": {
+          "title": "Acht Spielbretter",
+          "description": "Lösen Sie acht unabhängige Shap10r-Rätsel gleichzeitig in einem 4x2-Rasterlayout"
+        },
+        "feature2": {
+          "title": "Expertenstrategie",
+          "description": "Meistern Sie das komplexe Ressourcenmanagement über acht miteinander verbundene Boards"
+        },
+        "feature3": {
+          "title": "Ultimative Herausforderung",
+          "description": "Testen Sie Ihre Multitasking-Fähigkeiten mit acht parallelen Spielen"
+        },
+        "feature4": {
+          "title": "Highscore-Potenzial",
+          "description": "Erziele hohe Punktzahlen, indem du Reihen auf allen acht Brettern vervollständigst"
+        }
+      },
+      "howToPlay": {
+        "step1": "Wählen Sie Formen und Farben aus dem gemeinsamen Auswahlbereich",
+        "step2": "Platziere die Teile strategisch auf allen acht Brettern",
+        "step3": "Überwachen Sie den Fortschritt auf jedem Brett und optimieren Sie Ihre Züge",
+        "step4": "Schließe alle acht Rätsel innerhalb der erlaubten Versuche ab, um zu gewinnen"
+      },
+      "seo": {
+        "title": "Octo Shap10r | Zahlen-Puzzlespiel mit acht Brettern",
+        "description": "Stellen Sie sich der ultimativen Herausforderung mit Octo Shap10r, das acht gleichzeitige Puzzlebretter mit gemeinsamen Formen und Farben bietet. Das intensivste Multi-Board-Spielerlebnis.",
+        "keywords": "Octo Shap10r, Achter-Puzzle, Zahlenspiel, Logikspiel, Strategiespiel, Formen zuordnen, Farben zuordnen"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "Wie unterscheidet sich Octo Shap10r von anderen Varianten?",
+          "answer": "Octo Shap10r verfügt über acht Spielbretter in einem 4x2-Rasterlayout und bietet das anspruchsvollste Multitasking-Erlebnis der Shap10r-Reihe."
+        },
+        "faq2": {
+          "question": "Müssen alle acht Bretter gleichzeitig ausgefüllt werden?",
+          "answer": "Ja, Sie müssen alle acht Rätsel innerhalb der erlaubten Versuche lösen, was ein fachmännisches Ressourcenmanagement und strategische Planung erfordert."
+        },
+        "faq3": {
+          "question": "Welche Bildschirmgröße wird empfohlen?",
+          "answer": "Für das optimale Erlebnis wird ein großer Bildschirm (1920 x 1080 oder höher) empfohlen, das Layout passt sich jedoch auch an kleinere Bildschirme an."
+        },
+        "faq4": {
+          "question": "Ist dies die anspruchsvollste Version?",
+          "answer": "Ja, Octo Shap10r ist für erfahrene Spieler konzipiert, die ihre Fähigkeiten mit acht gleichzeitigen Spielen bis ans absolute Limit austesten möchten."
         }
       }
     }

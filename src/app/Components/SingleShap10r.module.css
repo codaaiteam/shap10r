@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.game {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape {
+  width: 80%;
+  height: 80%;
+}
+
+.shape svg {
+  width: 100%;
+  height: 100%;
+}
+
+.mainShape {
+  fill: white;
+  stroke: var(--primary);
+  stroke-width: 4;
+}
+
+.innerShape {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 4;
+}
+
+.centerDot {
+  fill: var(--primary);
+}

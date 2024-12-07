@@ -69,6 +69,21 @@
     "fontFamily": "国际米兰"
   },
   "games": {
+    "shap10r": {
+      "id": "shap10r",
+      "title": "Shape10r",
+      "description": "原创的 Shape10r 益智游戏",
+      "image": "/images/shap10r.svg",
+      "gameUrl": "/{语言}",
+      "type": "单身的",
+      "features": [
+        "原创 Shape10r 游戏",
+        "经典拼图机制",
+        "多个级别",
+        "具有挑战性的游戏玩法"
+      ],
+      "mainFeature": "原创 Shape10r 游戏"
+    },
     "double-shap10r": {
       "title": "双 Shap10r",
       "description": "挑战自己，同时玩两个 Shap10r 拼图。在这个经典游戏的令人费解的版本中，使用共享的形状和颜色同时解决两个数字组合。",
@@ -118,6 +133,110 @@
         "faq4": {
           "question": "有不同的模式可用吗？",
           "answer": "与常规 Shap10r 一样，您可以在两个棋盘上以排序值的普通模式或以未分类值的困难模式进行游戏。"
+        }
+      }
+    },
+    "quad-shap10r": {
+      "title": "四轴 Shap10r",
+      "description": "同时解决四个 Shap10r 难题，迎接终极挑战。使用共享的形状和颜色池解决四个独立的数字组合，掌握多任务处理的技巧。",
+      "shortDescription": "使用共享资源解决四重拼图",
+      "features": {
+        "feature1": {
+          "title": "四人游戏板",
+          "description": "使用共享的形状池同时解决四个独立的 Shap10r 拼图"
+        },
+        "feature2": {
+          "title": "高级策略",
+          "description": "管理四个委员会的资源，以最大限度地提高效率和得分"
+        },
+        "feature3": {
+          "title": "多任务挑战",
+          "description": "测试你同时追踪和解决多个谜题的能力"
+        },
+        "feature4": {
+          "title": "竞争性得分",
+          "description": "完成所有板上的行即可获得积分，并争取高分"
+        }
+      },
+      "howToPlay": {
+        "step1": "从共享选择区域中选择形状和颜色",
+        "step2": "在四个棋盘上策略性地放置棋子",
+        "step3": "监控每个棋盘的进展情况，并有效地确定行动的优先顺序",
+        "step4": "在允许的尝试次数内完成所有四个谜题即可获胜"
+      },
+      "seo": {
+        "title": "Quad Shap10r | 四板数字拼图游戏",
+        "description": "Quad Shap10r 具有四个同时共享形状和颜色的拼图板，可挑战您的思维。战略性多板游戏可实现终极拼图解谜。",
+        "keywords": "Quad Shap10r、四边形拼图、数字游戏、逻辑游戏、策略游戏、形状匹配、颜色匹配"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "Quad Shap10r 与常规 Shap10r 有何不同？",
+          "answer": "Quad Shap10r 具有四个游戏板，它们共享相同的形状和颜色，需要先进的战略规划才能同时解决所有难题。"
+        },
+        "faq2": {
+          "question": "所有板子都需要一起完成吗？",
+          "answer": "是的，您必须在允许的尝试次数内解决所有四个谜题，并谨慎管理所有板上的形状选择。"
+        },
+        "faq3": {
+          "question": "它比 Double Shap10r 更难吗？",
+          "answer": "是的，管理四个共享资源的董事会是一项艰巨的挑战，需要专家的多任务处理和战略思维。"
+        },
+        "faq4": {
+          "question": "有不同的模式可用吗？",
+          "answer": "与常规 Shap10r 一样，您可以在所有四个棋盘上以排序值的普通模式或以未分类值的困难模式进行游戏。"
+        }
+      }
+    },
+    "octo-shap10r": {
+      "title": "Octo Shap10r",
+      "description": "体验终极 Shap10r 挑战，同时解决八个难题。使用共享的形状和颜色池解决多个数字组合，掌握极限多任务处理的艺术。",
+      "shortDescription": "使用共享资源解决 Octo 难题",
+      "features": {
+        "feature1": {
+          "title": "八个游戏板",
+          "description": "在 4x2 网格布局中同时解决八个独立的 Shap10r 谜题"
+        },
+        "feature2": {
+          "title": "专家策略",
+          "description": "掌握跨八个互连板的复杂资源管理"
+        },
+        "feature3": {
+          "title": "终极挑战",
+          "description": "通过八个并行游戏将您的多任务处理能力发挥到极致"
+        },
+        "feature4": {
+          "title": "高分潜力",
+          "description": "完成所有八个板上的行即可获得高分"
+        }
+      },
+      "howToPlay": {
+        "step1": "从共享选择区域中选择形状和颜色",
+        "step2": "在所有八个棋盘上策略性地放置棋子",
+        "step3": "监控每个棋盘的进度并优化你的动作",
+        "step4": "在允许的尝试次数内完成所有八个谜题即可获胜"
+      },
+      "seo": {
+        "title": "Octo Shap10r | 八板数字拼图游戏",
+        "description": "使用 Octo Shap10r 迎接终极挑战，它具有八个同时共享形状和颜色的拼图板。最激烈的多板游戏体验。",
+        "keywords": "Octo Shap10r、八字谜、数字游戏、逻辑游戏、策略游戏、形状匹配、颜色匹配"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "Octo Shap10r 与其他变体有何不同？",
+          "answer": "Octo Shap10r 具有八个游戏板，采用 4x2 网格布局，提供 Shap10r 系列中最具挑战性的多任务体验。"
+        },
+        "faq2": {
+          "question": "八块板子都需要一起完成吗？",
+          "answer": "是的，您必须在允许的尝试次数内解决所有八个谜题，这需要专家的资源管理和战略规划。"
+        },
+        "faq3": {
+          "question": "推荐的屏幕尺寸是多少？",
+          "answer": "尽管布局可适应较小的屏幕，但建议使用大屏幕（1920x1080 或更高）以获得最佳体验。"
+        },
+        "faq4": {
+          "question": "这是最具挑战性的版本吗？",
+          "answer": "是的，Octo Shap10r 专为那些希望通过同时进行八场游戏将自己的技能发挥到极限的专业玩​​家而设计。"
         }
       }
     }

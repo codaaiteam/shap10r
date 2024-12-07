@@ -11,9 +11,9 @@ import Link from 'next/link';
 import Header from '@/app/Components/Header';
 import QuestionFAQ from "@/app/Components/QuestionFAQ";
 import { useTranslations } from '@/hooks/useTranslations';
-import { getGamesData } from '@/lib/cloudflare'; // 新增
+import { getGamesData } from '@/lib/cloudflare'; 
 import Comments from '../../../Components/Comments';
-import SimpleRating from '../../../Components/SimpleRating';  // 注意调整导入路径
+import SimpleRating from '../../../Components/SimpleRating';  
 import { getGameById, getGameComponent } from '@/data/games';
 
 const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || '';
@@ -81,7 +81,7 @@ export default function GamePage() {
  const [isFullscreen, setIsFullscreen] = useState(false);
  const [gameFaqs, setGameFaqs] = useState([]);
  const [game, setGame] = useState(null);
- const [gamesData, setGamesData] = useState(null); // 新增
+ const [gamesData, setGamesData] = useState(null); 
  const { lang, id } = params;
  const [imageError, setImageError] = useState(false);
 
@@ -89,36 +89,35 @@ export default function GamePage() {
     console.warn(`Failed to load image for game: ${id}`);
     setImageError(true);
  };
-  const getImageUrl = (imagePath) => {
+
+ const getImageUrl = (imagePath) => {
     if (!imagePath) return null;
     if (imagePath.startsWith('http')) return imagePath;
     return `${CDN_URL}${imagePath.startsWith('/') ? '' : '/'}${imagePath}`;
-  };
+ };
 
-  useEffect(() => {
+ useEffect(() => {
     async function fetchGames() {
       try {
         const data = await getGamesData();
         setGamesData(data);
-        const currentGame = getGameById(id, t);  // 使用 getGameById
+        const currentGame = getGameById(id, t);
 
         if (currentGame) {
-          // 处理图片路径
           currentGame.processedImage = getImageUrl(currentGame.image);
           setGame(currentGame);
 
           const gameTranslation = t?.games?.[id];
-          const gameFaqContent = gameTranslation?.faqs || currentGame.faqs;
-          
-          if (gameFaqContent) {
-            const customFaqs = Object.values(gameFaqContent).map(faq => ({
-              question: faq.question,
-              answer: faq.answer
-            }));
-            setGameFaqs(customFaqs);
-          } else if (t?.gameFaqTemplates) {
-            const templateFaqs = generateGameFaqs(currentGame, t.gameFaqTemplates);
-            setGameFaqs(templateFaqs);
+          if (gameTranslation?.faqs) {
+            if (typeof gameTranslation.faqs === 'object' && !Array.isArray(gameTranslation.faqs)) {
+              const faqArray = Object.entries(gameTranslation.faqs).map(([key, faq]) => ({
+                question: faq.question,
+                answer: faq.answer
+              }));
+              setGameFaqs(faqArray);
+            } else if (Array.isArray(gameTranslation.faqs)) {
+              setGameFaqs(gameTranslation.faqs);
+            }
           }
         }
       } catch (error) {
@@ -145,8 +144,8 @@ export default function GamePage() {
       </div>
     );
   }
-   const GameComponent = getGameComponent(game.component);  // 使用 game.type 而不是 game.component
-  
+   const GameComponent = getGameComponent(game.component);  
+  const props = game;
   if (!GameComponent) {
     return (
       <div className={styles.error}>
@@ -161,19 +160,16 @@ export default function GamePage() {
   // Transform nested features object into array
   const getFeatures = () => {
     if (currentGameT?.features) {
-      // Handle object structure (new format)
       if (typeof currentGameT.features === 'object' && !Array.isArray(currentGameT.features)) {
         return Object.values(currentGameT.features).map(feature => ({
           title: feature.title,
           description: feature.description
         }));
       }
-      // Handle array structure (old format)
       if (Array.isArray(currentGameT.features)) {
         return currentGameT.features;
       }
     }
-    // Fallback to game features or default content
     return game.features?.map((feature, index) => ({
       title: feature,
       description: defaultGameContent.features[index]?.description || ''
@@ -183,11 +179,9 @@ export default function GamePage() {
   // Transform nested howToPlay object into array
   const getHowToPlay = () => {
     if (currentGameT?.howToPlay) {
-      // Handle object structure (new format)
       if (typeof currentGameT.howToPlay === 'object' && !Array.isArray(currentGameT.howToPlay)) {
         return Object.values(currentGameT.howToPlay);
       }
-      // Handle array structure (old format)
       if (Array.isArray(currentGameT.howToPlay)) {
         return currentGameT.howToPlay;
       }
@@ -208,6 +202,13 @@ export default function GamePage() {
     howToPlay: getHowToPlay()
   };
 
+  const moreGamesSection = (
+    <section className={styles.moreGames} id="more-games">
+      <h2>{t?.games?.moreGames || 'More Games'}</h2>
+      <GameGrid t={t} excludeId={id} />
+    </section>
+  );
+
   return (
     <>
       <SEO 
@@ -219,29 +220,23 @@ export default function GamePage() {
       <LanguageSwitcher />
       <Header />
       <main className={styles.main}>
-        {/* Hero Section */}
+        {/* Game Section */}
         <section className={styles.gameSection}>
-       <h1 className={styles.gameTitle}>{gameT.title}</h1>
-       <p className={styles.gameDescription}>{gameT.description}</p>
+          <h1 className={styles.gameTitle}>{gameT.title}</h1>
+          <p className={styles.gameDescription}>{gameT.description}</p>
           <div className={styles.gameWrapper}>
             <GameComponent {...game} />
           </div>
         </section>
 
-        {/* Game Section */}
+        {/* Comments Section */}
         <section className={styles.comments}>
         <h2>{t?.comments || "Comments"}</h2>
         <Comments title={t.title} />
       </section>
-        {/* More Games Section */}
-        <section className={styles.moreGames}>
-          <h2>{t?.game?.relatedGames || "More Games"}</h2>
-          <GameGrid 
-            excludeId={game.id}
-            t={t}
-          />
-        </section>
         
+        {moreGamesSection}
+
         {/* Features Section */}
         <section className={styles.features}>
           <h2>{t?.game?.features || "Features"}</h2>
@@ -268,6 +263,7 @@ export default function GamePage() {
           </div>
         </section>
 
+        {/* FAQ Section */}
         <section className={styles.faq}>
           <h2>{t?.faq || "Frequently Asked Questions"}</h2>
           <div className={styles.faqList}>

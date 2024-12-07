@@ -69,6 +69,21 @@
     "fontFamily": "Inter"
   },
   "games": {
+    "shap10r": {
+      "id": "forma10r",
+      "title": "Forma10r",
+      "description": "Il gioco di puzzle originale Shape10r",
+      "image": "/images/shap10r.svg",
+      "gameUrl": "/{lingua}",
+      "type": "separare",
+      "features": [
+        "Gioco Shape10r originale",
+        "Meccanica dei puzzle classici",
+        "Livelli multipli",
+        "Gameplay impegnativo"
+      ],
+      "mainFeature": "Gioco Shape10r originale"
+    },
     "double-shap10r": {
       "title": "Doppio Shap10r",
       "description": "Mettiti alla prova con due puzzle Shap10r simultanei. Usa forme e colori condivisi per risolvere entrambe le combinazioni di numeri contemporaneamente in questa variante rompicapo del classico gioco.",
@@ -118,6 +133,110 @@
         "faq4": {
           "question": "Sono disponibili diverse modalità?",
           "answer": "Come nel normale Shap10r, puoi giocare in modalità Normale con valori ordinati o in modalità Difficile con valori non ordinati su entrambe le scacchiere."
+        }
+      }
+    },
+    "quad-shap10r": {
+      "title": "Quadruplo Shap10r",
+      "description": "Affronta la sfida definitiva con quattro puzzle Shap10r simultanei. Padroneggia l'arte del multitasking mentre risolvi quattro combinazioni di numeri indipendenti utilizzando un pool condiviso di forme e colori.",
+      "shortDescription": "Risoluzione di puzzle quadrupli con risorse condivise",
+      "features": {
+        "feature1": {
+          "title": "Tavole da gioco quadruple",
+          "description": "Risolvi quattro puzzle Shap10r indipendenti simultaneamente utilizzando un pool condiviso di forme"
+        },
+        "feature2": {
+          "title": "Strategia avanzata",
+          "description": "Gestire le risorse su quattro bacheche per massimizzare l'efficienza e il punteggio"
+        },
+        "feature3": {
+          "title": "Sfida multi-tasking",
+          "description": "Metti alla prova la tua capacità di tracciare e risolvere più puzzle contemporaneamente"
+        },
+        "feature4": {
+          "title": "Punteggio competitivo",
+          "description": "Guadagna punti completando le righe su tutte le tavole e punta a punteggi elevati"
+        }
+      },
+      "howToPlay": {
+        "step1": "Seleziona forme e colori dall'area di selezione condivisa",
+        "step2": "Posiziona i pezzi strategicamente su tutte e quattro le tavole",
+        "step3": "Monitora i progressi su ogni scheda e dai priorità alle mosse in modo efficace",
+        "step4": "Completa tutti e quattro i puzzle entro i tentativi consentiti per vincere"
+      },
+      "seo": {
+        "title": "Quad Shap10r | Gioco di puzzle numerico a quattro assi",
+        "description": "Sfida la tua mente con Quad Shap10r, con quattro tabelloni puzzle simultanei che condividono forme e colori. Gioco strategico multi-tabellone per la risoluzione definitiva dei puzzle.",
+        "keywords": "Quad Shap10r, quad puzzle, gioco numerico, gioco di logica, gioco di strategia, abbinamento di forme, abbinamento di colori"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "In che cosa il Quad Shap10r è diverso dal normale Shap10r?",
+          "answer": "Quad Shap10r è composto da quattro tabelloni di gioco che condividono lo stesso insieme di forme e colori, il che richiede una pianificazione strategica avanzata per risolvere tutti gli enigmi contemporaneamente."
+        },
+        "faq2": {
+          "question": "È necessario completare tutte le schede insieme?",
+          "answer": "Sì, devi risolvere tutti e quattro i puzzle entro i tentativi consentiti, gestendo attentamente la selezione delle forme su tutte le tavole."
+        },
+        "faq3": {
+          "question": "È più difficile di Double Shap10r?",
+          "answer": "Sì, gestire quattro consigli di amministrazione con risorse condivise crea una sfida intensa che richiede capacità di multitasking e pensiero strategico."
+        },
+        "faq4": {
+          "question": "Sono disponibili diverse modalità?",
+          "answer": "Come nel normale Shap10r, puoi giocare in modalità Normale con valori ordinati o in modalità Difficile con valori non ordinati su tutte e quattro le scacchiere."
+        }
+      }
+    },
+    "octo-shap10r": {
+      "title": "Octo-Shap10r",
+      "description": "Vivi la sfida definitiva di Shap10r con otto puzzle simultanei. Padroneggia l'arte del multitasking estremo mentre risolvi più combinazioni di numeri usando un pool condiviso di forme e colori.",
+      "shortDescription": "Risolvere puzzle Octo con risorse condivise",
+      "features": {
+        "feature1": {
+          "title": "Otto Tabelloni di Gioco",
+          "description": "Risolvi otto puzzle Shap10r indipendenti contemporaneamente in una griglia 4x2"
+        },
+        "feature2": {
+          "title": "Strategia esperta",
+          "description": "Padroneggia la gestione complessa delle risorse attraverso otto schede interconnesse"
+        },
+        "feature3": {
+          "title": "Sfida definitiva",
+          "description": "Porta le tue capacità multitasking al limite con otto giochi paralleli"
+        },
+        "feature4": {
+          "title": "Potenziale punteggio elevato",
+          "description": "Ottieni punteggi enormi completando le righe su tutte le otto tavole"
+        }
+      },
+      "howToPlay": {
+        "step1": "Seleziona forme e colori dall'area di selezione condivisa",
+        "step2": "Posiziona i pezzi strategicamente su tutte le otto scacchiere",
+        "step3": "Monitora i progressi su ogni scacchiera e ottimizza le tue mosse",
+        "step4": "Completa tutti gli otto puzzle entro i tentativi consentiti per vincere"
+      },
+      "seo": {
+        "title": "Octo Shap10r | Gioco di puzzle numerico a otto assi",
+        "description": "Affronta la sfida definitiva con Octo Shap10r, con otto puzzle board simultanei che condividono forme e colori. L'esperienza di gioco multi-board più intensa.",
+        "keywords": "Octo Shap10r, puzzle dell'otto, gioco dei numeri, gioco di logica, gioco di strategia, abbinamento delle forme, abbinamento dei colori"
+      },
+      "faqs": {
+        "faq1": {
+          "question": "In che cosa Octo Shap10r si differenzia dalle altre varianti?",
+          "answer": "Octo Shap10r è composto da otto tabelloni di gioco disposti in una griglia 4x2, offrendo l'esperienza multi-tasking più impegnativa della serie Shap10r."
+        },
+        "faq2": {
+          "question": "È necessario completare tutte e otto le tavole insieme?",
+          "answer": "Sì, devi risolvere tutti gli otto enigmi entro i tentativi consentiti, il che richiede una gestione esperta delle risorse e una pianificazione strategica."
+        },
+        "faq3": {
+          "question": "Quale dimensione dello schermo è consigliata?",
+          "answer": "Per un'esperienza ottimale si consiglia uno schermo di grandi dimensioni (1920x1080 o superiore), anche se il layout si adatta anche a schermi più piccoli."
+        },
+        "faq4": {
+          "question": "Questa è la versione più impegnativa?",
+          "answer": "Sì, Octo Shap10r è progettato per giocatori esperti che vogliono spingere le proprie abilità al limite assoluto con otto partite simultanee."
         }
       }
     }

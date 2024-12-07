@@ -1,12 +1,48 @@
 {
  "games": {
+   "shap10r": {
+     "id": "shap10r",
+     "title": "Shape10r",
+     "description": "The original Shape10r puzzle game",
+     "image": "/images/shap10r.svg",
+     "gameUrl": "/{lang}",
+     "type": "single",
+     "features": [
+       "Original Shape10r Game",
+       "Classic Puzzle Mechanics",
+       "Multiple Levels",
+       "Challenging Gameplay"
+     ],
+     "mainFeature": "Original Shape10r Game"
+   },
    "double-shap10r": {
      "title": "Double Shap10r",
      "type": "double",
      "image": "/double-shap10r-cover.svg",
      "component": "DoubleShapr10r"
+   },
+   "quad-shap10r": {
+     "title": "Quad Shap10r",
+     "type": "quad",
+     "image": "/quad-shap10r-cover.svg",
+     "component": "QuadShap10r",
+     "features": [
+       "2x2 grid layout with independent games",
+       "Shared row and column actions",
+       "Combined scoring system"
+     ]
+   },
+   "octo-shap10r": {
+     "title": "Octo Shap10r",
+     "type": "octo",
+     "image": "/octo-shap10r-cover.svg",
+     "component": "OctoShap10r",
+     "features": [
+       "4x2 grid layout with 8 independent games",
+       "Advanced multi-board strategy",
+       "Intense multi-tasking challenge",
+       "Ultimate puzzle-solving experience"
+     ]
    }
-
-
  }
 }

@@ -46,8 +46,13 @@ export default function GameGrid({ t, excludeId }) {
     };
   }, [t, excludeId]);
 
-  const handleGameClick = (gameId) => {
-    router.push(`/${currentLang}/game/${gameId}`);
+  const handleGameClick = (gameId, gameUrl) => {
+    if (gameUrl?.includes('{lang}')) {
+      router.push(gameUrl.replace('{lang}', currentLang));
+    } else {
+      // 如果没有 gameUrl 或者不包含 {lang}，使用默认的游戏页面路径
+      router.push(`/${currentLang}/game/${gameId}`);
+    }
   };
 
   const handleImageError = (gameId) => {
@@ -94,7 +99,7 @@ export default function GameGrid({ t, excludeId }) {
             <div 
               key={game.id}
               className={styles.gameCard}
-              onClick={() => handleGameClick(game.id)}
+              onClick={() => handleGameClick(game.id, game.gameUrl)}
               role="link"
               tabIndex={0}
               style={{ cursor: 'pointer' }}
