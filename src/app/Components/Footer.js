@@ -1,6 +1,6 @@
 // components/Footer.js
 import Link from 'next/link';
-import styles from '../Footer.module.css'; // 更新为正确的相对路径
+import styles from './Footer.module.css'; // 更新为正确的相对路径
 
 const Footer = () => {
   return (
