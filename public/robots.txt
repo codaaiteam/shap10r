@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.playsprunkiphrase4.com
+Host: https://www.playshap10r.org/
 
 # Sitemaps
-Sitemap: https://www.playsprunkiphrase4.com/sitemap.xml
+Sitemap: https://www.playshap10r.org/sitemap.xml
