@@ -28,6 +28,8 @@ const Footer = () => {
             >
               AI Reword Tools
             </a>
+        <span className={styles.separator}>·</span>
+        <a href="https://www.repo-game.org" target="_blank" rel="noopener noreferrer">Repo Game</a>
       </div>
       <div className={styles.copyright}>
         © 2024 Shap10r. All rights reserved.
