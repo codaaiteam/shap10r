@@ -64,6 +64,11 @@ const Footer = () => {
         <a href="https://www.vo3ai.com" target="_blank" rel="noopener noreferrer">
         VO3 AI
         </a>
+        <span>·</span>
+        <a href="https://aibanana.net/" target="_blank" rel="noopener noreferrer">
+        AI Banana
+        </a>
+
 
 
     </footer>
