@@ -68,6 +68,15 @@ const Footer = () => {
         <a href="https://aibanana.net/" target="_blank" rel="noopener noreferrer">
         AI Banana
         </a>
+        <span>·</span>
+        <a href="https://aibanana.net/" target="_blank" rel="noopener noreferrer">
+        AI Banana
+        </a>
+        <span>·</span>
+        <a href="https://www.banananano2.ai/" target="_blank" rel="noopener noreferrer">
+        Banana Nano
+        </a>
+
 
 
 
