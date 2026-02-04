@@ -96,6 +96,11 @@ const Footer = () => {
         <a href="https://openclawinstall.org/" target="_blank" rel="noopener noreferrer">
         OpenClaw
         </a>
+        <span>·</span>
+        <a href="https://klingai3.com/" target="_blank" rel="noopener noreferrer">
+        Kling AI
+        </a>
+
 
 
 
