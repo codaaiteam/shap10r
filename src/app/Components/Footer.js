@@ -88,6 +88,15 @@ const Footer = () => {
         <a href="https://flux-2-ai.com/" target="_blank" rel="noopener noreferrer">
         Flux 2 AI
         </a>
+        <span>·</span>
+        <a href="https://cinegoai.com/" target="_blank" rel="noopener noreferrer">
+        CineGo AI
+        </a>
+        <span>·</span>
+        <a href="https://openclawinstall.org/" target="_blank" rel="noopener noreferrer">
+        OpenClaw
+        </a>
+
 
 
 
