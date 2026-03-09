@@ -100,6 +100,11 @@ const Footer = () => {
         <a href="https://klingai3.com/" target="_blank" rel="noopener noreferrer">
         Kling AI
         </a>
+        <span>·</span>
+        <a href="https://www.youraislopboresmegame.com/" target="_blank" rel="noopener noreferrer">
+        Your AI Slop Bores Me Game
+        </a>
+
 
 
 
