@@ -129,6 +129,9 @@ const Footer = () => {
         17-0 Challenge
         </a>
 
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "8px 16px", width: "100%", padding: "8px 12px", fontSize: "13px", lineHeight: 1.6, opacity: 0.55, boxSizing: "border-box" }}>
+        <a href="https://gakuran-codes.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Gakuran Codes</a>
+      </div>
     </footer>
   );
 };
